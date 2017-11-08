@@ -9,61 +9,172 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+### 14.1 Introduction
+Use the following packages:
 ```{r}
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(stringr))
 ```
 
-#### 14.1 Introduction
-#### 14.2 String basics
-##### 14.2.5 Exercises
+### 14.2 String basics
 
-1. In code that doesn’t use stringr, you’ll often see paste() and paste0(). What’s the difference between the two functions? What stringr function are they equivalent to? How do the functions differ in their handling of NA?
+ - String length
+ - Combining strings
+ - Subsetting strings
+ - Locales
+ - Exercises
+ 
+#### 14.2.5 Exercises
 
-2. In your own words, describe the difference between the sep and collapse arguments to str_c().
+*1. In code that doesn’t use stringr, you’ll often see paste() and paste0(). What’s the difference between the two functions? What stringr function are they equivalent to? How do the functions differ in their handling of NA?*
 
-3. Use str_length() and str_sub() to extract the middle character from a string. What will you do if the string has an even number of characters?
+The paste() function is used to concatenate strings. It converts character vectors into character strings and seperates strings by spaces by default, or by the parameter given to *sep*. The function takes three arguments: paste (..., sep = " ", collapse = NULL)
 
-4. What does str_wrap() do? When might you want to use it?
+The paste0() function is similar to paste(), in that it also takes character vectors and concatenates them to a string. This functions takes two arguments: paste0(..., collapse = NULL), and assumes that that sep = "".
 
-5. What does str_trim() do? What’s the opposite of str_trim()?
 
-6. Write a function that turns (e.g.) a vector c("a", "b", "c") into the string a, b, and c. Think carefully about what it should do if given a vector of length 0, 1, or 2.
+stringr::str_c() works by joining multiple strings into one string. It is similar to **paste0()**; it doesn't seperate strings with spaces by default. If any arguments are NA, str_c() will return NA, where are paste() and paste0() convert NAs into a string.
+
+*2. In your own words, describe the difference between the sep and collapse arguments to str_c().*
+
+str_c(..., sep = "", collapse = NULL)
+The sep= argument dictates the string that is inserted between the input vectors. 
+The collapse= argument used to collapse the the input vectors into a character vector of length 1 based on the string input.
+
+
+*3. Use str_length() and str_sub() to extract the middle character from a string. What will you do if the string has an even number of characters?*
+
+str_length(string)
+str_sub(string, start = 1L, end = -1L)
+
+```{r 14.2.5.3}
+x <- c("1", "12", "123", "1234", "12345", "123456")
+x_length <- str_length(x)
+middle <- ceiling(x_length/2)
+str_sub(x, middle, middle)
+```
+
+Characters with even number of characters cannot return a single middle character; the str returned using ceiling will return the first of the two middle characters.
+
+*4. What does str_wrap() do? When might you want to use it?*
+
+str_wrap(string, width = 80, indent = 0, exdent = 0)
+
+The str_wrap() function is used to wrap strings around formatted text for given dimensions. It can be used for formatting paragraphs and large text blocks.
+
+*5. What does str_trim() do? What’s the opposite of str_trim()?*
+
+str_trim(string, side = c("both", "left", "right"))
+The str_trim() function is used to trim whitespace (ie. removes spaces/tabs) from the start and/or end of strings. 
+
+str_pad(string, width, side = c("left", "right", "both"), pad = " ")
+The opposite to this function is str_pad(), which adds whitespaces to the start and/or end of strings.
+
+*6. Write a function that turns (e.g.) a vector c("a", "b", "c") into the string a, b, and c. Think carefully about what it should do if given a vector of length 0, 1, or 2.*
+
+```{r 14.2.5.6}
+return_abc <- function(x){
+      x_length <- length(x)
+      if(x_length > 1){
+            str_c(str_c(x[-x_length], collapse = ", "),
+                  x[x_length], sep= ", and ")
+      } else {
+            x
+      }
+}
+
+return_abc("")
+return_abc(letters[1])
+return_abc(letters[1:2])
+return_abc(letters[1:4])
+```
+
+
 
 #### 14.3 Matching patterns with regular expressions
 ##### 14.3.1.1 Exercises
-1. Explain why each of these strings don’t match a \: "\", "\\", "\\\".
 
-2. How would you match the sequence "'\?
+*1. Explain why each of these strings don’t match a \: "\", "\\", "\\\".*
 
-3. What patterns will the regular expression \..\..\.. match? How would you represent it as a string?
+In R regexps use the backslash, \, to escape specific expression behaviours. A backslash will cause R to skip the the character following it.
+ - The first string will escape to the next character - the statement will be incomplete if the string is " \ "
+ - The second string will escape the first \ and print \
+ - The second string will escape the first \ and print \\
+ 
+*2. How would you match the sequence* "'\\ *?*
+
+Not sure - this sequence won't be recognized as complete, since the \ will escape the next character. I suppose it can only be matched with itself or using indexes...
+
+*3. What patterns will the regular expression \\..\\..\\.. match? How would you represent it as a string?*
+
+The first \. creates the wildcard, followed by a dot. This expression will match (any character + .) 3 times
 
 ##### 14.3.2.1 Exercises
-1. How would you match the literal string "$^$"?
+*1. How would you match the literal string "\$^$" ?*
 
-2. Given the corpus of common words in stringr::words, create regular expressions that find all words that:
- - Start with “y”.
- - End with “x”
- - Are exactly three letters long. (Don’t cheat by using str_length()!)
- - Have seven letters or more.
+The ^ indicates the beginning of string and $ indicates the end of a string. 
+Because they are both anchors, they need to be escaped to act as a string. 
+The expression following expression will match the literal string.
+```{r}
+literal_string <- "$^$"
+str_view(literal_string, "\\$\\^\\$")
+```
+
+*2. Given the corpus of common words in stringr::words, create regular expressions that find all words that:*
+
+ - Start with “y”: `r str_view(words, "^y", match = TRUE)`
+ 
+ - End with “x”: `r str_view(words, "x$", match = TRUE)`
+ 
+ - Are exactly three letters long: `r str_view(words, "^[a-z].[a-z]$", match = TRUE)`
+ 
+ - Have seven letters or more: `r str_view(words, "^[a-z]{6}.", match = TRUE)`
+ 
 Since this list is long, you might want to use the match argument to str_view() to show only the matching or non-matching words.
 
 ##### 14.3.3.1 Exercises
+
 1. Create regular expressions to find all words that:
 
- - Start with a vowel.
+ - Start with a vowel: `r str_view(words, "^[aeiou], match = TRUE")`
 
- - That only contain consonants. (Hint: thinking about matching “not”-vowels.)
+ - That only contain consonants: `r str_view(words, "^[^aeiou]+$", match=TRUE)`
 
- - End with ed, but not with eed.
+ - End with ed, but not with eed: `r str_view(words, "[^e]ed$", match=TRUE)`
 
- - End with ing or ise.
+ - End with ing or ise: `r str_view(words, "ing$|ise$", match=TRUE)`
 
-2. Empirically verify the rule “i before e except after c”.
+2. Empirically verify the rule “i before e except after c”
+```{r i before e}
+## i before e, except after c
+length(str_subset(words, "(cei|[^c]ie)"))
+str_subset(words, "(cei|[^c]ie)")
+
+## i after e
+length(str_subset(words, "(cie|[^c]ei)"))
+str_subset(words, "(cie|[^c]ei)")
+```
 
 3. Is “q” always followed by a “u”?
+```{r q before u}
+## q before u
+length(str_subset(words, "qu"))
+str_subset(words, "qu")
+
+## u before q
+length(str_subset(words, "(uq|q[^u])"))
+str_subset(words, "(uq|q[^u])")
+```
 
 4. Write a regular expression that matches a word if it’s probably written in British English, not American English.
+Using spelling differences: 
+
+
+```{r}
+
+```
+
 
 5. Create a regular expression that will match telephone numbers as commonly written in your country.
 
