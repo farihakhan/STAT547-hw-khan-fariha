@@ -2,7 +2,9 @@
 title: 'Homework 06: Data wrangling wrap up'
 author: "Fariha Khan"
 date: '2017-11-07'
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -169,50 +171,87 @@ str_subset(words, "(uq|q[^u])")
 
 4. Write a regular expression that matches a word if it’s probably written in British English, not American English.
 Using spelling differences: 
-
+|**American**|**British**|
+|------------|-----------|
+| -er        | -re       |
+| -nse       | -nce      |
+| -ize       | -ise      |
+| -or        | -our      |
 
 ```{r}
-
+str_view(words, "([^aeiou]re|nce|ise|our)$", match = TRUE)
 ```
 
 
 5. Create a regular expression that will match telephone numbers as commonly written in your country.
+Telephone numbers in canada consist of a 3-digit area code, followed by a 7-digit number:
+(xxx-xxx-xxxx) or (xxx xxx xxxx)
+
+```{r}
+numbers <- c("123 456 7890", "113 432-4343", "444 3434", "111-444-3333", "11 1 4443333")
+str_view(numbers, "^\\d{3}(\\s|-)\\d{3}(\\s|-)\\d{4}$", match = TRUE)
+```
+
 
 ##### 14.3.4.1 Exercises
-1. Describe the equivalents of ?, +, * in {m,n} form.
 
-2. Describe in words what these regular expressions match: (read carefully to see if I’m using a regular expression or a string that defines a regular expression.)
+*1. Describe the equivalents of * ?, +, * in {m,n} form.
 
- - ^.*$
- - "\\{.+\\}"
- - \d{4}-\d{2}-\d{2}
- - "\\\\{4}"
+ - ?: 0 or 1
+ - +: 1 or more
+ - *: 0 or more
+ - {n}: exactly n
+ - {n,}: n or more
+ - {,m}: at most m
+ - {n,m}: between n and m
+
+ ? is equivalent to {,1} because it matches at most 1 time. 
+ + is equivalent to {1,} because it matches 1 or more times. 
+ * doesn't have an equivalent because can range from 0 up to infinity.
+ 
+*2. Describe in words what these regular expressions match: (read carefully to see if I’m using a regular expression or a string that defines a regular expression.)*
+
+ - ^.*$: Any string
+ 
+ - "\\\\{.+\\}": A string that contains curly brackets surrounded by at least one character
+ 
+ - \d{4}-\d{2}-\d{2}: 4Digits-2Digits-2Digits
+ 
+ - "\\\\\\{4}": This will match a backlash four times
 
 3. Create regular expressions to find all words that:
 
- - Start with three consonants.
- - Have three or more vowels in a row.
- - Have two or more vowel-consonant pairs in a row.
+ - Start with three consonants: `r str_view(words, "^[^aeiou]{3}", match = TRUE)`
  
-4. Solve the beginner regexp crosswords at https://regexcrossword.com/challenges/beginner.
+ - Have three or more vowels in a row.: `r str_view(words, "[aeiou]{3,}", match = TRUE)`
+ 
+ - Have two or more vowel-consonant pairs in a row: 
+ `r str_view(words, "([aeiou][^aeiou]){2,}", match = TRUE)`
+ 
 
 ##### 14.3.5.1 Exercises
 
 1. Describe, in words, what these expressions will match:
 
- - (.)\1\1
- - "(.)(.)\\2\\1"
- - (..)\1
- - "(.).\\1.\\1"
- - "(.)(.)(.).*\\3\\2\\1"
+ - (.)\1\1 : A character repeated twice
+ 
+ - "(.)(.)\\2\\1": Any two characters occuring once, and then repeated in reverse
+ 
+ - (..)\1: Two characters repeated once
+ 
+ - "(.).\\1.\\1": A string of 5 characters, where the 1st, 3rd and 5th characters are repeated and the 2nd and 4th can be anything.
+ 
+ - "(.)(.)(.).*\\3\\2\\1": String of 6 or more characters, where the first 3 are repeated in reverse between any character (.) repeated 0 to inifnity times
  
 2. Construct regular expressions to match words that:
 
- - Start and end with the same character.
+ - Start and end with the same character: `r str_view(words, "^(.).*\\1$", match=TRUE)`
 
- - Contain a repeated pair of letters (e.g. “church” contains “ch” repeated twice.)
+ - Contain a repeated pair of letters (e.g. “church” contains “ch” repeated twice.):
+ `r str_view(words, "^(..).*\\1$", match=TRUE)`
 
  - Contain one letter repeated in at least three places (e.g. “eleven” contains three “e”s.)
+ `r str_view(words, "(.).*\\1.*\\1", match=TRUE)`
  
 #### 14.4 Tools
 
@@ -220,13 +259,46 @@ Using spelling differences:
 
 1. For each of the following challenges, try solving it by using both a single regular expression, and a combination of multiple str_detect() calls.
 
- - Find all words that start or end with x.
+ - Find all words that start or end with x: 
+```{r}
+words[str_detect(words, "^x|x$")]
+i <- str_detect(words, "^x")
+j <- str_detect(words, "x$")
+head(list(words[i|j]))
+```
 
  - Find all words that start with a vowel and end with a consonant.
+ 
+
+```{r}
+words[str_detect(words, "^[aeiou]|[^aeiou]$")]
+
+i <- str_detect(words, "^[aeiou]")
+j <- str_detect(words, "[^aeiou]$")
+words[i&j] %>% 
+      head()
+```
 
  - Are there any words that contain at least one of each different vowel?
+ 
+```{r}
+words[str_detect(words, "a") &
+      str_detect(words, "e") &
+      str_detect(words, "i") &
+      str_detect(words, "o") &
+      str_detect(words, "u")]
+```
 
-2. What word has the highest number of vowels? What word has the highest proportion of vowels? (Hint: what is the denominator?)
+2. What word has the highest number of vowels? What word has the highest proportion of vowels? 
+```{r}
+## Highest number of vowels
+max(str_count(words, "[aeiou]"))
+
+## Get proportions - than extract the largest value
+proportion <- max(str_count(words, "[aeiou]"))/str_length(words)
+words[which(proportion == max(proportion))] ##??????
+
+```
 
 ##### 14.4.3.1 Exercises
 
@@ -234,12 +306,25 @@ Using spelling differences:
 
 2. From the Harvard sentences data, extract:
 
- - The first word from each sentence.
- - All words ending in ing.
- - All plurals.
+ - The first word from each sentence: `r str_extract(sentences, "^\\w+") %>% head(10)`
+
+ - All words ending in ing: 
+```{r}
+pattern <- "\\b[A-Za-z]+ing\\b"
+ing <- str_detect(sentences, pattern)
+str_extract_all(sentences[ing], pattern, simplify = TRUE) %>% head(10)
+```
  
+ - All plurals.
+```{r}
+pattern <- "\\b[A-Za-z]{3,}[^s]s\\b"
+plural <- str_detect(sentences, pattern)
+str_extract(sentences[plural], pattern) %>% head(10)
+```
 ##### 14.4.4.1 Exercises
 1. Find all words that come after a “number” like “one”, “two”, “three” etc. Pull out both the number and the word.
+
+
 
 2. Find all contractions. Separate out the pieces before and after the apostrophe.
 
