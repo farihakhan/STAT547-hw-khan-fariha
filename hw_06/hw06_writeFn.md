@@ -1,25 +1,20 @@
----
-title: "Writing Functions"
-author: "Fariha Khan"
-date: '2017-11-10'
-output: 
-  html_document: 
-    keep_md: yes
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Writing Functions
+Fariha Khan  
+2017-11-10  
 
 
-```{r}
+
+
+
+```r
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(gapminder))
 ```
 
 I'm going to create a function that returns a visual graph of life expectancy by year for a given country
-```{r}
+
+```r
 data("gapminder")
 get_lifeExp <- function(x){
       X <- str_replace(x, str_sub(x,1,1), toupper(str_sub(x,1,1)))
@@ -34,6 +29,13 @@ get_lifeExp <- function(x){
 }
 
 get_lifeExp("Canada")
+```
+
+![](hw06_writeFn_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
+```r
 get_lifeExp("canada")
 ```
+
+![](hw06_writeFn_files/figure-html/unnamed-chunk-2-2.png)<!-- -->
 
