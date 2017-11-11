@@ -3,9 +3,7 @@ title: 'Homework 06: Data wrangling wrap up'
 author: "Fariha Khan"
 date: '2017-11-07'
 output: 
-  html_document: 
-    keep_md: yes
-    toc: yes
+  github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -181,7 +179,7 @@ Using spelling differences:
 | -ize       | -ise      |
 | -or        | -our      |
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, results='markup'}
 str_view(words, "([^aeiou]re|nce|ise|our)$", match = TRUE)
 ```
 
