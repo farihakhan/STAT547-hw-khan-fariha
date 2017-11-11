@@ -3,11 +3,14 @@ title: 'Homework 06: Data wrangling wrap up'
 author: "Fariha Khan"
 date: '2017-11-07'
 output: 
-  github_document
+  html_document: 
+    keep_md: yes
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 
@@ -17,6 +20,7 @@ Use the following packages:
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(stringi))
+suppressPackageStartupMessages(library(htmlwidgets))
 ```
 
 # 14.2 String basics
