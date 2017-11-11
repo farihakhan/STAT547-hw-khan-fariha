@@ -17,6 +17,7 @@ Use the following packages:
 ```{r}
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(stringr))
+suppressPackageStartupMessages(library(stringi))
 ```
 
 ### 14.2 String basics
@@ -343,7 +344,7 @@ unlist(strsplit(seperated, "(?=')", perl = T))
 ```
 #### 14.4.5.1 Exercises
 
-1. Replace all forward slashes in a string with backslashes.
+*1. Replace all forward slashes in a string with backslashes.*
 This would only work if I used 4 backslashed 
 
 ```{r}
@@ -353,14 +354,14 @@ str_replace_all(x, "/", "\\")
 str_replace_all(x, "/", "\\\\")
 ```
 
-2. Implement a simple version of str_to_lower() using replace_all().
+*2. Implement a simple version of str_to_lower() using replace_all().*
 ```{r}
 x <- "abcd"
 x
 str_replace_all(x, c("a" = "A", "b" = "B", "c" = "C", "d" = "D"))
 ```
 
-3. Switch the first and last letters in words. Which of those strings are still words?
+*3. Switch the first and last letters in words. Which of those strings are still words?*
 ```{r}
 
 str_replace(words, 
@@ -371,23 +372,50 @@ str_replace(words,
 
 #### 14.4.6.1 Exercises
 
-1. Split up a string like "apples, pears, and bananas" into individual components.
+*1. Split up a string like "apples, pears, and bananas" into individual components.*
 ```{r}
 x <- c("apples, pears, and bananas")
 str_split(x, ", +(and +)?")[[1]]
 ```
 
-2. Why is it better to split up by boundary("word") than " "?
+*2. Why is it better to split up by boundary("word") than " "?*
+Spliiting by boundary("word") will remove whitespace and any special characters and puncutation, where as " " will only remove a space.
 
-3. What does splitting with an empty string ("") do? Experiment, and then read the documentation.
+*3. What does splitting with an empty string ("") do? Experiment, and then read the documentation.*
+```{r}
+"a|b|c|d" %>% 
+  str_split("\\|") %>% 
+  .[[1]]
+
+"a|b|c|d" %>% 
+  str_split("") %>% 
+  .[[1]]
+```
+
+It seems to split the string by every character.
 
 ### 14.5 Other types of pattern
 
 #### 14.5.1 Exercises
 
-1. How would you find all strings containing \ with regex() vs. with fixed()?
+*1. How would you find all strings containing \ with regex() vs. with fixed()?*
 
-2. What are the five most common words in sentences?
+```{r}
+x <- "a\\b"
+str_subset(x, "\\\\")
+```
+
+*2. What are the five most common words in sentences?*
+```{r}
+all_words <- unlist(str_extract_all(sentences, boundary("word")))
+
+all_words %>% 
+      table() %>% 
+      sort(decreasing=T) %>% 
+      head(5)
+
+```
+
 
 ### 14.6 Other uses of regular expressions
 
@@ -395,10 +423,16 @@ str_split(x, ", +(and +)?")[[1]]
 
 #### 14.7.1 Exercises
 
-1. Find the stringi functions that:
+*1. Find the stringi functions that:*
 
- - Count the number of words.
- - Find duplicated strings.
- - Generate random text.
+ - Count the number of words: 
+      - stri_count_boundaries(test, type="word")
+      - stri_count_words()
+ - Find duplicated strings: stri_duplicated()
+       - stri_duplicated(), stri_duplicated_any()
+ - Generate random text
+       - stri_rand_shuffle(str)
+       - stri_rand_lipsum(nparagraphs, start_lipsum = TRUE)
 
-2. How do you control the language that stri_sort() uses for sorting?
+*2. How do you control the language that stri_sort() uses for sorting?*
+stri_order(str, decreasing = FALSE, na_last = TRUE, opts_collator = NULL)
