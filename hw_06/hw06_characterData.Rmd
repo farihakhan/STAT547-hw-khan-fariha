@@ -5,6 +5,7 @@ date: '2017-11-07'
 output: 
   html_document: 
     keep_md: yes
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -12,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-### 14.1 Introduction
+# 14.1 Introduction
 Use the following packages:
 ```{r}
 suppressPackageStartupMessages(library(tidyverse))
@@ -20,7 +21,7 @@ suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(stringi))
 ```
 
-### 14.2 String basics
+# 14.2 String basics
 
  - String length
  - Combining strings
@@ -28,7 +29,7 @@ suppressPackageStartupMessages(library(stringi))
  - Locales
  - Exercises
  
-#### 14.2.5 Exercises
+### 14.2.5 Exercises
 
 *1. In code that doesn’t use stringr, you’ll often see paste() and paste0(). What’s the difference between the two functions? What stringr function are they equivalent to? How do the functions differ in their handling of NA?*
 
@@ -95,9 +96,9 @@ return_abc(letters[1:4])
 
 
 
-### 14.3 Matching patterns with regular expressions
+# 14.3 Matching patterns with regular expressions
 
-#### 14.3.1.1 Exercises
+### 14.3.1.1 Exercises
 
 *1. Explain why each of these strings don’t match a \: "\", "\\", "\\\".*
 
@@ -114,7 +115,7 @@ Not sure - this sequence won't be recognized as complete, since the \ will escap
 
 The first \. creates the wildcard, followed by a dot. This expression will match (any character + .) 3 times
 
-#### 14.3.2.1 Exercises
+### 14.3.2.1 Exercises
 *1. How would you match the literal string "\$^$" ?*
 
 The ^ indicates the beginning of string and $ indicates the end of a string. 
@@ -137,7 +138,7 @@ str_view(literal_string, "\\$\\^\\$")
  
 Since this list is long, you might want to use the match argument to str_view() to show only the matching or non-matching words.
 
-#### 14.3.3.1 Exercises
+### 14.3.3.1 Exercises
 
 *1. Create regular expressions to find all words that:*
 
@@ -180,7 +181,7 @@ Using spelling differences:
 | -ize       | -ise      |
 | -or        | -our      |
 
-```{r}
+```{r, echo=TRUE}
 str_view(words, "([^aeiou]re|nce|ise|our)$", match = TRUE)
 ```
 
@@ -195,7 +196,7 @@ str_view(numbers, "^\\d{3}(\\s|-)\\d{3}(\\s|-)\\d{4}$", match = TRUE)
 ```
 
 
-#### 14.3.4.1 Exercises
+### 14.3.4.1 Exercises
 
 *1. Describe the equivalents of * ?, +, * in {m,n} form.
 
@@ -231,7 +232,7 @@ str_view(numbers, "^\\d{3}(\\s|-)\\d{3}(\\s|-)\\d{4}$", match = TRUE)
  `r str_view(words, "([aeiou][^aeiou]){2,}", match = TRUE)`
  
 
-#### 14.3.5.1 Exercises
+### 14.3.5.1 Exercises
 
 1. Describe, in words, what these expressions will match:
 
@@ -255,8 +256,8 @@ str_view(numbers, "^\\d{3}(\\s|-)\\d{3}(\\s|-)\\d{4}$", match = TRUE)
  - Contain one letter repeated in at least three places (e.g. “eleven” contains three “e”s.)
  `r str_view(words, "(.).*\\1.*\\1", match=TRUE)`
  
-### 14.4 Tools
-#### 14.4.2 Exercises
+# 14.4 Tools
+### 14.4.2 Exercises
 
 1. For each of the following challenges, try solving it by using both a single regular expression, and a combination of multiple str_detect() calls.
 
@@ -301,7 +302,7 @@ words[which(proportion == max(proportion))] ##??????
 
 ```
 
-#### 14.4.3.1 Exercises
+### 14.4.3.1 Exercises
 
 *1. In the previous example, you might have noticed that the regular expression matched “flickered”, which is not a colour. Modify the regex to fix the problem.*
 
@@ -324,7 +325,7 @@ plural <- str_detect(sentences, pattern)
 str_extract(sentences[plural], pattern) %>% head(10)
 ```
 
-#### 14.4.4.1 Exercises
+### 14.4.4.1 Exercises
 *1. Find all words that come after a “number” like “one”, “two”, “three” etc. Pull out both the number and the word.*
 
 ```{r}
@@ -342,7 +343,7 @@ seperated <- str_extract(sentences[x], pattern)
 unlist(str_split(seperated, pattern = "'"))
 unlist(strsplit(seperated, "(?=')", perl = T))
 ```
-#### 14.4.5.1 Exercises
+### 14.4.5.1 Exercises
 
 *1. Replace all forward slashes in a string with backslashes.*
 This would only work if I used 4 backslashed 
@@ -371,7 +372,7 @@ str_replace(words,
 ```
 
 
-#### 14.4.6.1 Exercises
+### 14.4.6.1 Exercises
 
 *1. Split up a string like "apples, pears, and bananas" into individual components.*
 ```{r}
@@ -395,9 +396,9 @@ Spliiting by boundary("word") will remove whitespace and any special characters 
 
 It seems to split the string by every character.
 
-### 14.5 Other types of pattern
+# 14.5 Other types of pattern
 
-#### 14.5.1 Exercises
+### 14.5.1 Exercises
 
 *1. How would you find all strings containing \ with regex() vs. with fixed()?*
 
@@ -418,11 +419,11 @@ all_words %>%
 ```
 
 
-### 14.6 Other uses of regular expressions
+# 14.6 Other uses of regular expressions
 
-### 14.7 stringi
+# 14.7 stringi
 
-#### 14.7.1 Exercises
+### 14.7.1 Exercises
 
 *1. Find the stringi functions that:*
 
