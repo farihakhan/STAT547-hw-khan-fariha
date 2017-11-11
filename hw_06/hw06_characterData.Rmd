@@ -339,7 +339,7 @@ I couldn't figure out how to keep the apostrophe using str_split()
 pattern <- "[A-Za-z]*'[a-z]+"
 x <- str_detect(sentences, pattern = pattern)
 seperated <- str_extract(sentences[x], pattern)
-str_split(seperated, pattern = "'")
+unlist(str_split(seperated, pattern = "'"))
 unlist(strsplit(seperated, "(?=')", perl = T))
 ```
 #### 14.4.5.1 Exercises
@@ -365,7 +365,8 @@ str_replace_all(x, c("a" = "A", "b" = "B", "c" = "C", "d" = "D"))
 ```{r}
 
 str_replace(words, 
-            str_sub(words,1,1),str_sub(words, -1))
+            str_sub(words,1,1),str_sub(words, -1)) %>% 
+      head(10)
 
 ```
 
