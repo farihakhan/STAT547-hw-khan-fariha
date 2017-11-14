@@ -123,7 +123,7 @@ The first \. creates the wildcard, followed by a dot. This expression will match
 The ^ indicates the beginning of string and $ indicates the end of a string. 
 Because they are both anchors, they need to be escaped to act as a string. 
 The expression following expression will match the literal string.
-```{r}
+```{r }
 literal_string <- "$^$"
 str_view(literal_string, "\\$\\^\\$")
 ```
