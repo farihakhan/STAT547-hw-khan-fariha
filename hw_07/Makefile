@@ -8,14 +8,14 @@ all: 07_automatingData.html
 gapminder.tsv:
 	Rscript 00_downloadData.R
 
-gap_data.tsv lifeExp_vs_year.png ReOrd_lifeExp_vs_year.png 01_filter-reorder-plot.html: 01_cleanData.R lotr_raw.tsv 
+gap_data.tsv lifeExp_vs_year.png ReOrd_lifeExp_vs_year.png 01_filter-reorder-plot.html: 01_cleanData.R gap_data.tsv 
 	Rscript -e "rmarkdown::render('$<')"
 
-total-words-by-film-race.tsv: lotr_clean.tsv 02_aggregate-plot.R
-	Rscript 02_aggregate-plot.R
+gap_Rdata.tsv top_Asia.png top_Americas.png top_Africa.png top_Europe.png: gap_Rdata.tsv 02_analyzeData.R
+	Rscript 02_analyzeData.R
 	rm Rplots.pdf
 
-03_lotr-report.html: 03_lotr-report.Rmd lotr_clean.tsv barchart_total-words-by-race.png
+07_automatingData.html: 07_automatingData.Rmd gap_Rdata.tsv
 	Rscript -e "rmarkdown::render('$<')"
 
 clean:

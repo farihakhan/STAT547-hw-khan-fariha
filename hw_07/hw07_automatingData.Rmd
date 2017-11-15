@@ -19,5 +19,17 @@ suppressPackageStartupMessages(library(knitr))
 suppressPackageStartupMessages(library(readr))
 ```
 
-## Including Plots
+## Download Data
+I initially downloaded the gapminder data using the download.file() function
+
+
+## Initial Analysis
+I compared the life expectancy of each country by the year of the raw data.
+I then reordered the data based on maximum life expectancy.
+
+### Top countries overview
+I created a function to find the top 20 countries with the highest average life expectancy within each continent
+
+## Top 3 countries
+I looked at the spread of the life expectancy for the top 3 countries for each continent (excluding Oceania).
 
