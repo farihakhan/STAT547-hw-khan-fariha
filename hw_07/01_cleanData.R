@@ -43,7 +43,7 @@ plot2 <- gap_new %>%
       scale_color_brewer(palette = "Set1") +
       ggtitle("REORDERED MAX Continental Life expectancy by Year") +
       ylab("Maximum LifeExp (log10)")
-ggsave("lifeExp_vs_year.png", plot2)
+ggsave("ReOrd_lifeExp_vs_year.png", plot2)
 
 
 
