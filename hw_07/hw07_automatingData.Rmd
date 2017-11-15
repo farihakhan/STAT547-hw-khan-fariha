@@ -32,6 +32,12 @@ I compared the life expectancy of each country by the year of the raw data.
 I then reordered the data based on maximum life expectancy.
 ```{r}
 source('01_cleanData.R')
+
+old_levels
+new_levels
+
+print(plot1)
+print(plot2)
 ```
 
 
@@ -46,10 +52,33 @@ getTop20("Europe")
 ```
 
 
-## Top 3 countries
+## Top 3 countries Asia
 I looked at the spread of the life expectancy for the top 3 countries for each continent (excluding Oceania).
 ```{r}
 source('02_analyzeData.R')
+
+kable(topAsia)
+print(plot_tAsia)
 ```
 
 
+## Top 3 countries Africa
+
+```{r}
+kable(topAfrica)
+print(plot_tAfrica)
+```
+
+## Top 3 countries Americas
+
+```{r}
+kable(topAmericas)
+print(plot_tAmericas)
+```
+
+## Top 3 countries Europe
+
+```{r}
+kable(topEurope)
+print(plot_tEurope)
+```
