@@ -81,10 +81,3 @@ plot_tEurope <- gap_new %>%
       ggtitle("Europe: Top 3 mean life expectancy")
 ggsave("top_Europe.png", plot_tEurope)
 
-
-## write linear fit data to file, use china as an example
-offset = 1952
-dat <- subset(gap_dat,country=="China")
-the_fit <- lm(lifeExp ~ I(year - offset), dat)
-output <- data.frame(t(coef(the_fit))) %>%
-      setNames(c("intercept", "slope"))
