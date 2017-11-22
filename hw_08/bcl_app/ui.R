@@ -1,13 +1,16 @@
 #setwd('/Users/farihatkhan/Documents/coursework/stat545/stat547/stat545_hw/hw_08/bcl_app/')
 library(tidyverse)
 library(shiny)
+library(shinythemes)
 
 #bcl <- read.csv("bcl_data.csv", stringsAsFactors = FALSE)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-      titlePanel("BC Liquor Store prices"),
-      h5("Fariha Khan: My app"),
+      theme = shinytheme("darkly"),
+                
+      titlePanel("BC Liquor Store products"),
+      h5("App author: Fariha Khan"),
       br(),
       
       sidebarLayout(
