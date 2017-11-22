@@ -1,6 +1,7 @@
 #setwd('/Users/farihatkhan/Documents/coursework/stat545/stat547/stat545_hw/hw_08/bcl_app/')
 library(tidyverse)
 library(shiny)
+library(DT)
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {

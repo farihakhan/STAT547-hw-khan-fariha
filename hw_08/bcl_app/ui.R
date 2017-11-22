@@ -2,6 +2,7 @@
 library(tidyverse)
 library(shiny)
 library(shinythemes)
+library(DT)
 
 #bcl <- read.csv("bcl_data.csv", stringsAsFactors = FALSE)
 
