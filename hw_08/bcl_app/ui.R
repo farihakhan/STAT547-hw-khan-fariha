@@ -33,7 +33,7 @@ ui <- fluidPage(
       
                   sliderInput(
                         "priceInput", "PRICE RANGE",
-                        min = 0, max = 300, value = c(0, 300), pre = "$"),
+                        min = 0, max = 300, value = c(0, 300), pre = "$")
             ),
             
             mainPanel(
