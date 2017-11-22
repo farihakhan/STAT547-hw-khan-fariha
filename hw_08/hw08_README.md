@@ -29,3 +29,6 @@ You can see the modifications I made [here.]( https://farihakhan.shinyapps.io/bc
 
 ## 
 ## Progress Report
+
+One issue I had problems with, and could not resolve was the reactivity for empty checkbox groups.
+So when no options are selected, an error occurs. Otherwise, I had fun adding to the app. I had to use a lot of resources while writing it, mostly the shiny website though.
