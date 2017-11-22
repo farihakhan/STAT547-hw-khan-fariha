@@ -20,7 +20,7 @@ ui <- fluidPage(
       
             # INPUT FEATURES  
       
-                  radioButtons(
+                  checkboxGroupInput(
                         "typeInput", "PRODUCT TYPE",
                         choices = c("BEER", "REFRESHMENT", "SPIRITS", "WINE"),
                         selected = "WINE"
@@ -38,7 +38,12 @@ ui <- fluidPage(
       
                   sliderInput(
                         "priceInput", "PRICE RANGE",
-                        min = 0, max = 300, value = c(0, 300), pre = "$")
+                        min = 0, max = 300, value = c(0, 300), pre = "$"),
+                        br(), br(), hr(),
+                  
+                  img(src = "bcl_logo1.png", width = "100%", height = "50%")
+            
+                  
             ),
             mainPanel(
                   textOutput("textFilters"),

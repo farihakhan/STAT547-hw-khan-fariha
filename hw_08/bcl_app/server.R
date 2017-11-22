@@ -15,6 +15,7 @@ server <- function(input, output) {
             if (is.null(input$countryInput)) {
                   return(NULL)
             }
+            
             bcl %>%
                   filter(Price >= input$priceInput[1],
                          Price <= input$priceInput[2],
