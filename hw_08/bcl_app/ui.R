@@ -24,19 +24,22 @@ ui <- fluidPage(
                         ),
                   br(),
       
-                  selectInput(
-                        "countryInput", "COUNTRY",
-                        c("CANADA", "FRANCE", "ITALY", 
-                        "UNITED STATES OF AMERICA", "AUSTRALIA")
-                        ),
+                  # selectInput(
+                  #       "countryInput", "COUNTRY",
+                  #       c("CANADA", "FRANCE", "ITALY", 
+                  #       "UNITED STATES OF AMERICA", "AUSTRALIA")
+                  #       ),
+                  
+                  uiOutput("countryOutput"),
                   br(),
       
                   sliderInput(
                         "priceInput", "PRICE RANGE",
                         min = 0, max = 300, value = c(0, 300), pre = "$")
             ),
-            
             mainPanel(
+                  textOutput("textFilters"),
+                  br(),
                   plotOutput("coolplot"),
                   br(), br(),
                   tableOutput("results")

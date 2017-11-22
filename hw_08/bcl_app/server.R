@@ -4,7 +4,16 @@ library(shiny)
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+      output$countryOutput <- renderUI({
+            selectInput("countryInput", "Country",
+                        sort(unique(bcl$Country)),
+                        selected = "CANADA")
+      })
+      
       filtered <- reactive({
+            if (is.null(input$countryInput)) {
+                  return(NULL)
+            }
             bcl %>%
                   filter(Price >= input$priceInput[1],
                          Price <= input$priceInput[2],
@@ -19,8 +28,15 @@ server <- function(input, output) {
       })
       
       output$coolplot <- renderPlot({
+            if (is.null(filtered())) {
+                  return()
+            }
             ggplot(filtered(), aes(Alcohol_Content)) +
-                  geom_histogram()
+                  geom_histogram(aes(fill = Country),
+                         bins = 40, alpha = 0.5, colour = "gray") +
+                   theme_bw() +
+                   labs(title = "Distribution of Alcohol Content",
+                        x = "Alcohol content %")
       })
       
       output$results <- renderTable({
