@@ -1,8 +1,8 @@
-setwd('/Users/farihatkhan/Documents/coursework/stat545/stat547/stat545_hw/hw_08/bcl_app/')
+#setwd('/Users/farihatkhan/Documents/coursework/stat545/stat547/stat545_hw/hw_08/bcl_app/')
 library(tidyverse)
 library(shiny)
 
-bcl <- read.csv("bcl-data.csv", stringsAsFactors = FALSE)
+#bcl <- read.csv("bcl_data.csv", stringsAsFactors = FALSE)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
