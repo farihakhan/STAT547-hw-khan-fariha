@@ -14,5 +14,5 @@
 ## Homework 09: Building your own R packagep
 ### November 28, 2017
 
-[[Homework 09 folder]()
-My R package]()
+[[Homework 09 folder](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_09/README_hw09.md)
+[My R package](https://github.com/farihakhan/powersPackage)
