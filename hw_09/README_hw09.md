@@ -6,24 +6,27 @@
 ### [Assignment overview](http://stat545.com/hw09_package.html)
 ### Your mission
 
-#### [x] Define and export at least one new function, i.e. make it available to a user
+ [x] Define and export at least one new function, i.e. make it available to a user
 
-#### [x] Give function arguments sensible defaults, where relevant.
+ [x] Give function arguments sensible defaults, where relevant.
 
-#### [x] Use assertions to add some validity checks of function input.
+ [x] Use assertions to add some validity checks of function input.
 
-#### [x] Document all exported functions.
+ [x] Document all exported functions.
 
-#### [x] Include at least three unit tests for every function that is exported.
-#### There should be at least one expectation for success and one for failure.
+ [x] Include at least three unit tests for every function that is exported.
+ 
+ [x] There should be at least one expectation for success and one for failure.
 
-#### [x] Your package should pass check() without errors (warnings and notes are OK, though it would be great if there were none).
+ [x] Your package should pass check() without errors (warnings and notes are OK, though it would be great if there were none).
 
-#### [x] Keep updating the README and vignette to show usage of all the functions in the package. 
+ [x] Keep updating the README and vignette to show usage of all the functions in the package. 
 
-#### [x] Push your package to GitHub
+ [x] Push your package to GitHub
 
-#### [x] Write your reflections in a document in your normal STAT 545/547 course repo and open the usual issue there. Make sure to provide a link to your package, so TAs/prof/peers can find it for review! 
+ [x] Write your reflections in a document in your normal STAT 545/547 course repo and open the usual issue there. Make sure to provide a link to your package, so TAs/prof/peers can find it for review! 
+ 
+ #### [My R package](https://github.com/farihakhan/powersPackage)
  
 ### Progress report + Resources
 
