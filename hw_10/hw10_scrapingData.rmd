@@ -1,0 +1,80 @@
+---
+title: "HW10 - Scraping data"
+author: "Fariha Khan"
+date: '2017-12-07'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Load packages
+suppressPackageStartupMessages(library(tidyverse)) 
+suppressPackageStartupMessages(library(magrittr))
+suppressPackageStartupMessages(library(purrr))
+suppressPackageStartupMessages(library(glue))
+suppressPackageStartupMessages(library(stringr))
+
+suppressPackageStartupMessages(library(rvest))
+```
+
+
+### IMBD CHARTS - Top 250 Rate Movies
+
+Get data from web
+```{r url}
+imbd_url <- "http://www.imdb.com/chart/top?ref_=nv_mv_250_6"
+imbd <- read_html(imbd_url)
+imbd
+```
+
+
+Look at data structure.
+Because there are 250 movies in this list, I'm going to subset it and take the top 25 instead.
+```{r}
+imbd %>% 
+      html_structure()
+
+imbd %>%
+      html_nodes(".titleColumn") %>% 
+      html_text() %>%
+      head(25)
+```
+
+Start structuring data:
+Use strsplit to parse the titleColumn node by ["\n"] 
+The node needed to be cleaned so I had to do some data wrangling after pulling the node in
+```{r}
+rankInfo <- imbd %>% 
+      html_nodes(".titleColumn") %>% 
+      html_text() %>% 
+      strsplit("[\n]") %>% 
+      data.frame() %>% 
+      t() 
+
+rank_df <- as.data.frame(rankInfo, row.names = FALSE) %>% 
+      select(V2:V4) %>% 
+      head(25)
+
+```
+
+Looking at the data within the top ranked movies
+```{r}
+imbd %>%
+      html_nodes(".titleColumn, a") %>% 
+      html_attrs() %>% 
+      glimpse()
+
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
