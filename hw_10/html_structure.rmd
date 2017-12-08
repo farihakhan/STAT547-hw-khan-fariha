@@ -1,0 +1,39 @@
+---
+title: "HTML structure"
+author: "Fariha Khan"
+date: '2017-12-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Load packages
+suppressPackageStartupMessages(library(tidyverse)) 
+suppressPackageStartupMessages(library(magrittr))
+suppressPackageStartupMessages(library(purrr))
+suppressPackageStartupMessages(library(glue))
+suppressPackageStartupMessages(library(stringr))
+
+suppressPackageStartupMessages(library(rvest))
+```
+
+
+```{r url, include=FALSE}
+imbd_url <- "http://www.imdb.com/chart/top?ref_=nv_mv_250_6"
+imbd <- read_html(imbd_url)
+imbd
+```
+
+
+### View data structure
+
+```{r strucure}
+imbd %>% 
+      html_structure()
+
+imbd %>%
+      html_nodes(".titleColumn") %>% 
+      html_text() %>%
+      head(25)
+```

@@ -10,71 +10,124 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load packages
 suppressPackageStartupMessages(library(tidyverse)) 
-suppressPackageStartupMessages(library(magrittr))
-suppressPackageStartupMessages(library(purrr))
-suppressPackageStartupMessages(library(glue))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(kableExtra))
 suppressPackageStartupMessages(library(stringr))
-
 suppressPackageStartupMessages(library(rvest))
 ```
 
 
-### IMBD CHARTS - Top 250 Rate Movies
+## IMBD CHARTS - Top 250 Rate Movies
 
-Get data from web
+### Get data from web
+
 ```{r url}
+imbd_home <- "http://www.imdb.com"
 imbd_url <- "http://www.imdb.com/chart/top?ref_=nv_mv_250_6"
 imbd <- read_html(imbd_url)
+
 imbd
 ```
 
 
-Look at data structure.
-Because there are 250 movies in this list, I'm going to subset it and take the top 25 instead.
-```{r}
-imbd %>% 
-      html_structure()
+### View data structure
 
+View html_structure.
+
+```{r strucure}
 imbd %>%
       html_nodes(".titleColumn") %>% 
       html_text() %>%
-      head(25)
+      head()
 ```
 
-Start structuring data:
-Use strsplit to parse the titleColumn node by ["\n"] 
-The node needed to be cleaned so I had to do some data wrangling after pulling the node in
-```{r}
-rankInfo <- imbd %>% 
+
+### Extract and structure data:
+
+I stored each column variable into character lists. I changed some of the data types of the variables to allow analysis.
+```{r get movie info}
+
+Title <- imbd %>% 
       html_nodes(".titleColumn") %>% 
+      html_nodes("a, #text") %>% 
+      html_text()
+
+yearRelease <- imbd %>% 
+      html_nodes(".secondaryInfo") %>% 
       html_text() %>% 
-      strsplit("[\n]") %>% 
-      data.frame() %>% 
-      t() 
+      str_replace_all(c("[(|)]" = "")) %>% 
+      as.numeric()
 
-rank_df <- as.data.frame(rankInfo, row.names = FALSE) %>% 
-      select(V2:V4) %>% 
-      head(25)
+Rating <- imbd %>% 
+      html_nodes(".ratingColumn.imdbRating") %>% 
+      html_nodes("strong") %>% 
+      html_text() %>% 
+      as.numeric()
 
-```
-
-Looking at the data within the top ranked movies
-```{r}
-imbd %>%
-      html_nodes(".titleColumn, a") %>% 
+Votes <- imbd %>% 
+      html_nodes(".ratingColumn.imdbRating") %>% 
+      html_nodes("strong") %>% 
       html_attrs() %>% 
-      glimpse()
+      map("title") %>% 
+      unlist()
 
+Cast <- imbd %>% 
+      html_nodes(".titleColumn") %>% 
+      html_nodes("a, #text") %>% 
+      html_attrs() %>% 
+      map("title") %>% 
+      unlist()
+
+Link <- imbd %>% 
+      html_nodes(".titleColumn") %>% 
+      html_nodes("a, #text") %>% 
+      html_attrs() %>% 
+      map("href") %>% 
+      unlist()
 ```
 
 
+### Create summary dataframe
+```{r top dataset}
 
-## Including Plots
+imbd_df <- data.frame(Title, yearRelease, 
+                      Rating,Cast,
+                      Votes, Link) %>% 
+      mutate(Link = paste0(imbd_home, Link))
 
-You can also embed plots, for example:
+imbd_df %>% glimpse()
 
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Clean dataset
+
+Parse out names of the cast memebers for analysis
+```{r}
+imbd_df2 <- imbd_df %>% 
+      mutate(no.Votes = word(Votes, 4),
+             no.Votes = as.numeric(gsub(",", "", no.Votes)),
+             movieURL = paste0("["," Movie URL](",Link,")"),
+             Director = word(Cast, 1, sep = fixed(' (dir.)')),
+             Cast1 = word(Cast, 2, sep = fixed(', ')),
+             Cast2 = word(Cast, 3, sep = fixed(', ')))
+
+imbd_df2 %>% 
+      select(Title, yearRelease, Rating,
+             no.Votes, Director, Cast1,
+             Cast2, movieURL) %>% 
+      kable("html", align = "c", padding = 1,
+            caption = "IMBD Top 250 Rated movies") %>% 
+      kable_styling("striped") %>% 
+      add_footnote(c("no.Votes = Number of imbd user ratings",
+                     "movieURL = Hyperlink to imbd movie homepage")) %>% 
+      scroll_box(height = "700px") 
+```
+
+### Analyze dataset
+
+Create dataframe 2
+Here I want to look at the cast and genre of the movies
+```{r}
+
+```
+
