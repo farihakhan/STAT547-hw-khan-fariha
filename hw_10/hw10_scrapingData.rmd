@@ -32,7 +32,7 @@ imbd
 
 ### View data structure
 
-View html_structure.
+##### View [html_structure](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/html_structure.md)
 
 ```{r strucure}
 imbd %>%
@@ -88,6 +88,7 @@ Link <- imbd %>%
 
 
 ### Create summary dataframe
+
 ```{r top dataset}
 
 imbd_df <- data.frame(Title, yearRelease, 
@@ -110,6 +111,9 @@ imbd_df2 <- imbd_df %>%
              Director = word(Cast, 1, sep = fixed(' (dir.)')),
              Cast1 = word(Cast, 2, sep = fixed(', ')),
              Cast2 = word(Cast, 3, sep = fixed(', ')))
+## Save data
+write.table(imbd_df2, "./data/imbd_top250movies_summary.tsv",
+            quote = FALSE, sep = "\t", row.names = FALSE)
 
 imbd_df2 %>% 
       select(Title, yearRelease, Rating,
@@ -121,9 +125,22 @@ imbd_df2 %>%
       add_footnote(c("no.Votes = Number of imbd user ratings",
                      "movieURL = Hyperlink to imbd movie homepage")) %>% 
       scroll_box(height = "700px") 
+
+
 ```
 
 ### Analyze dataset
+
+```{r}
+ggplot(imbd_df2) +
+      geom_histogram(aes(x = yearRelease))
+ggplot(imbd_df2) +
+      geom_point(aes(x = yearRelease, y = Rating))
+ggplot(imbd_df2) +
+      geom_point(aes(x = no.Votes, y = Rating)) +
+      geom_smooth(aes(x = no.Votes, y = Rating))
+```
+
 
 Create dataframe 2
 Here I want to look at the cast and genre of the movies
