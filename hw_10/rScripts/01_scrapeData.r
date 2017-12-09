@@ -69,7 +69,7 @@ imdb_df <- extractFields(imdb)
 imdb_df2 <- imdb_df %>% 
       mutate(no.Votes = word(Votes, 4),
              no.Votes = as.numeric(gsub(",", "", no.Votes)),
-             movieURL = paste0("["," Movie URL](",Link,")"),
+             movieURL = paste0("[","Movie URL](",Link,")"),
              Director = word(Cast, 1, sep = fixed(' (dir.)')),
              Cast1 = word(Cast, 2, sep = fixed(', ')),
              Cast2 = word(Cast, 3, sep = fixed(', ')))
