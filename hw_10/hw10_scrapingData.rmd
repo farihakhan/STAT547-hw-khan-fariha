@@ -7,7 +7,11 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
 
+## imdb CHARTS - Top 250 Rate Movies
+
+```{r}
 ## Load packages
 suppressPackageStartupMessages(library(tidyverse)) 
 suppressPackageStartupMessages(library(knitr))
@@ -17,16 +21,10 @@ suppressPackageStartupMessages(library(rvest))
 ```
 
 
-## IMBD CHARTS - Top 250 Rate Movies
-
 ### Get data from web
 
 ```{r url}
-imbd_home <- "http://www.imdb.com"
-imbd_url <- "http://www.imdb.com/chart/top?ref_=nv_mv_250_6"
-imbd <- read_html(imbd_url)
-
-imbd
+suppressMessages(source('rScripts/01_scrapeData.r'))
 ```
 
 
@@ -35,7 +33,9 @@ imbd
 ##### View [html_structure](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/html_structure.md)
 
 ```{r strucure}
-imbd %>%
+imdb
+
+imdb %>%
       html_nodes(".titleColumn") %>% 
       html_text() %>%
       head()
@@ -45,40 +45,55 @@ imbd %>%
 ### Extract and structure data:
 
 I stored each column variable into character lists. I changed some of the data types of the variables to allow analysis.
-```{r get movie info}
 
-Title <- imbd %>% 
+The extracted variables are:
+
+ - Title
+ 
+ - Year released
+ 
+ - Rating 
+ 
+ - Number of IMDb user votes
+ 
+ - Brief cast info
+ 
+ - Link associated with each movie
+ 
+```{r get movie info, eval=FALSE, include=TRUE}
+
+Title <- imdb %>% 
       html_nodes(".titleColumn") %>% 
       html_nodes("a, #text") %>% 
       html_text()
 
-yearRelease <- imbd %>% 
+yearRelease <- imdb %>% 
       html_nodes(".secondaryInfo") %>% 
       html_text() %>% 
       str_replace_all(c("[(|)]" = "")) %>% 
       as.numeric()
 
-Rating <- imbd %>% 
+Rating <- imdb %>% 
       html_nodes(".ratingColumn.imdbRating") %>% 
       html_nodes("strong") %>% 
       html_text() %>% 
       as.numeric()
 
-Votes <- imbd %>% 
+Votes <- imdb %>% 
       html_nodes(".ratingColumn.imdbRating") %>% 
       html_nodes("strong") %>% 
       html_attrs() %>% 
       map("title") %>% 
       unlist()
 
-Cast <- imbd %>% 
+Cast <- imdb %>% 
       html_nodes(".titleColumn") %>% 
       html_nodes("a, #text") %>% 
       html_attrs() %>% 
       map("title") %>% 
       unlist()
 
-Link <- imbd %>% 
+Link <- imdb %>% 
       html_nodes(".titleColumn") %>% 
       html_nodes("a, #text") %>% 
       html_attrs() %>% 
@@ -91,12 +106,8 @@ Link <- imbd %>%
 
 ```{r top dataset}
 
-imbd_df <- data.frame(Title, yearRelease, 
-                      Rating,Cast,
-                      Votes, Link) %>% 
-      mutate(Link = paste0(imbd_home, Link))
-
-imbd_df %>% glimpse()
+imdb_df <- extractFields(imdb)
+imdb_df %>% glimpse()
 
 ```
 
@@ -104,44 +115,28 @@ imbd_df %>% glimpse()
 
 Parse out names of the cast memebers for analysis
 ```{r}
-imbd_df2 <- imbd_df %>% 
-      mutate(no.Votes = word(Votes, 4),
-             no.Votes = as.numeric(gsub(",", "", no.Votes)),
-             movieURL = paste0("["," Movie URL](",Link,")"),
-             Director = word(Cast, 1, sep = fixed(' (dir.)')),
-             Cast1 = word(Cast, 2, sep = fixed(', ')),
-             Cast2 = word(Cast, 3, sep = fixed(', ')))
+
+imdb_kable1
+
 ## Save data
-write.table(imbd_df2, "./data/imbd_top250movies_summary.tsv",
+write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
             quote = FALSE, sep = "\t", row.names = FALSE)
 
-imbd_df2 %>% 
-      select(Title, yearRelease, Rating,
-             no.Votes, Director, Cast1,
-             Cast2, movieURL) %>% 
-      kable("html", align = "c", padding = 1,
-            caption = "IMBD Top 250 Rated movies") %>% 
-      kable_styling("striped") %>% 
-      add_footnote(c("no.Votes = Number of imbd user ratings",
-                     "movieURL = Hyperlink to imbd movie homepage")) %>% 
-      scroll_box(height = "700px") 
-
-
 ```
 
-### Analyze dataset
+### Analyze datase
+###
+###
+*Quick look at the correlation between release year and rating.*
 
-```{r}
-ggplot(imbd_df2) +
-      geom_histogram(aes(x = yearRelease))
-ggplot(imbd_df2) +
-      geom_point(aes(x = yearRelease, y = Rating))
-ggplot(imbd_df2) +
-      geom_point(aes(x = no.Votes, y = Rating)) +
-      geom_smooth(aes(x = no.Votes, y = Rating))
-```
+<img src="media/yearRelease_hist.png" align = "middle">
 
+<p>
+<img src="media/yearRelease_rating.png" width="50%" height="50%" align = "left">
+<img src="media/rating_noVotes.png" width="50%" height="50%" align = "right">
+</p>
 
+### Get data from links
 Create dataframe 2
 Here I want to look at the cast and genre of the movies
 ```{r}
