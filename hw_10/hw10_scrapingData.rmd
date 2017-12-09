@@ -70,8 +70,7 @@ pre code, pre, code {
   word-wrap: initial !important;
 }
 </style>
-```{r get movie info, eval=FALSE, include=TRUE, out.width=6}
-
+```{r get movie info, eval=FALSE, include=TRUE}
 Title <- imdb %>% 
       html_nodes(".titleColumn") %>% 
       html_nodes("a, #text") %>% 
@@ -158,6 +157,6 @@ Creating dataframe 2 to look at:
  - Credit summary??
 
 ```{r}
-# suppressMessages(source('rScripts/02_scrapeData.r'))
+suppressMessages(source('rScripts/02_scrapeData.r'))
 ```
 
