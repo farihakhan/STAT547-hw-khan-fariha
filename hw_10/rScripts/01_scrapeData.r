@@ -83,7 +83,7 @@ imdb_kable1 <- imdb_df2 %>%
       kable_styling("striped") %>% 
       add_footnote(c("no.Votes = Number of imdb user ratings",
                      "movieURL = Hyperlink to imdb movie homepage")) %>% 
-      scroll_box(height = "700px") 
+      scroll_box(height = "500px") 
 
 
 # Analyze and plot -----------------------------------------------------------------------

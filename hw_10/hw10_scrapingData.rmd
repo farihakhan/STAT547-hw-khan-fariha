@@ -1,15 +1,16 @@
 ---
-title: "HW10 - Scraping data"
+title: "HW10 Scraping data - IMDb Top 250 Rate Movies"
 author: "Fariha Khan"
 date: '2017-12-07'
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## imdb CHARTS - Top 250 Rate Movies
 
 ```{r}
 ## Load packages
@@ -22,7 +23,8 @@ suppressPackageStartupMessages(library(rvest))
 
 
 ### Get data from web
-
+I wrote my code in an R script to make the markdown cleaner to view.
+The rScript for the first part is found [here]()
 ```{r url}
 suppressMessages(source('rScripts/01_scrapeData.r'))
 ```
@@ -60,7 +62,15 @@ The extracted variables are:
  
  - Link associated with each movie
  
-```{r get movie info, eval=FALSE, include=TRUE}
+<style>
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+</style>
+```{r get movie info, eval=FALSE, include=TRUE, out.width=6}
 
 Title <- imdb %>% 
       html_nodes(".titleColumn") %>% 
@@ -125,8 +135,7 @@ write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
 ```
 
 ### Analyze datase
-###
-###
+
 *Quick look at the correlation between release year and rating.*
 
 <img src="media/yearRelease_hist.png" align = "middle">
@@ -136,10 +145,19 @@ write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
 <img src="media/rating_noVotes.png" width="50%" height="50%" align = "right">
 </p>
 
-### Get data from links
-Create dataframe 2
-Here I want to look at the cast and genre of the movies
-```{r}
 
+### Get data from links
+Creating dataframe 2 to look at:
+
+ - Duration
+ 
+ - Genre
+ 
+ - Plot summary
+ 
+ - Credit summary??
+
+```{r}
+# suppressMessages(source('rScripts/02_scrapeData.r'))
 ```
 
