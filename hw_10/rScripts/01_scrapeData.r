@@ -71,17 +71,16 @@ imdb_df2 <- imdb_df %>%
              no.Votes = as.numeric(gsub(",", "", no.Votes)),
              Director = word(Cast, 1, sep = fixed(' (dir.)')),
              Cast1 = word(Cast, 2, sep = fixed(', ')),
-             Cast2 = word(Cast, 3, sep = fixed(', '))) %>% 
-      mutate(movieURL = text_spec("url", link=Link))
+             Cast2 = word(Cast, 3, sep = fixed(', ')))
 
 imdb_kable1 <- imdb_df2 %>% 
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
-             Cast2, movieURL) %>% 
+             Cast2, Link) %>% 
       kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling("striped") %>% 
-      scroll_box(height = "500px") 
+      scroll_box(height = "400px") 
 
 
 # Analyze and plot -----------------------------------------------------------------------

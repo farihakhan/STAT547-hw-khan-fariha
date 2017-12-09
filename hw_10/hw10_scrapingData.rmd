@@ -22,7 +22,7 @@ suppressPackageStartupMessages(library(rvest))
 ```
 
 
-### Get data from web
+#### Get data from web
 I wrote my code in an R script to make the markdown cleaner to view.
 The rScript for the first part is found [here]()
 ```{r url}
@@ -30,9 +30,9 @@ suppressMessages(source('rScripts/01_scrapeData.r'))
 ```
 
 
-### View data structure
+#### View data structure
 
-##### View [html_structure](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/html_structure.md)
+###### View [html_structure](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/html_structure.md)
 
 ```{r strucure}
 imdb
@@ -44,7 +44,7 @@ imdb %>%
 ```
 
 
-### Extract and structure data:
+#### Extract and structure data:
 
 I stored each column variable into character lists. I changed some of the data types of the variables to allow analysis.
 
@@ -61,49 +61,10 @@ The extracted variables are:
  - Brief cast info
  
  - Link associated with each movie
- 
-```{r get movie info, eval=FALSE, include=TRUE}
-Title <- imdb %>% 
-      html_nodes(".titleColumn") %>% 
-      html_nodes("a, #text") %>% 
-      html_text()
-
-yearRelease <- imdb %>% 
-      html_nodes(".secondaryInfo") %>% 
-      html_text() %>% 
-      str_replace_all(c("[(|)]" = "")) %>% 
-      as.numeric()
-
-Rating <- imdb %>% 
-      html_nodes(".ratingColumn.imdbRating") %>% 
-      html_nodes("strong") %>% 
-      html_text() %>% 
-      as.numeric()
-
-Votes <- imdb %>% 
-      html_nodes(".ratingColumn.imdbRating") %>% 
-      html_nodes("strong") %>% 
-      html_attrs() %>% 
-      map("title") %>% 
-      unlist()
-
-Cast <- imdb %>% 
-      html_nodes(".titleColumn") %>% 
-      html_nodes("a, #text") %>% 
-      html_attrs() %>% 
-      map("title") %>% 
-      unlist()
-
-Link <- imdb %>% 
-      html_nodes(".titleColumn") %>% 
-      html_nodes("a, #text") %>% 
-      html_attrs() %>% 
-      map("href") %>% 
-      unlist()
-```
 
 
-### Create summary dataframe
+
+#### Create summary dataframe
 
 ```{r top dataset}
 
@@ -112,10 +73,10 @@ imdb_df %>% glimpse()
 
 ```
 
-### Clean dataset
+#### Clean dataset
 
 Parse out names of the cast memebers for analysis
-```{r}
+```{r results='asis'}
 
 imdb_kable1
 
@@ -125,7 +86,7 @@ imdb_kable1
 
 ```
 
-### Analyze datase
+#### Analyze datase
 
 *Quick look at the correlation between release year and rating.*
 
@@ -137,7 +98,7 @@ imdb_kable1
 </p>
 
 
-### Get data from links
+#### Get data from links
 
 Creating more detailed dataset, which include:
 
@@ -147,9 +108,9 @@ Creating more detailed dataset, which include:
  
  - Plot summary
 
-Due to issues with memory, the top 25 movies are subsetted.
+Due to issues with memory, the top 25 movies are subsetted. This work is done in the following rScript - to avoid long lagging time when rendering the rmarkdown.
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 suppressMessages(source('rScripts/02_scrapeData.r'))
 ```
 
