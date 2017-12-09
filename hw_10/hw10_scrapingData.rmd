@@ -120,8 +120,8 @@ Parse out names of the cast memebers for analysis
 imdb_kable1
 
 ## Save data
-# write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
-#             quote = FALSE, sep = "\t", row.names = FALSE)
+## write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
+##             quote = FALSE, sep = "\t", row.names = FALSE)
 
 ```
 
@@ -138,15 +138,16 @@ imdb_kable1
 
 
 ### Get data from links
-Creating dataframe 2 to look at:
+
+Creating more detailed dataset, which include:
 
  - Duration
  
  - Genre
  
  - Plot summary
- 
- - Credit summary??
+
+Due to issues with memory, the top 25 movies are subsetted.
 
 ```{r}
 suppressMessages(source('rScripts/02_scrapeData.r'))

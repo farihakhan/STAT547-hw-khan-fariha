@@ -17,44 +17,45 @@ imdb_full <- imdb_df2 %>%
              Cast2 = as.factor(Cast2),
              Genre = "",
              Duration = "",
-             plotSummary = "")
-
+             plotSummary = "") %>% 
+      head(25)
 
 
 # Genre --------------------------------------------------------------
 
-# for(i in 1:nrow(imdb_full)){
-#       genre <- imdb_df$Link[i] %>% 
-#             read_html() %>%
-#             html_nodes(".see-more.inline.canwrap") %>% 
-#             .[[2]] %>% 
-#             html_text()
-#       
-#       imdb_full$Genre[i] <- genre
-# }
-# 
-# 
-# # Duration -------------------------------------------------------------------------------
-# 
-# 
-# for(i in 1:nrow(imdb_full)){
-#       time <- imdb_df$Link[i] %>% 
-#             read_html() %>%
-#             html_node(".txt-block, time, .inline") %>% 
-#             html_text()
-#       
-#       imdb_full$Duration[i] <- time
-# }
-# 
-# # Plot summary ---------------------------------------------------------------------------
-# 
-# 
-# for(i in 1:nrow(imdb_full)){
-#       txt <- imdb_df$Link[i] %>% 
-#             read_html() %>%
-#             html_nodes("#titleStoryLine , div.inline.canwrap") %>% 
-#             html_nodes("p, #text") %>% 
-#             html_text()
-#       
-#       imdb_full$plotSummary[i] <- txt
-# }
+for(i in 1:25){
+      genre <- imdb_df$Link[i] %>%
+            read_html() %>%
+            html_nodes(".see-more.inline.canwrap") %>%
+            .[[2]] %>%
+            html_text()
+
+      imdb_full$Genre[i] <- genre
+}
+
+
+# Duration -------------------------------------------------------------------------------
+
+
+for(i in 1:25){
+      time <- imdb_df$Link[i] %>%
+            read_html() %>%
+            html_node(".txt-block, time, .inline") %>%
+            html_text()
+
+      imdb_full$Duration[i] <- time
+}
+
+# Plot summary ---------------------------------------------------------------------------
+
+
+for(i in 1:25){
+      txt <- imdb_df$Link[i] %>%
+            read_html() %>%
+            html_nodes("#titleStoryLine , div.inline.canwrap") %>%
+            html_nodes("p, #text") %>%
+            html_text()
+
+      imdb_full$plotSummary[i] <- txt
+}
+
