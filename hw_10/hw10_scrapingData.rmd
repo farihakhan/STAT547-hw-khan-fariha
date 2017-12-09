@@ -62,14 +62,6 @@ The extracted variables are:
  
  - Link associated with each movie
  
-<style>
-pre code, pre, code {
-  white-space: pre !important;
-  overflow-x: scroll !important;
-  word-break: keep-all !important;
-  word-wrap: initial !important;
-}
-</style>
 ```{r get movie info, eval=FALSE, include=TRUE}
 Title <- imdb %>% 
       html_nodes(".titleColumn") %>% 

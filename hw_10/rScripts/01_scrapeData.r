@@ -69,7 +69,9 @@ imdb_df <- extractFields(imdb)
 imdb_df2 <- imdb_df %>% 
       mutate(no.Votes = word(Votes, 4),
              no.Votes = as.numeric(gsub(",", "", no.Votes)),
-             movieURL = paste0("[","Movie URL](",Link,")"),
+             movieURL = paste0("<a href=\"",
+                               Link,
+                               "\">Movie url</a>"),
              Director = word(Cast, 1, sep = fixed(' (dir.)')),
              Cast1 = word(Cast, 2, sep = fixed(', ')),
              Cast2 = word(Cast, 3, sep = fixed(', ')))
@@ -78,7 +80,7 @@ imdb_kable1 <- imdb_df2 %>%
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
              Cast2, movieURL) %>% 
-      kable("markdown", align = "c", padding = 1,
+      kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling("striped") %>% 
       add_footnote(c("no.Votes = Number of imdb user ratings",
