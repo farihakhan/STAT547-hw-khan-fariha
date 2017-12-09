@@ -123,7 +123,7 @@ imdb_df %>% glimpse()
 ### Clean dataset
 
 Parse out names of the cast memebers for analysis
-```{r}
+```{r results='markup'}
 
 imdb_kable1
 
