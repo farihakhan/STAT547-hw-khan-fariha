@@ -78,7 +78,7 @@ imdb_kable1 <- imdb_df2 %>%
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
              Cast2, movieURL) %>% 
-      kable("html", align = "c", padding = 1,
+      kable("markdown", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling("striped") %>% 
       add_footnote(c("no.Votes = Number of imdb user ratings",
