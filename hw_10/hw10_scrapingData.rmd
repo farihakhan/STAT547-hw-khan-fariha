@@ -76,27 +76,22 @@ imdb_df %>% glimpse()
 
 > See rScript for more
 
-```{r collapse=TRUE}
+```{r }
 imdb_df2 %>% 
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
              Cast2, Link) %>% 
-      kable("html", align = "c", padding = 1,
-            caption = "imdb Top 250 Rated movies") %>% 
-      kable_styling("striped") %>% 
-      scroll_box(height = "400px")
-```
+      head(25) %>% 
+      kable(align = "c", padding = 1,
+            caption = "imdb Top 250 Rated movies")
 
-
-Parse out names of the cast memebers for analysis
-```{r}
+## Look at cast members
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
-      kable("html", align = "c", padding = 1,
-            caption = "IMDb Top 250 Rated") %>% 
-      kableExtra::scroll_box(height = "400px")
-
-```
+      head(25) %>% 
+      kable(align = "c", padding = 1,
+            caption = "IMDb Top 250 Rated") 
+``` 
 
 ```{r}
 ## Save data
