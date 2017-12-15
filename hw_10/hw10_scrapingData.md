@@ -2388,7 +2388,7 @@ imdb_df2 %>%
 
 <img src="media/yearRelease_hist.png" align = "middle">
 
-<p>
+<p float="left">
 <img src="media/yearRelease_rating.png" width="50%" height="50%" align = "left">
 <img src="media/rating_noVotes.png" width="50%" height="50%" align = "right">
 </p>
