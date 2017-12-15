@@ -2386,13 +2386,11 @@ imdb_df2 %>%
 
 *Quick look at the correlation between release year and rating.*
 
-<img src="media/yearRelease_hist.png" align = "middle">
-
-<p float="left">
+<p>
 <img src="media/yearRelease_rating.png" width="50%" height="50%" align = "left">
 <img src="media/rating_noVotes.png" width="50%" height="50%" align = "right">
 </p>
-
+<img src="media/yearRelease_hist.png" align = "middle">
 
 ####
 

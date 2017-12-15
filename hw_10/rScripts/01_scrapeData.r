@@ -80,7 +80,8 @@ imdb_kable1 <- imdb_df2 %>%
       kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling("striped") %>% 
-      scroll_box(height = "400px") 
+      scroll_box(height = "400px", 
+                 box_css = "border: 1px solid #ddd;")
 
 
 # Analyze and plot -----------------------------------------------------------------------
