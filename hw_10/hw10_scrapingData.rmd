@@ -76,16 +76,13 @@ imdb_df %>% glimpse()
 #### Clean dataset
 
 Parse out names of the cast memebers for analysis
-```{r}
-
-imdb_kable1
+```{r results='asis'}
 
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
       kable("html", align = "c", padding = 1,
             caption = "IMDb Top 250 Rated") %>% 
-      kable_styling("striped", full_width = F) %>% 
-      scroll_box(height = "400px")
+      kableExtra::scroll_box(height = "400px")
 
 ## Save data
 ## write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
