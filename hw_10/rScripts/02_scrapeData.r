@@ -40,7 +40,8 @@ for(i in 1:25){
 for(i in 1:25){
       time <- imdb_df$Link[i] %>%
             read_html() %>%
-            html_node(".txt-block, time, .inline") %>%
+            html_nodes(".txt-block") %>%
+            html_nodes("time") %>% 
             html_text()
 
       imdb_full$Duration[i] <- time
@@ -59,3 +60,24 @@ for(i in 1:25){
       imdb_full$plotSummary[i] <- txt
 }
 
+
+
+# Clean and add ----------------------------------------------------------------------------------
+finalData <- function(imdb_full){
+      
+      genre <- word(imdb_full$Genre, 2, sep = fixed('Genres:'))
+      genre <- as.factor(gsub("Sci-Fi", "SciFi", genre))
+      genre <- str_extract_all(genre, boundary("word"))
+      
+      df <-  imdb_full %>% 
+            mutate(plotSummary = word(imdb_full$plotSummary,
+                                      1, sep = fixed('Written'))) %>% 
+            mutate(plotSummary = trimws(plotSummary, which = "right")) %>% 
+            mutate(Genre = genre)
+      
+      return(df)
+}
+
+
+write.table(imdb, './hw_10/data/.tsv', 
+            quote = FALSE, sep = "\t", row.names = FALSE)
