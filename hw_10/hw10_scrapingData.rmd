@@ -100,10 +100,10 @@ imdb_df2 %>%
 
 <img src="media/yearRelease_rating.png" width="50%" height="50%" align = "left">
 
-<img src="media/rating_noVotes.png" width="50%" height="50%" align = "right">
-<br></br>
+<img src="media/rating_noVotes.png" width="50%" height="50%" align = "right"><br>
 </p>
-<br></br>
+<br>
+
 
 #### Get data from links
 
