@@ -2,9 +2,7 @@
 title: "HW10 Scraping data - IMDb Top 250 Rate Movies"
 author: "Fariha Khan"
 date: '2017-12-07'
-output: 
-  html_document: 
-    keep_md: yes
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -76,12 +74,19 @@ imdb_df %>% glimpse()
 
 #### Clean dataset
 
-> See rScript
+> See rScript for more
 
-<div>
-    <div>imdb_kable1
-    </div>
-</div>
+```{r collapse=TRUE}
+imdb_df2 %>% 
+      select(Title, yearRelease, Rating,
+             no.Votes, Director, Cast1,
+             Cast2, Link) %>% 
+      kable("html", align = "c", padding = 1,
+            caption = "imdb Top 250 Rated movies") %>% 
+      kable_styling("striped") %>% 
+      scroll_box(height = "400px")
+```
+
 
 
 
@@ -90,7 +95,6 @@ imdb_df %>% glimpse()
 
 Parse out names of the cast memebers for analysis
 ```{r}
-
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
       kable("html", align = "c", padding = 1,
@@ -107,14 +111,14 @@ imdb_df2 %>%
 
 *Quick look at the correlation between release year and rating.*
 
+<body>
 <img src="media/yearRelease_hist.png" align = "middle">
-<p float = "middle">
-<img src="media/yearRelease_rating.png" width="30%" height="30%" align = "left">
-<img src="media/rating_noVotes.png" width="30%" height="30%" align = "right">
+<p>
+<img src="media/yearRelease_rating.png" width="40%" height="40%" align = "left">
+<img src="media/rating_noVotes.png" width="40%" height="40%" align = "right">
 </p>
+</body>
 
-
-####
 
 #### Get data from links
 

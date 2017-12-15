@@ -73,15 +73,7 @@ imdb_df2 <- imdb_df %>%
              Cast1 = word(Cast, 2, sep = fixed(', ')),
              Cast2 = word(Cast, 3, sep = fixed(', ')))
 
-imdb_kable1 <- imdb_df2 %>% 
-      select(Title, yearRelease, Rating,
-             no.Votes, Director, Cast1,
-             Cast2, Link) %>% 
-      kable("html", align = "c", padding = 1,
-            caption = "imdb Top 250 Rated movies") %>% 
-      kable_styling("striped") %>% 
-      scroll_box(height = "400px", 
-                 box_css = "border: 1px solid #ddd;")
+
 
 
 # Analyze and plot -----------------------------------------------------------------------
