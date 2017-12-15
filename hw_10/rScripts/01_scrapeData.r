@@ -94,13 +94,17 @@ plot2 <- ggplot(imdb_df2, aes(x = yearRelease, y = Rating)) +
       geom_smooth(se = FALSE) + 
       labs(title = "IMDb rating vs. Year of release") + 
       theme_minimal()
-ggsave("media/yearRelease_rating.png", plot2)
+ggsave("media/yearRelease_rating.png", 
+       plot = plot2, dpi = 500,
+       width = 4, height = 4)
 
 plot3 <- ggplot(imdb_df2, aes(x = no.Votes, y = Rating)) +
       geom_point() +
       geom_smooth(se = FALSE) +
       labs(title = "IMDb rating vs. Number of votes") +
       theme_minimal()
-ggsave("media/rating_noVotes.png", plot3)
+ggsave("media/rating_noVotes.png", 
+       plot = plot3, dpi = 500,
+       width = 4, height = 4)
 
 

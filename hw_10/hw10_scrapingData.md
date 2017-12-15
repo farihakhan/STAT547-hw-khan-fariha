@@ -78,7 +78,7 @@ imdb_df %>% glimpse()
     ## $ yearRelease <dbl> 1994, 1972, 1974, 2008, 1957, 1993, 1994, 2003, 19...
     ## $ Rating      <dbl> 9.2, 9.2, 9.0, 9.0, 8.9, 8.9, 8.9, 8.9, 8.8, 8.8, ...
     ## $ Cast        <fctr> Frank Darabont (dir.), Tim Robbins, Morgan Freema...
-    ## $ Votes       <fctr> 9.2 based on 1,886,772 user ratings, 9.2 based on...
+    ## $ Votes       <fctr> 9.2 based on 1,886,797 user ratings, 9.2 based on...
     ## $ Link        <chr> "http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FG...
 
 #### Clean dataset
@@ -140,7 +140,7 @@ The Shawshank Redemption
 9.2
 </td>
 <td style="text-align:center;">
-1886772
+1886797
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -152,7 +152,7 @@ Tim Robbins
 Morgan Freeman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1>
+<http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1>
 </td>
 </tr>
 <tr>
@@ -166,7 +166,7 @@ The Godfather
 9.2
 </td>
 <td style="text-align:center;">
-1288216
+1288241
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -178,7 +178,7 @@ Marlon Brando
 Al Pacino
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2>
+<http://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2>
 </td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@ The Godfather: Part II
 9.0
 </td>
 <td style="text-align:center;">
-888694
+888707
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -204,7 +204,7 @@ Al Pacino
 Robert De Niro
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3>
+<http://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3>
 </td>
 </tr>
 <tr>
@@ -218,7 +218,7 @@ The Dark Knight
 9.0
 </td>
 <td style="text-align:center;">
-1862557
+1862579
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -230,7 +230,7 @@ Christian Bale
 Heath Ledger
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4>
+<http://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4>
 </td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@ Heath Ledger
 8.9
 </td>
 <td style="text-align:center;">
-517864
+517875
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -256,7 +256,7 @@ Henry Fonda
 Lee J. Cobb
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5>
+<http://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5>
 </td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ Schindler's List
 8.9
 </td>
 <td style="text-align:center;">
-970147
+970161
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -282,7 +282,7 @@ Liam Neeson
 Ralph Fiennes
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6>
+<http://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6>
 </td>
 </tr>
 <tr>
@@ -296,7 +296,7 @@ Pulp Fiction
 8.9
 </td>
 <td style="text-align:center;">
-1475822
+1475838
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -308,7 +308,7 @@ John Travolta
 Uma Thurman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7>
+<http://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7>
 </td>
 </tr>
 <tr>
@@ -322,7 +322,7 @@ The Lord of the Rings: The Return of the King
 8.9
 </td>
 <td style="text-align:center;">
-1348173
+1348193
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -334,7 +334,7 @@ Elijah Wood
 Viggo Mortensen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8>
+<http://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8>
 </td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ Il buono, il brutto, il cattivo
 8.8
 </td>
 <td style="text-align:center;">
-558932
+558941
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -360,7 +360,7 @@ Clint Eastwood
 Eli Wallach
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9>
+<http://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9>
 </td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@ Fight Club
 8.8
 </td>
 <td style="text-align:center;">
-1512187
+1512212
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -386,7 +386,7 @@ Brad Pitt
 Edward Norton
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10>
+<http://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10>
 </td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The Lord of the Rings: The Fellowship of the Ring
 8.8
 </td>
 <td style="text-align:center;">
-1368339
+1368362
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -412,7 +412,7 @@ Elijah Wood
 Ian McKellen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11>
+<http://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ Forrest Gump
 8.7
 </td>
 <td style="text-align:center;">
-1423957
+1423987
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -438,7 +438,7 @@ Tom Hanks
 Robin Wright
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12>
+<http://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12>
 </td>
 </tr>
 <tr>
@@ -452,7 +452,7 @@ Star Wars: Episode V - The Empire Strikes Back
 8.7
 </td>
 <td style="text-align:center;">
-942464
+942508
 </td>
 <td style="text-align:center;">
 Irvin Kershner
@@ -464,7 +464,7 @@ Mark Hamill
 Harrison Ford
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13>
+<http://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13>
 </td>
 </tr>
 <tr>
@@ -478,7 +478,7 @@ Inception
 8.7
 </td>
 <td style="text-align:center;">
-1651410
+1651436
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -490,7 +490,7 @@ Leonardo DiCaprio
 Joseph Gordon-Levitt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14>
+<http://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14>
 </td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ The Lord of the Rings: The Two Towers
 8.7
 </td>
 <td style="text-align:center;">
-1220263
+1220283
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -516,7 +516,7 @@ Elijah Wood
 Ian McKellen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15>
+<http://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15>
 </td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ One Flew Over the Cuckoo's Nest
 8.7
 </td>
 <td style="text-align:center;">
-753207
+753224
 </td>
 <td style="text-align:center;">
 Milos Forman
@@ -542,7 +542,7 @@ Jack Nicholson
 Louise Fletcher
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16>
+<http://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16>
 </td>
 </tr>
 <tr>
@@ -556,7 +556,7 @@ Goodfellas
 8.7
 </td>
 <td style="text-align:center;">
-812985
+812998
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -568,7 +568,7 @@ Robert De Niro
 Ray Liotta
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17>
+<http://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17>
 </td>
 </tr>
 <tr>
@@ -582,7 +582,7 @@ The Matrix
 8.7
 </td>
 <td style="text-align:center;">
-1357252
+1357272
 </td>
 <td style="text-align:center;">
 Lana Wachowski
@@ -594,7 +594,7 @@ Keanu Reeves
 Laurence Fishburne
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18>
+<http://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18>
 </td>
 </tr>
 <tr>
@@ -608,7 +608,7 @@ Shichinin no samurai
 8.6
 </td>
 <td style="text-align:center;">
-254227
+254232
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -620,7 +620,7 @@ Toshirô Mifune
 Takashi Shimura
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19>
+<http://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19>
 </td>
 </tr>
 <tr>
@@ -634,7 +634,7 @@ Star Wars
 8.6
 </td>
 <td style="text-align:center;">
-1014722
+1014771
 </td>
 <td style="text-align:center;">
 George Lucas
@@ -646,7 +646,7 @@ Mark Hamill
 Harrison Ford
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20>
+<http://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20>
 </td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ Cidade de Deus
 8.6
 </td>
 <td style="text-align:center;">
-587241
+587248
 </td>
 <td style="text-align:center;">
 Fernando Meirelles
@@ -672,7 +672,7 @@ Alexandre Rodrigues
 Leandro Firmino
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21>
+<http://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21>
 </td>
 </tr>
 <tr>
@@ -686,7 +686,7 @@ Se7en
 8.6
 </td>
 <td style="text-align:center;">
-1150613
+1150626
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -698,7 +698,7 @@ Morgan Freeman
 Brad Pitt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22>
+<http://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22>
 </td>
 </tr>
 <tr>
@@ -712,7 +712,7 @@ The Silence of the Lambs
 8.6
 </td>
 <td style="text-align:center;">
-1004772
+1004792
 </td>
 <td style="text-align:center;">
 Jonathan Demme
@@ -724,7 +724,7 @@ Jodie Foster
 Anthony Hopkins
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23>
+<http://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23>
 </td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ It's a Wonderful Life
 8.6
 </td>
 <td style="text-align:center;">
-312281
+312292
 </td>
 <td style="text-align:center;">
 Frank Capra
@@ -750,7 +750,7 @@ James Stewart
 Donna Reed
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24>
+<http://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24>
 </td>
 </tr>
 <tr>
@@ -764,7 +764,7 @@ La vita è bella
 8.6
 </td>
 <td style="text-align:center;">
-484274
+484283
 </td>
 <td style="text-align:center;">
 Roberto Benigni
@@ -776,7 +776,7 @@ Roberto Benigni
 Nicoletta Braschi
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25>
+<http://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25>
 </td>
 </tr>
 <tr>
@@ -790,7 +790,7 @@ The Usual Suspects
 8.6
 </td>
 <td style="text-align:center;">
-824733
+824744
 </td>
 <td style="text-align:center;">
 Bryan Singer
@@ -802,7 +802,7 @@ Kevin Spacey
 Gabriel Byrne
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0114814/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_26>
+<http://www.imdb.com/title/tt0114814/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_26>
 </td>
 </tr>
 <tr>
@@ -816,7 +816,7 @@ Léon
 8.5
 </td>
 <td style="text-align:center;">
-818956
+818973
 </td>
 <td style="text-align:center;">
 Luc Besson
@@ -828,7 +828,7 @@ Jean Reno
 Gary Oldman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0110413/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_27>
+<http://www.imdb.com/title/tt0110413/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_27>
 </td>
 </tr>
 <tr>
@@ -842,7 +842,7 @@ Saving Private Ryan
 8.5
 </td>
 <td style="text-align:center;">
-992822
+992840
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -854,7 +854,7 @@ Tom Hanks
 Matt Damon
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120815/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_28>
+<http://www.imdb.com/title/tt0120815/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_28>
 </td>
 </tr>
 <tr>
@@ -868,7 +868,7 @@ Sen to Chihiro no kamikakushi
 8.5
 </td>
 <td style="text-align:center;">
-484940
+484949
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -880,7 +880,7 @@ Daveigh Chase
 Suzanne Pleshette
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0245429/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_29>
+<http://www.imdb.com/title/tt0245429/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_29>
 </td>
 </tr>
 <tr>
@@ -894,7 +894,7 @@ Coco
 8.5
 </td>
 <td style="text-align:center;">
-35367
+35409
 </td>
 <td style="text-align:center;">
 Lee Unkrich
@@ -906,7 +906,7 @@ Anthony Gonzalez
 Gael García Bernal
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2380307/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_30>
+<http://www.imdb.com/title/tt2380307/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_30>
 </td>
 </tr>
 <tr>
@@ -920,7 +920,7 @@ American History X
 8.5
 </td>
 <td style="text-align:center;">
-868200
+868219
 </td>
 <td style="text-align:center;">
 Tony Kaye
@@ -932,7 +932,7 @@ Edward Norton
 Edward Furlong
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120586/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_31>
+<http://www.imdb.com/title/tt0120586/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_31>
 </td>
 </tr>
 <tr>
@@ -946,7 +946,7 @@ Once Upon a Time in the West
 8.5
 </td>
 <td style="text-align:center;">
-242557
+242562
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -958,7 +958,7 @@ Henry Fonda
 Charles Bronson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0064116/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_32>
+<http://www.imdb.com/title/tt0064116/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_32>
 </td>
 </tr>
 <tr>
@@ -972,7 +972,7 @@ Interstellar
 8.5
 </td>
 <td style="text-align:center;">
-1118110
+1118147
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -984,7 +984,7 @@ Matthew McConaughey
 Anne Hathaway
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0816692/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_33>
+<http://www.imdb.com/title/tt0816692/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_33>
 </td>
 </tr>
 <tr>
@@ -998,7 +998,7 @@ The Green Mile
 8.5
 </td>
 <td style="text-align:center;">
-893699
+893714
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -1010,7 +1010,7 @@ Tom Hanks
 Michael Clarke Duncan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120689/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_34>
+<http://www.imdb.com/title/tt0120689/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_34>
 </td>
 </tr>
 <tr>
@@ -1024,7 +1024,7 @@ Psycho
 8.5
 </td>
 <td style="text-align:center;">
-476197
+476204
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -1036,7 +1036,7 @@ Anthony Perkins
 Janet Leigh
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0054215/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_35>
+<http://www.imdb.com/title/tt0054215/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_35>
 </td>
 </tr>
 <tr>
@@ -1050,7 +1050,7 @@ City Lights
 8.5
 </td>
 <td style="text-align:center;">
-125565
+125567
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -1062,7 +1062,7 @@ Charles Chaplin
 Virginia Cherrill
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0021749/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_36>
+<http://www.imdb.com/title/tt0021749/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_36>
 </td>
 </tr>
 <tr>
@@ -1076,7 +1076,7 @@ Casablanca
 8.5
 </td>
 <td style="text-align:center;">
-429626
+429632
 </td>
 <td style="text-align:center;">
 Michael Curtiz
@@ -1088,7 +1088,7 @@ Humphrey Bogart
 Ingrid Bergman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0034583/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_37>
+<http://www.imdb.com/title/tt0034583/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_37>
 </td>
 </tr>
 <tr>
@@ -1102,7 +1102,7 @@ The Intouchables
 8.5
 </td>
 <td style="text-align:center;">
-590043
+590059
 </td>
 <td style="text-align:center;">
 Olivier Nakache
@@ -1114,7 +1114,7 @@ François Cluzet
 Omar Sy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1675434/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_38>
+<http://www.imdb.com/title/tt1675434/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_38>
 </td>
 </tr>
 <tr>
@@ -1128,7 +1128,7 @@ Modern Times
 8.5
 </td>
 <td style="text-align:center;">
-164947
+164950
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -1140,7 +1140,7 @@ Charles Chaplin
 Paulette Goddard
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0027977/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_39>
+<http://www.imdb.com/title/tt0027977/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_39>
 </td>
 </tr>
 <tr>
@@ -1154,7 +1154,7 @@ The Pianist
 8.5
 </td>
 <td style="text-align:center;">
-567086
+567098
 </td>
 <td style="text-align:center;">
 Roman Polanski
@@ -1166,7 +1166,7 @@ Adrien Brody
 Thomas Kretschmann
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0253474/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_40>
+<http://www.imdb.com/title/tt0253474/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_40>
 </td>
 </tr>
 <tr>
@@ -1180,7 +1180,7 @@ Raiders of the Lost Ark
 8.5
 </td>
 <td style="text-align:center;">
-732280
+732289
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -1192,7 +1192,7 @@ Harrison Ford
 Karen Allen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0082971/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_41>
+<http://www.imdb.com/title/tt0082971/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_41>
 </td>
 </tr>
 <tr>
@@ -1206,7 +1206,7 @@ The Departed
 8.5
 </td>
 <td style="text-align:center;">
-974437
+974454
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -1218,7 +1218,7 @@ Leonardo DiCaprio
 Matt Damon
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0407887/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_42>
+<http://www.imdb.com/title/tt0407887/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_42>
 </td>
 </tr>
 <tr>
@@ -1232,7 +1232,7 @@ Rear Window
 8.5
 </td>
 <td style="text-align:center;">
-355115
+355119
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -1244,7 +1244,7 @@ James Stewart
 Grace Kelly
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0047396/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_43>
+<http://www.imdb.com/title/tt0047396/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_43>
 </td>
 </tr>
 <tr>
@@ -1258,7 +1258,7 @@ Terminator 2: Judgment Day
 8.5
 </td>
 <td style="text-align:center;">
-823596
+823611
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -1270,7 +1270,7 @@ Arnold Schwarzenegger
 Linda Hamilton
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0103064/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_44>
+<http://www.imdb.com/title/tt0103064/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_44>
 </td>
 </tr>
 <tr>
@@ -1284,7 +1284,7 @@ Back to the Future
 8.5
 </td>
 <td style="text-align:center;">
-828693
+828714
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -1296,7 +1296,7 @@ Michael J. Fox
 Christopher Lloyd
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0088763/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_45>
+<http://www.imdb.com/title/tt0088763/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_45>
 </td>
 </tr>
 <tr>
@@ -1310,7 +1310,7 @@ Whiplash
 8.5
 </td>
 <td style="text-align:center;">
-516186
+516207
 </td>
 <td style="text-align:center;">
 Damien Chazelle
@@ -1322,7 +1322,7 @@ Miles Teller
 J.K. Simmons
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2582802/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_46>
+<http://www.imdb.com/title/tt2582802/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_46>
 </td>
 </tr>
 <tr>
@@ -1336,7 +1336,7 @@ Gladiator
 8.5
 </td>
 <td style="text-align:center;">
-1094543
+1094559
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -1348,7 +1348,7 @@ Russell Crowe
 Joaquin Phoenix
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0172495/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_47>
+<http://www.imdb.com/title/tt0172495/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_47>
 </td>
 </tr>
 <tr>
@@ -1362,7 +1362,7 @@ The Lion King
 8.5
 </td>
 <td style="text-align:center;">
-734665
+734680
 </td>
 <td style="text-align:center;">
 Roger Allers
@@ -1374,7 +1374,7 @@ Matthew Broderick
 Jeremy Irons
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0110357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_48>
+<http://www.imdb.com/title/tt0110357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_48>
 </td>
 </tr>
 <tr>
@@ -1388,7 +1388,7 @@ The Prestige
 8.5
 </td>
 <td style="text-align:center;">
-957975
+957992
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -1400,7 +1400,7 @@ Christian Bale
 Hugh Jackman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0482571/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_49>
+<http://www.imdb.com/title/tt0482571/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_49>
 </td>
 </tr>
 <tr>
@@ -1414,7 +1414,7 @@ Memento
 8.5
 </td>
 <td style="text-align:center;">
-941385
+941398
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -1426,7 +1426,7 @@ Guy Pearce
 Carrie-Anne Moss
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0209144/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_50>
+<http://www.imdb.com/title/tt0209144/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_50>
 </td>
 </tr>
 <tr>
@@ -1440,7 +1440,7 @@ Apocalypse Now
 8.5
 </td>
 <td style="text-align:center;">
-497217
+497227
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -1452,7 +1452,7 @@ Martin Sheen
 Marlon Brando
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0078788/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_51>
+<http://www.imdb.com/title/tt0078788/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_51>
 </td>
 </tr>
 <tr>
@@ -1466,7 +1466,7 @@ Alien
 8.4
 </td>
 <td style="text-align:center;">
-642531
+642546
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -1478,7 +1478,7 @@ Sigourney Weaver
 Tom Skerritt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0078748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_52>
+<http://www.imdb.com/title/tt0078748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_52>
 </td>
 </tr>
 <tr>
@@ -1492,7 +1492,7 @@ The Great Dictator
 8.4
 </td>
 <td style="text-align:center;">
-157633
+157636
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -1504,7 +1504,7 @@ Charles Chaplin
 Paulette Goddard
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0032553/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_53>
+<http://www.imdb.com/title/tt0032553/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_53>
 </td>
 </tr>
 <tr>
@@ -1518,7 +1518,7 @@ Sunset Blvd.
 8.4
 </td>
 <td style="text-align:center;">
-157317
+157319
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -1530,7 +1530,7 @@ William Holden
 Gloria Swanson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0043014/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_54>
+<http://www.imdb.com/title/tt0043014/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_54>
 </td>
 </tr>
 <tr>
@@ -1544,7 +1544,7 @@ Nuovo Cinema Paradiso
 8.4
 </td>
 <td style="text-align:center;">
-174558
+174561
 </td>
 <td style="text-align:center;">
 Giuseppe Tornatore
@@ -1556,7 +1556,7 @@ Philippe Noiret
 Enzo Cannavale
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0095765/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_55>
+<http://www.imdb.com/title/tt0095765/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_55>
 </td>
 </tr>
 <tr>
@@ -1570,7 +1570,7 @@ Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
 8.4
 </td>
 <td style="text-align:center;">
-378779
+378784
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -1582,7 +1582,7 @@ Peter Sellers
 George C. Scott
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0057012/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_56>
+<http://www.imdb.com/title/tt0057012/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_56>
 </td>
 </tr>
 <tr>
@@ -1596,7 +1596,7 @@ The Lives of Others
 8.4
 </td>
 <td style="text-align:center;">
-289879
+289881
 </td>
 <td style="text-align:center;">
 Florian Henckel von Donnersmarck
@@ -1608,7 +1608,7 @@ Ulrich Mühe
 Martina Gedeck
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0405094/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_57>
+<http://www.imdb.com/title/tt0405094/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_57>
 </td>
 </tr>
 <tr>
@@ -1622,7 +1622,7 @@ Hotaru no haka
 8.4
 </td>
 <td style="text-align:center;">
-164221
+164224
 </td>
 <td style="text-align:center;">
 Isao Takahata
@@ -1634,7 +1634,7 @@ Tsutomu Tatsumi
 Ayano Shiraishi
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0095327/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_58>
+<http://www.imdb.com/title/tt0095327/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_58>
 </td>
 </tr>
 <tr>
@@ -1648,7 +1648,7 @@ Paths of Glory
 8.4
 </td>
 <td style="text-align:center;">
-136850
+136854
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -1660,7 +1660,7 @@ Kirk Douglas
 Ralph Meeker
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050825/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_59>
+<http://www.imdb.com/title/tt0050825/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_59>
 </td>
 </tr>
 <tr>
@@ -1674,7 +1674,7 @@ Django Unchained
 8.4
 </td>
 <td style="text-align:center;">
-1086262
+1086283
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -1686,7 +1686,7 @@ Jamie Foxx
 Christoph Waltz
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1853728/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_60>
+<http://www.imdb.com/title/tt1853728/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_60>
 </td>
 </tr>
 <tr>
@@ -1700,7 +1700,7 @@ The Shining
 8.4
 </td>
 <td style="text-align:center;">
-691339
+691351
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -1712,7 +1712,7 @@ Jack Nicholson
 Shelley Duvall
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0081505/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_61>
+<http://www.imdb.com/title/tt0081505/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_61>
 </td>
 </tr>
 <tr>
@@ -1726,7 +1726,7 @@ WALL·E
 8.4
 </td>
 <td style="text-align:center;">
-811234
+811256
 </td>
 <td style="text-align:center;">
 Andrew Stanton
@@ -1738,7 +1738,7 @@ Ben Burtt
 Elissa Knight
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0910970/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_62>
+<http://www.imdb.com/title/tt0910970/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_62>
 </td>
 </tr>
 <tr>
@@ -1752,7 +1752,7 @@ American Beauty
 8.4
 </td>
 <td style="text-align:center;">
-910699
+910711
 </td>
 <td style="text-align:center;">
 Sam Mendes
@@ -1764,7 +1764,7 @@ Kevin Spacey
 Annette Bening
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0169547/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_63>
+<http://www.imdb.com/title/tt0169547/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_63>
 </td>
 </tr>
 <tr>
@@ -1778,7 +1778,7 @@ Mononoke-hime
 8.4
 </td>
 <td style="text-align:center;">
-256833
+256835
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -1790,7 +1790,7 @@ Yôji Matsuda
 Yuriko Ishida
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0119698/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_64>
+<http://www.imdb.com/title/tt0119698/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_64>
 </td>
 </tr>
 <tr>
@@ -1804,7 +1804,7 @@ The Dark Knight Rises
 8.4
 </td>
 <td style="text-align:center;">
-1268237
+1268248
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -1816,7 +1816,7 @@ Christian Bale
 Tom Hardy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1345836/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_65>
+<http://www.imdb.com/title/tt1345836/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_65>
 </td>
 </tr>
 <tr>
@@ -1830,7 +1830,7 @@ Blade Runner 2049
 8.4
 </td>
 <td style="text-align:center;">
-158183
+158210
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -1842,7 +1842,7 @@ Harrison Ford
 Ryan Gosling
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1856101/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_66>
+<http://www.imdb.com/title/tt1856101/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_66>
 </td>
 </tr>
 <tr>
@@ -1856,7 +1856,7 @@ Oldeuboi
 8.4
 </td>
 <td style="text-align:center;">
-406944
+406952
 </td>
 <td style="text-align:center;">
 Chan-wook Park
@@ -1868,7 +1868,7 @@ Min-sik Choi
 Ji-tae Yu
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0364569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_67>
+<http://www.imdb.com/title/tt0364569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_67>
 </td>
 </tr>
 <tr>
@@ -1882,7 +1882,7 @@ Witness for the Prosecution
 8.4
 </td>
 <td style="text-align:center;">
-75596
+75599
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -1894,7 +1894,7 @@ Tyrone Power
 Marlene Dietrich
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0051201/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_68>
+<http://www.imdb.com/title/tt0051201/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_68>
 </td>
 </tr>
 <tr>
@@ -1908,7 +1908,7 @@ Aliens
 8.4
 </td>
 <td style="text-align:center;">
-546989
+546998
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -1920,7 +1920,7 @@ Sigourney Weaver
 Michael Biehn
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0090605/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_69>
+<http://www.imdb.com/title/tt0090605/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_69>
 </td>
 </tr>
 <tr>
@@ -1934,7 +1934,7 @@ Once Upon a Time in America
 8.4
 </td>
 <td style="text-align:center;">
-247177
+247182
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -1946,7 +1946,7 @@ Robert De Niro
 James Woods
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0087843/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_70>
+<http://www.imdb.com/title/tt0087843/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_70>
 </td>
 </tr>
 <tr>
@@ -1960,7 +1960,7 @@ Das Boot
 8.3
 </td>
 <td style="text-align:center;">
-186994
+186998
 </td>
 <td style="text-align:center;">
 Wolfgang Petersen
@@ -1972,7 +1972,7 @@ Jürgen Prochnow
 Herbert Grönemeyer
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0082096/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_71>
+<http://www.imdb.com/title/tt0082096/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_71>
 </td>
 </tr>
 <tr>
@@ -1986,7 +1986,7 @@ Dangal
 8.3
 </td>
 <td style="text-align:center;">
-77496
+77506
 </td>
 <td style="text-align:center;">
 Nitesh Tiwari
@@ -1998,7 +1998,7 @@ Aamir Khan
 Sakshi Tanwar
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt5074352/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_72>
+<http://www.imdb.com/title/tt5074352/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_72>
 </td>
 </tr>
 <tr>
@@ -2012,7 +2012,7 @@ Citizen Kane
 8.3
 </td>
 <td style="text-align:center;">
-328960
+328963
 </td>
 <td style="text-align:center;">
 Orson Welles
@@ -2024,7 +2024,7 @@ Orson Welles
 Joseph Cotten
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0033467/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_73>
+<http://www.imdb.com/title/tt0033467/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_73>
 </td>
 </tr>
 <tr>
@@ -2038,7 +2038,7 @@ Vertigo
 8.3
 </td>
 <td style="text-align:center;">
-282556
+282564
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -2050,7 +2050,7 @@ James Stewart
 Kim Novak
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0052357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_74>
+<http://www.imdb.com/title/tt0052357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_74>
 </td>
 </tr>
 <tr>
@@ -2064,7 +2064,7 @@ North by Northwest
 8.3
 </td>
 <td style="text-align:center;">
-243443
+243445
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -2076,7 +2076,7 @@ Cary Grant
 Eva Marie Saint
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0053125/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_75>
+<http://www.imdb.com/title/tt0053125/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_75>
 </td>
 </tr>
 <tr>
@@ -2090,7 +2090,7 @@ Star Wars: Episode VI - Return of the Jedi
 8.3
 </td>
 <td style="text-align:center;">
-773082
+773130
 </td>
 <td style="text-align:center;">
 Richard Marquand
@@ -2102,7 +2102,7 @@ Mark Hamill
 Harrison Ford
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0086190/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_76>
+<http://www.imdb.com/title/tt0086190/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_76>
 </td>
 </tr>
 <tr>
@@ -2116,7 +2116,7 @@ Braveheart
 8.3
 </td>
 <td style="text-align:center;">
-817217
+817232
 </td>
 <td style="text-align:center;">
 Mel Gibson
@@ -2128,7 +2128,7 @@ Mel Gibson
 Sophie Marceau
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0112573/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_77>
+<http://www.imdb.com/title/tt0112573/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_77>
 </td>
 </tr>
 <tr>
@@ -2142,7 +2142,7 @@ Reservoir Dogs
 8.3
 </td>
 <td style="text-align:center;">
-745159
+745172
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -2154,7 +2154,7 @@ Harvey Keitel
 Tim Roth
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0105236/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_78>
+<http://www.imdb.com/title/tt0105236/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_78>
 </td>
 </tr>
 <tr>
@@ -2168,7 +2168,7 @@ M
 8.3
 </td>
 <td style="text-align:center;">
-111647
+111648
 </td>
 <td style="text-align:center;">
 Fritz Lang
@@ -2180,7 +2180,7 @@ Peter Lorre
 Ellen Widmann
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0022100/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_79>
+<http://www.imdb.com/title/tt0022100/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_79>
 </td>
 </tr>
 <tr>
@@ -2194,7 +2194,7 @@ Requiem for a Dream
 8.3
 </td>
 <td style="text-align:center;">
-638904
+638918
 </td>
 <td style="text-align:center;">
 Darren Aronofsky
@@ -2206,7 +2206,7 @@ Ellen Burstyn
 Jared Leto
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0180093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_80>
+<http://www.imdb.com/title/tt0180093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_80>
 </td>
 </tr>
 <tr>
@@ -2220,7 +2220,7 @@ Kimi no na wa.
 8.3
 </td>
 <td style="text-align:center;">
-65545
+65561
 </td>
 <td style="text-align:center;">
 Makoto Shinkai
@@ -2232,7 +2232,7 @@ Ryûnosuke Kamiki
 Mone Kamishiraishi
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt5311514/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_81>
+<http://www.imdb.com/title/tt5311514/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_81>
 </td>
 </tr>
 <tr>
@@ -2246,7 +2246,7 @@ Taare Zameen Par
 8.3
 </td>
 <td style="text-align:center;">
-113090
+113091
 </td>
 <td style="text-align:center;">
 Aamir Khan
@@ -2258,7 +2258,7 @@ Darsheel Safary
 Aamir Khan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0986264/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_82>
+<http://www.imdb.com/title/tt0986264/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_82>
 </td>
 </tr>
 <tr>
@@ -2272,7 +2272,7 @@ Amélie
 8.3
 </td>
 <td style="text-align:center;">
-594444
+594450
 </td>
 <td style="text-align:center;">
 Jean-Pierre Jeunet
@@ -2284,7 +2284,7 @@ Audrey Tautou
 Mathieu Kassovitz
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0211915/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_83>
+<http://www.imdb.com/title/tt0211915/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_83>
 </td>
 </tr>
 <tr>
@@ -2298,7 +2298,7 @@ A Clockwork Orange
 8.3
 </td>
 <td style="text-align:center;">
-623097
+623106
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -2310,7 +2310,7 @@ Malcolm McDowell
 Patrick Magee
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0066921/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_84>
+<http://www.imdb.com/title/tt0066921/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_84>
 </td>
 </tr>
 <tr>
@@ -2324,7 +2324,7 @@ Lawrence of Arabia
 8.3
 </td>
 <td style="text-align:center;">
-215491
+215495
 </td>
 <td style="text-align:center;">
 David Lean
@@ -2336,7 +2336,7 @@ Peter O'Toole
 Alec Guinness
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0056172/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_85>
+<http://www.imdb.com/title/tt0056172/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_85>
 </td>
 </tr>
 <tr>
@@ -2350,7 +2350,7 @@ Amadeus
 8.3
 </td>
 <td style="text-align:center;">
-302920
+302932
 </td>
 <td style="text-align:center;">
 Milos Forman
@@ -2362,7 +2362,7 @@ F. Murray Abraham
 Tom Hulce
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0086879/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_86>
+<http://www.imdb.com/title/tt0086879/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_86>
 </td>
 </tr>
 <tr>
@@ -2376,7 +2376,7 @@ Double Indemnity
 8.3
 </td>
 <td style="text-align:center;">
-110710
+110712
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -2388,7 +2388,7 @@ Fred MacMurray
 Barbara Stanwyck
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0036775/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_87>
+<http://www.imdb.com/title/tt0036775/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_87>
 </td>
 </tr>
 <tr>
@@ -2402,7 +2402,7 @@ Eternal Sunshine of the Spotless Mind
 8.3
 </td>
 <td style="text-align:center;">
-745692
+745702
 </td>
 <td style="text-align:center;">
 Michel Gondry
@@ -2414,7 +2414,7 @@ Jim Carrey
 Kate Winslet
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0338013/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_88>
+<http://www.imdb.com/title/tt0338013/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_88>
 </td>
 </tr>
 <tr>
@@ -2428,7 +2428,7 @@ Taxi Driver
 8.3
 </td>
 <td style="text-align:center;">
-570855
+570867
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -2440,7 +2440,7 @@ Robert De Niro
 Jodie Foster
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0075314/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_89>
+<http://www.imdb.com/title/tt0075314/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_89>
 </td>
 </tr>
 <tr>
@@ -2454,7 +2454,7 @@ To Kill a Mockingbird
 8.3
 </td>
 <td style="text-align:center;">
-242783
+242789
 </td>
 <td style="text-align:center;">
 Robert Mulligan
@@ -2466,7 +2466,7 @@ Gregory Peck
 John Megna
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0056592/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_90>
+<http://www.imdb.com/title/tt0056592/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_90>
 </td>
 </tr>
 <tr>
@@ -2480,7 +2480,7 @@ Full Metal Jacket
 8.3
 </td>
 <td style="text-align:center;">
-545349
+545360
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -2492,7 +2492,7 @@ Matthew Modine
 R. Lee Ermey
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0093058/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_91>
+<http://www.imdb.com/title/tt0093058/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_91>
 </td>
 </tr>
 <tr>
@@ -2506,7 +2506,7 @@ R. Lee Ermey
 8.3
 </td>
 <td style="text-align:center;">
-481309
+481321
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -2518,7 +2518,7 @@ Keir Dullea
 Gary Lockwood
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0062622/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_92>
+<http://www.imdb.com/title/tt0062622/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_92>
 </td>
 </tr>
 <tr>
@@ -2532,7 +2532,7 @@ Singin' in the Rain
 8.3
 </td>
 <td style="text-align:center;">
-172640
+172643
 </td>
 <td style="text-align:center;">
 Stanley Donen
@@ -2544,7 +2544,7 @@ Gene Kelly
 Donald O'Connor
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0045152/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_93>
+<http://www.imdb.com/title/tt0045152/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_93>
 </td>
 </tr>
 <tr>
@@ -2558,7 +2558,7 @@ Toy Story
 8.3
 </td>
 <td style="text-align:center;">
-704090
+704105
 </td>
 <td style="text-align:center;">
 John Lasseter
@@ -2570,7 +2570,7 @@ Tom Hanks
 Tim Allen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0114709/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_94>
+<http://www.imdb.com/title/tt0114709/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_94>
 </td>
 </tr>
 <tr>
@@ -2584,7 +2584,7 @@ Tim Allen
 8.3
 </td>
 <td style="text-align:center;">
-256287
+256296
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -2596,7 +2596,7 @@ Aamir Khan
 Madhavan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1187043/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_95>
+<http://www.imdb.com/title/tt1187043/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_95>
 </td>
 </tr>
 <tr>
@@ -2610,7 +2610,7 @@ The Sting
 8.3
 </td>
 <td style="text-align:center;">
-196044
+196048
 </td>
 <td style="text-align:center;">
 George Roy Hill
@@ -2622,7 +2622,7 @@ Paul Newman
 Robert Redford
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0070735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_96>
+<http://www.imdb.com/title/tt0070735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_96>
 </td>
 </tr>
 <tr>
@@ -2636,7 +2636,7 @@ Toy Story 3
 8.3
 </td>
 <td style="text-align:center;">
-611443
+611453
 </td>
 <td style="text-align:center;">
 Lee Unkrich
@@ -2648,7 +2648,7 @@ Tom Hanks
 Tim Allen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0435761/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_97>
+<http://www.imdb.com/title/tt0435761/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_97>
 </td>
 </tr>
 <tr>
@@ -2662,7 +2662,7 @@ Inglourious Basterds
 8.3
 </td>
 <td style="text-align:center;">
-1003151
+1003177
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -2674,7 +2674,7 @@ Brad Pitt
 Diane Kruger
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0361748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_98>
+<http://www.imdb.com/title/tt0361748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_98>
 </td>
 </tr>
 <tr>
@@ -2688,7 +2688,7 @@ Ladri di biciclette
 8.3
 </td>
 <td style="text-align:center;">
-108700
+108702
 </td>
 <td style="text-align:center;">
 Vittorio De Sica
@@ -2700,7 +2700,7 @@ Lamberto Maggiorani
 Enzo Staiola
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0040522/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_99>
+<http://www.imdb.com/title/tt0040522/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_99>
 </td>
 </tr>
 <tr>
@@ -2714,7 +2714,7 @@ The Kid
 8.3
 </td>
 <td style="text-align:center;">
-80589
+80592
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -2726,7 +2726,7 @@ Charles Chaplin
 Edna Purviance
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0012349/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_100>
+<http://www.imdb.com/title/tt0012349/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_100>
 </td>
 </tr>
 <tr>
@@ -2740,7 +2740,7 @@ Snatch
 8.3
 </td>
 <td style="text-align:center;">
-662235
+662247
 </td>
 <td style="text-align:center;">
 Guy Ritchie
@@ -2752,7 +2752,7 @@ Jason Statham
 Brad Pitt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0208092/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_101>
+<http://www.imdb.com/title/tt0208092/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_101>
 </td>
 </tr>
 <tr>
@@ -2766,7 +2766,7 @@ Monty Python and the Holy Grail
 8.3
 </td>
 <td style="text-align:center;">
-419266
+419270
 </td>
 <td style="text-align:center;">
 Terry Gilliam
@@ -2778,7 +2778,7 @@ Graham Chapman
 John Cleese
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0071853/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_102>
+<http://www.imdb.com/title/tt0071853/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_102>
 </td>
 </tr>
 <tr>
@@ -2792,7 +2792,7 @@ Good Will Hunting
 8.3
 </td>
 <td style="text-align:center;">
-686189
+686204
 </td>
 <td style="text-align:center;">
 Gus Van Sant
@@ -2804,7 +2804,7 @@ Robin Williams
 Matt Damon
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0119217/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_103>
+<http://www.imdb.com/title/tt0119217/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_103>
 </td>
 </tr>
 <tr>
@@ -2818,7 +2818,7 @@ Jagten
 8.3
 </td>
 <td style="text-align:center;">
-205766
+205771
 </td>
 <td style="text-align:center;">
 Thomas Vinterberg
@@ -2830,7 +2830,7 @@ Mads Mikkelsen
 Thomas Bo Larsen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2106476/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_104>
+<http://www.imdb.com/title/tt2106476/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_104>
 </td>
 </tr>
 <tr>
@@ -2844,7 +2844,7 @@ Per qualche dollaro in più
 8.3
 </td>
 <td style="text-align:center;">
-179638
+179642
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -2856,7 +2856,7 @@ Clint Eastwood
 Lee Van Cleef
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0059578/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_105>
+<http://www.imdb.com/title/tt0059578/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_105>
 </td>
 </tr>
 <tr>
@@ -2870,7 +2870,7 @@ Scarface
 8.3
 </td>
 <td style="text-align:center;">
-599079
+599094
 </td>
 <td style="text-align:center;">
 Brian De Palma
@@ -2882,7 +2882,7 @@ Al Pacino
 Michelle Pfeiffer
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0086250/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_106>
+<http://www.imdb.com/title/tt0086250/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_106>
 </td>
 </tr>
 <tr>
@@ -2896,7 +2896,7 @@ L.A. Confidential
 8.3
 </td>
 <td style="text-align:center;">
-453678
+453681
 </td>
 <td style="text-align:center;">
 Curtis Hanson
@@ -2908,7 +2908,7 @@ Kevin Spacey
 Russell Crowe
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0119488/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_107>
+<http://www.imdb.com/title/tt0119488/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_107>
 </td>
 </tr>
 <tr>
@@ -2922,7 +2922,7 @@ The Apartment
 8.2
 </td>
 <td style="text-align:center;">
-124421
+124424
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -2934,7 +2934,7 @@ Jack Lemmon
 Shirley MacLaine
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0053604/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_108>
+<http://www.imdb.com/title/tt0053604/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_108>
 </td>
 </tr>
 <tr>
@@ -2960,7 +2960,7 @@ Brigitte Helm
 Alfred Abel
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0017136/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_109>
+<http://www.imdb.com/title/tt0017136/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_109>
 </td>
 </tr>
 <tr>
@@ -2974,7 +2974,7 @@ Jodaeiye Nader az Simin
 8.2
 </td>
 <td style="text-align:center;">
-172939
+172946
 </td>
 <td style="text-align:center;">
 Asghar Farhadi
@@ -2986,7 +2986,7 @@ Payman Maadi
 Leila Hatami
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1832382/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_110>
+<http://www.imdb.com/title/tt1832382/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_110>
 </td>
 </tr>
 <tr>
@@ -3000,7 +3000,7 @@ Rashômon
 8.2
 </td>
 <td style="text-align:center;">
-116463
+116467
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -3012,7 +3012,7 @@ Toshirô Mifune
 Machiko Kyô
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0042876/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_111>
+<http://www.imdb.com/title/tt0042876/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_111>
 </td>
 </tr>
 <tr>
@@ -3026,7 +3026,7 @@ Indiana Jones and the Last Crusade
 8.2
 </td>
 <td style="text-align:center;">
-573573
+573587
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -3038,7 +3038,7 @@ Harrison Ford
 Sean Connery
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0097576/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_112>
+<http://www.imdb.com/title/tt0097576/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_112>
 </td>
 </tr>
 <tr>
@@ -3064,7 +3064,7 @@ Bette Davis
 Anne Baxter
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0042192/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_113>
+<http://www.imdb.com/title/tt0042192/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_113>
 </td>
 </tr>
 <tr>
@@ -3078,7 +3078,7 @@ Yôjinbô
 8.2
 </td>
 <td style="text-align:center;">
-83504
+83508
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -3090,7 +3090,7 @@ Toshirô Mifune
 Eijirô Tôno
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0055630/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_114>
+<http://www.imdb.com/title/tt0055630/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_114>
 </td>
 </tr>
 <tr>
@@ -3104,7 +3104,7 @@ Babam ve Oglum
 8.2
 </td>
 <td style="text-align:center;">
-51667
+51670
 </td>
 <td style="text-align:center;">
 Çagan Irmak
@@ -3116,7 +3116,7 @@ Resit Kurt
 Fikret Kuskan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0476735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_115>
+<http://www.imdb.com/title/tt0476735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_115>
 </td>
 </tr>
 <tr>
@@ -3130,7 +3130,7 @@ Up
 8.2
 </td>
 <td style="text-align:center;">
-753989
+754000
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -3142,7 +3142,7 @@ Edward Asner
 Jordan Nagai
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1049413/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_116>
+<http://www.imdb.com/title/tt1049413/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_116>
 </td>
 </tr>
 <tr>
@@ -3156,7 +3156,7 @@ Batman Begins
 8.2
 </td>
 <td style="text-align:center;">
-1088852
+1088871
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -3168,7 +3168,7 @@ Christian Bale
 Michael Caine
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0372784/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_117>
+<http://www.imdb.com/title/tt0372784/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_117>
 </td>
 </tr>
 <tr>
@@ -3182,7 +3182,7 @@ Some Like It Hot
 8.2
 </td>
 <td style="text-align:center;">
-195889
+195893
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -3194,7 +3194,7 @@ Marilyn Monroe
 Tony Curtis
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0053291/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_118>
+<http://www.imdb.com/title/tt0053291/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_118>
 </td>
 </tr>
 <tr>
@@ -3208,7 +3208,7 @@ The Treasure of the Sierra Madre
 8.2
 </td>
 <td style="text-align:center;">
-88728
+88730
 </td>
 <td style="text-align:center;">
 John Huston
@@ -3220,7 +3220,7 @@ Humphrey Bogart
 Walter Huston
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0040897/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_119>
+<http://www.imdb.com/title/tt0040897/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_119>
 </td>
 </tr>
 <tr>
@@ -3234,7 +3234,7 @@ Unforgiven
 8.2
 </td>
 <td style="text-align:center;">
-308215
+308221
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -3246,7 +3246,7 @@ Clint Eastwood
 Gene Hackman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0105695/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_120>
+<http://www.imdb.com/title/tt0105695/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_120>
 </td>
 </tr>
 <tr>
@@ -3260,7 +3260,7 @@ Der Untergang
 8.2
 </td>
 <td style="text-align:center;">
-275887
+275889
 </td>
 <td style="text-align:center;">
 Oliver Hirschbiegel
@@ -3272,7 +3272,7 @@ Bruno Ganz
 Alexandra Maria Lara
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0363163/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_121>
+<http://www.imdb.com/title/tt0363163/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_121>
 </td>
 </tr>
 <tr>
@@ -3286,7 +3286,7 @@ Die Hard
 8.2
 </td>
 <td style="text-align:center;">
-654813
+654825
 </td>
 <td style="text-align:center;">
 John McTiernan
@@ -3298,7 +3298,7 @@ Bruce Willis
 Alan Rickman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0095016/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_122>
+<http://www.imdb.com/title/tt0095016/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_122>
 </td>
 </tr>
 <tr>
@@ -3312,7 +3312,7 @@ Raging Bull
 8.2
 </td>
 <td style="text-align:center;">
-259891
+259895
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -3324,7 +3324,7 @@ Robert De Niro
 Cathy Moriarty
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0081398/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_123>
+<http://www.imdb.com/title/tt0081398/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_123>
 </td>
 </tr>
 <tr>
@@ -3338,7 +3338,7 @@ Heat
 8.2
 </td>
 <td style="text-align:center;">
-475919
+475929
 </td>
 <td style="text-align:center;">
 Michael Mann
@@ -3350,7 +3350,7 @@ Al Pacino
 Robert De Niro
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0113277/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_124>
+<http://www.imdb.com/title/tt0113277/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_124>
 </td>
 </tr>
 <tr>
@@ -3364,7 +3364,7 @@ The Third Man
 8.2
 </td>
 <td style="text-align:center;">
-127342
+127344
 </td>
 <td style="text-align:center;">
 Carol Reed
@@ -3376,7 +3376,7 @@ Orson Welles
 Joseph Cotten
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0041959/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_125>
+<http://www.imdb.com/title/tt0041959/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_125>
 </td>
 </tr>
 <tr>
@@ -3390,7 +3390,7 @@ Bacheha-Ye aseman
 8.2
 </td>
 <td style="text-align:center;">
-38897
+38898
 </td>
 <td style="text-align:center;">
 Majid Majidi
@@ -3402,7 +3402,7 @@ Mohammad Amir Naji
 Amir Farrokh Hashemian
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0118849/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_126>
+<http://www.imdb.com/title/tt0118849/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_126>
 </td>
 </tr>
 <tr>
@@ -3416,7 +3416,7 @@ The Great Escape
 8.2
 </td>
 <td style="text-align:center;">
-184024
+184027
 </td>
 <td style="text-align:center;">
 John Sturges
@@ -3428,7 +3428,7 @@ Steve McQueen
 James Garner
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0057115/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_127>
+<http://www.imdb.com/title/tt0057115/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_127>
 </td>
 </tr>
 <tr>
@@ -3454,7 +3454,7 @@ Takashi Shimura
 Nobuo Kaneko
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0044741/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_128>
+<http://www.imdb.com/title/tt0044741/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_128>
 </td>
 </tr>
 <tr>
@@ -3468,7 +3468,7 @@ Chinatown
 8.2
 </td>
 <td style="text-align:center;">
-240336
+240340
 </td>
 <td style="text-align:center;">
 Roman Polanski
@@ -3480,7 +3480,7 @@ Jack Nicholson
 Faye Dunaway
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0071315/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_129>
+<http://www.imdb.com/title/tt0071315/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_129>
 </td>
 </tr>
 <tr>
@@ -3494,7 +3494,7 @@ Pan's Labyrinth
 8.2
 </td>
 <td style="text-align:center;">
-518665
+518672
 </td>
 <td style="text-align:center;">
 Guillermo del Toro
@@ -3506,7 +3506,7 @@ Ivana Baquero
 Ariadna Gil
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0457430/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_130>
+<http://www.imdb.com/title/tt0457430/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_130>
 </td>
 </tr>
 <tr>
@@ -3520,7 +3520,7 @@ Tonari no Totoro
 8.2
 </td>
 <td style="text-align:center;">
-203918
+203919
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -3532,7 +3532,7 @@ Hitoshi Takagi
 Noriko Hidaka
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0096283/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_131>
+<http://www.imdb.com/title/tt0096283/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_131>
 </td>
 </tr>
 <tr>
@@ -3546,7 +3546,7 @@ Incendies
 8.2
 </td>
 <td style="text-align:center;">
-101160
+101164
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -3558,7 +3558,7 @@ Lubna Azabal
 Mélissa Désormeaux-Poulin
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1255953/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_132>
+<http://www.imdb.com/title/tt1255953/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_132>
 </td>
 </tr>
 <tr>
@@ -3572,7 +3572,7 @@ Ran
 8.2
 </td>
 <td style="text-align:center;">
-86844
+86845
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -3584,33 +3584,7 @@ Tatsuya Nakadai
 Akira Terao
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0089881/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_133>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-Dunkirk
-</td>
-<td style="text-align:center;">
-2017
-</td>
-<td style="text-align:center;">
-8.2
-</td>
-<td style="text-align:center;">
-265687
-</td>
-<td style="text-align:center;">
-Christopher Nolan
-</td>
-<td style="text-align:center;">
-Fionn Whitehead
-</td>
-<td style="text-align:center;">
-Barry Keoghan
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt5013056/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_134>
+<http://www.imdb.com/title/tt0089881/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_133>
 </td>
 </tr>
 <tr>
@@ -3624,7 +3598,7 @@ Judgment at Nuremberg
 8.2
 </td>
 <td style="text-align:center;">
-51665
+51666
 </td>
 <td style="text-align:center;">
 Stanley Kramer
@@ -3636,7 +3610,33 @@ Spencer Tracy
 Burt Lancaster
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0055031/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_135>
+<http://www.imdb.com/title/tt0055031/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_134>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Dunkirk
+</td>
+<td style="text-align:center;">
+2017
+</td>
+<td style="text-align:center;">
+8.2
+</td>
+<td style="text-align:center;">
+265900
+</td>
+<td style="text-align:center;">
+Christopher Nolan
+</td>
+<td style="text-align:center;">
+Fionn Whitehead
+</td>
+<td style="text-align:center;">
+Barry Keoghan
+</td>
+<td style="text-align:center;">
+<http://www.imdb.com/title/tt5013056/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_135>
 </td>
 </tr>
 <tr>
@@ -3650,7 +3650,7 @@ The Gold Rush
 8.2
 </td>
 <td style="text-align:center;">
-77234
+77235
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -3662,7 +3662,7 @@ Charles Chaplin
 Mack Swain
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0015864/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_136>
+<http://www.imdb.com/title/tt0015864/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_136>
 </td>
 </tr>
 <tr>
@@ -3676,7 +3676,7 @@ El secreto de sus ojos
 8.2
 </td>
 <td style="text-align:center;">
-152204
+152207
 </td>
 <td style="text-align:center;">
 Juan José Campanella
@@ -3688,7 +3688,7 @@ Ricardo Darín
 Soledad Villamil
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1305806/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_137>
+<http://www.imdb.com/title/tt1305806/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_137>
 </td>
 </tr>
 <tr>
@@ -3702,7 +3702,7 @@ Hauru no ugoku shiro
 8.2
 </td>
 <td style="text-align:center;">
-246834
+246836
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -3714,7 +3714,7 @@ Chieko Baishô
 Takuya Kimura
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0347149/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_138>
+<http://www.imdb.com/title/tt0347149/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_138>
 </td>
 </tr>
 <tr>
@@ -3728,7 +3728,7 @@ Inside Out
 8.2
 </td>
 <td style="text-align:center;">
-450473
+450484
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -3740,7 +3740,7 @@ Amy Poehler
 Bill Hader
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2096673/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_139>
+<http://www.imdb.com/title/tt2096673/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_139>
 </td>
 </tr>
 <tr>
@@ -3766,7 +3766,7 @@ Marlon Brando
 Karl Malden
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0047296/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_140>
+<http://www.imdb.com/title/tt0047296/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_140>
 </td>
 </tr>
 <tr>
@@ -3780,7 +3780,7 @@ The Bridge on the River Kwai
 8.2
 </td>
 <td style="text-align:center;">
-166440
+166442
 </td>
 <td style="text-align:center;">
 David Lean
@@ -3792,7 +3792,7 @@ William Holden
 Alec Guinness
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050212/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_141>
+<http://www.imdb.com/title/tt0050212/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_141>
 </td>
 </tr>
 <tr>
@@ -3806,7 +3806,7 @@ Det sjunde inseglet
 8.2
 </td>
 <td style="text-align:center;">
-125687
+125689
 </td>
 <td style="text-align:center;">
 Ingmar Bergman
@@ -3818,7 +3818,7 @@ Max von Sydow
 Gunnar Björnstrand
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050976/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_142>
+<http://www.imdb.com/title/tt0050976/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_142>
 </td>
 </tr>
 <tr>
@@ -3832,7 +3832,7 @@ Room
 8.2
 </td>
 <td style="text-align:center;">
-250437
+250446
 </td>
 <td style="text-align:center;">
 Lenny Abrahamson
@@ -3844,7 +3844,7 @@ Brie Larson
 Jacob Tremblay
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt3170832/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_143>
+<http://www.imdb.com/title/tt3170832/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_143>
 </td>
 </tr>
 <tr>
@@ -3858,7 +3858,7 @@ Lock, Stock and Two Smoking Barrels
 8.2
 </td>
 <td style="text-align:center;">
-455248
+455255
 </td>
 <td style="text-align:center;">
 Guy Ritchie
@@ -3870,7 +3870,7 @@ Jason Flemyng
 Dexter Fletcher
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_144>
+<http://www.imdb.com/title/tt0120735/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_144>
 </td>
 </tr>
 <tr>
@@ -3884,7 +3884,7 @@ Mr. Smith Goes to Washington
 8.2
 </td>
 <td style="text-align:center;">
-85826
+85827
 </td>
 <td style="text-align:center;">
 Frank Capra
@@ -3896,7 +3896,7 @@ James Stewart
 Jean Arthur
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0031679/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_145>
+<http://www.imdb.com/title/tt0031679/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_145>
 </td>
 </tr>
 <tr>
@@ -3910,7 +3910,7 @@ A Beautiful Mind
 8.2
 </td>
 <td style="text-align:center;">
-691686
+691703
 </td>
 <td style="text-align:center;">
 Ron Howard
@@ -3922,7 +3922,7 @@ Russell Crowe
 Ed Harris
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0268978/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_146>
+<http://www.imdb.com/title/tt0268978/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_146>
 </td>
 </tr>
 <tr>
@@ -3936,7 +3936,7 @@ Casino
 8.2
 </td>
 <td style="text-align:center;">
-372592
+372595
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -3948,7 +3948,7 @@ Robert De Niro
 Sharon Stone
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0112641/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_147>
+<http://www.imdb.com/title/tt0112641/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_147>
 </td>
 </tr>
 <tr>
@@ -3962,7 +3962,7 @@ Blade Runner
 8.2
 </td>
 <td style="text-align:center;">
-548417
+548429
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -3974,7 +3974,7 @@ Harrison Ford
 Rutger Hauer
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0083658/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_148>
+<http://www.imdb.com/title/tt0083658/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_148>
 </td>
 </tr>
 <tr>
@@ -3988,7 +3988,7 @@ The Elephant Man
 8.1
 </td>
 <td style="text-align:center;">
-180613
+180616
 </td>
 <td style="text-align:center;">
 David Lynch
@@ -4000,7 +4000,7 @@ Anthony Hopkins
 John Hurt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0080678/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_149>
+<http://www.imdb.com/title/tt0080678/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_149>
 </td>
 </tr>
 <tr>
@@ -4014,7 +4014,7 @@ V for Vendetta
 8.1
 </td>
 <td style="text-align:center;">
-877319
+877335
 </td>
 <td style="text-align:center;">
 James McTeigue
@@ -4026,7 +4026,7 @@ Hugo Weaving
 Natalie Portman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0434409/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_150>
+<http://www.imdb.com/title/tt0434409/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_150>
 </td>
 </tr>
 <tr>
@@ -4040,7 +4040,7 @@ The Wolf of Wall Street
 8.1
 </td>
 <td style="text-align:center;">
-910815
+910838
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -4052,7 +4052,7 @@ Leonardo DiCaprio
 Jonah Hill
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0993846/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_151>
+<http://www.imdb.com/title/tt0993846/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_151>
 </td>
 </tr>
 <tr>
@@ -4078,7 +4078,7 @@ Victor Sjöström
 Bibi Andersson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050986/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_152>
+<http://www.imdb.com/title/tt0050986/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_152>
 </td>
 </tr>
 <tr>
@@ -4092,7 +4092,7 @@ The General
 8.1
 </td>
 <td style="text-align:center;">
-60756
+60757
 </td>
 <td style="text-align:center;">
 Clyde Bruckman
@@ -4104,7 +4104,7 @@ Buster Keaton
 Marion Mack
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0017925/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_153>
+<http://www.imdb.com/title/tt0017925/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_153>
 </td>
 </tr>
 <tr>
@@ -4118,7 +4118,7 @@ Warrior
 8.1
 </td>
 <td style="text-align:center;">
-369497
+369503
 </td>
 <td style="text-align:center;">
 Gavin O'Connor
@@ -4130,7 +4130,7 @@ Tom Hardy
 Nick Nolte
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1291584/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_154>
+<http://www.imdb.com/title/tt1291584/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_154>
 </td>
 </tr>
 <tr>
@@ -4144,7 +4144,7 @@ Dial M for Murder
 8.1
 </td>
 <td style="text-align:center;">
-122089
+122090
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -4156,7 +4156,7 @@ Ray Milland
 Grace Kelly
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0046912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_155>
+<http://www.imdb.com/title/tt0046912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_155>
 </td>
 </tr>
 <tr>
@@ -4170,7 +4170,7 @@ Trainspotting
 8.1
 </td>
 <td style="text-align:center;">
-537780
+537789
 </td>
 <td style="text-align:center;">
 Danny Boyle
@@ -4182,7 +4182,7 @@ Ewan McGregor
 Ewen Bremner
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0117951/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_156>
+<http://www.imdb.com/title/tt0117951/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_156>
 </td>
 </tr>
 <tr>
@@ -4196,7 +4196,7 @@ Gran Torino
 8.1
 </td>
 <td style="text-align:center;">
-616862
+616874
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -4208,7 +4208,7 @@ Clint Eastwood
 Bee Vang
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1205489/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_157>
+<http://www.imdb.com/title/tt1205489/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_157>
 </td>
 </tr>
 <tr>
@@ -4222,7 +4222,7 @@ Gone with the Wind
 8.1
 </td>
 <td style="text-align:center;">
-238383
+238384
 </td>
 <td style="text-align:center;">
 Victor Fleming
@@ -4234,7 +4234,7 @@ Clark Gable
 Vivien Leigh
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0031381/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_158>
+<http://www.imdb.com/title/tt0031381/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_158>
 </td>
 </tr>
 <tr>
@@ -4248,7 +4248,7 @@ The Deer Hunter
 8.1
 </td>
 <td style="text-align:center;">
-257658
+257664
 </td>
 <td style="text-align:center;">
 Michael Cimino
@@ -4260,7 +4260,7 @@ Robert De Niro
 Christopher Walken
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0077416/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_159>
+<http://www.imdb.com/title/tt0077416/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_159>
 </td>
 </tr>
 <tr>
@@ -4274,7 +4274,7 @@ Sunrise: A Song of Two Humans
 8.1
 </td>
 <td style="text-align:center;">
-34527
+34528
 </td>
 <td style="text-align:center;">
 F.W. Murnau
@@ -4286,7 +4286,7 @@ George O'Brien
 Janet Gaynor
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0018455/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_160>
+<http://www.imdb.com/title/tt0018455/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_160>
 </td>
 </tr>
 <tr>
@@ -4300,7 +4300,7 @@ The Sixth Sense
 8.1
 </td>
 <td style="text-align:center;">
-775479
+775490
 </td>
 <td style="text-align:center;">
 M. Night Shyamalan
@@ -4312,7 +4312,7 @@ Bruce Willis
 Haley Joel Osment
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0167404/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_161>
+<http://www.imdb.com/title/tt0167404/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_161>
 </td>
 </tr>
 <tr>
@@ -4326,7 +4326,7 @@ Fargo
 8.1
 </td>
 <td style="text-align:center;">
-507352
+507357
 </td>
 <td style="text-align:center;">
 Joel Coen
@@ -4338,7 +4338,7 @@ William H. Macy
 Frances McDormand
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0116282/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_162>
+<http://www.imdb.com/title/tt0116282/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_162>
 </td>
 </tr>
 <tr>
@@ -4352,7 +4352,7 @@ No Country for Old Men
 8.1
 </td>
 <td style="text-align:center;">
-688916
+688928
 </td>
 <td style="text-align:center;">
 Ethan Coen
@@ -4364,7 +4364,7 @@ Tommy Lee Jones
 Javier Bardem
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0477348/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_163>
+<http://www.imdb.com/title/tt0477348/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_163>
 </td>
 </tr>
 <tr>
@@ -4378,7 +4378,7 @@ The Thing
 8.1
 </td>
 <td style="text-align:center;">
-293119
+293131
 </td>
 <td style="text-align:center;">
 John Carpenter
@@ -4390,7 +4390,7 @@ Kurt Russell
 Wilford Brimley
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0084787/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_164>
+<http://www.imdb.com/title/tt0084787/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_164>
 </td>
 </tr>
 <tr>
@@ -4404,7 +4404,7 @@ Andrei Rublev
 8.1
 </td>
 <td style="text-align:center;">
-28992
+28998
 </td>
 <td style="text-align:center;">
 Andrei Tarkovsky
@@ -4416,7 +4416,7 @@ Anatoliy Solonitsyn
 Ivan Lapikov
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0060107/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_165>
+<http://www.imdb.com/title/tt0060107/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_165>
 </td>
 </tr>
 <tr>
@@ -4430,7 +4430,7 @@ The Big Lebowski
 8.1
 </td>
 <td style="text-align:center;">
-600512
+600526
 </td>
 <td style="text-align:center;">
 Joel Coen
@@ -4442,7 +4442,7 @@ Jeff Bridges
 John Goodman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0118715/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_166>
+<http://www.imdb.com/title/tt0118715/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_166>
 </td>
 </tr>
 <tr>
@@ -4456,7 +4456,7 @@ Finding Nemo
 8.1
 </td>
 <td style="text-align:center;">
-782099
+782112
 </td>
 <td style="text-align:center;">
 Andrew Stanton
@@ -4468,7 +4468,7 @@ Albert Brooks
 Ellen DeGeneres
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0266543/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_167>
+<http://www.imdb.com/title/tt0266543/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_167>
 </td>
 </tr>
 <tr>
@@ -4482,7 +4482,7 @@ Tôkyô monogatari
 8.1
 </td>
 <td style="text-align:center;">
-33453
+33456
 </td>
 <td style="text-align:center;">
 Yasujirô Ozu
@@ -4494,7 +4494,7 @@ Chishû Ryû
 Chieko Higashiyama
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0046438/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_168>
+<http://www.imdb.com/title/tt0046438/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_168>
 </td>
 </tr>
 <tr>
@@ -4508,7 +4508,7 @@ Eskiya
 8.1
 </td>
 <td style="text-align:center;">
-44678
+44679
 </td>
 <td style="text-align:center;">
 Yavuz Turgul
@@ -4520,7 +4520,7 @@ Sener Sen
 Ugur Yücel
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0116231/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_169>
+<http://www.imdb.com/title/tt0116231/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_169>
 </td>
 </tr>
 <tr>
@@ -4534,7 +4534,7 @@ There Will Be Blood
 8.1
 </td>
 <td style="text-align:center;">
-418262
+418268
 </td>
 <td style="text-align:center;">
 Paul Thomas Anderson
@@ -4546,7 +4546,7 @@ Daniel Day-Lewis
 Paul Dano
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0469494/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_170>
+<http://www.imdb.com/title/tt0469494/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_170>
 </td>
 </tr>
 <tr>
@@ -4572,7 +4572,7 @@ Paul Newman
 George Kennedy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0061512/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_171>
+<http://www.imdb.com/title/tt0061512/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_171>
 </td>
 </tr>
 <tr>
@@ -4586,7 +4586,7 @@ Idi i smotri
 8.1
 </td>
 <td style="text-align:center;">
-33018
+33020
 </td>
 <td style="text-align:center;">
 Elem Klimov
@@ -4598,7 +4598,7 @@ Aleksey Kravchenko
 Olga Mironova
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0091251/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_172>
+<http://www.imdb.com/title/tt0091251/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_172>
 </td>
 </tr>
 <tr>
@@ -4612,7 +4612,7 @@ Rebecca
 8.1
 </td>
 <td style="text-align:center;">
-97795
+97796
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -4624,7 +4624,7 @@ Laurence Olivier
 Joan Fontaine
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0032976/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_173>
+<http://www.imdb.com/title/tt0032976/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_173>
 </td>
 </tr>
 <tr>
@@ -4638,7 +4638,7 @@ Hacksaw Ridge
 8.1
 </td>
 <td style="text-align:center;">
-281556
+281585
 </td>
 <td style="text-align:center;">
 Mel Gibson
@@ -4650,7 +4650,7 @@ Andrew Garfield
 Sam Worthington
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2119532/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_174>
+<http://www.imdb.com/title/tt2119532/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_174>
 </td>
 </tr>
 <tr>
@@ -4664,7 +4664,7 @@ Kill Bill: Vol. 1
 8.1
 </td>
 <td style="text-align:center;">
-817920
+817937
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -4676,7 +4676,7 @@ Uma Thurman
 David Carradine
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0266697/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_175>
+<http://www.imdb.com/title/tt0266697/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_175>
 </td>
 </tr>
 <tr>
@@ -4690,7 +4690,7 @@ How to Train Your Dragon
 8.1
 </td>
 <td style="text-align:center;">
-545677
+545688
 </td>
 <td style="text-align:center;">
 Dean DeBlois
@@ -4702,7 +4702,7 @@ Jay Baruchel
 Gerard Butler
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0892769/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_176>
+<http://www.imdb.com/title/tt0892769/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_176>
 </td>
 </tr>
 <tr>
@@ -4716,7 +4716,7 @@ Rang De Basanti
 8.1
 </td>
 <td style="text-align:center;">
-85885
+85889
 </td>
 <td style="text-align:center;">
 Rakeysh Omprakash Mehra
@@ -4728,7 +4728,7 @@ Aamir Khan
 Soha Ali Khan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0405508/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_177>
+<http://www.imdb.com/title/tt0405508/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_177>
 </td>
 </tr>
 <tr>
@@ -4742,7 +4742,7 @@ Mary and Max
 8.1
 </td>
 <td style="text-align:center;">
-134789
+134790
 </td>
 <td style="text-align:center;">
 Adam Elliot
@@ -4754,7 +4754,7 @@ Toni Collette
 Philip Seymour Hoffman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0978762/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_178>
+<http://www.imdb.com/title/tt0978762/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_178>
 </td>
 </tr>
 <tr>
@@ -4768,7 +4768,7 @@ Gone Girl
 8.1
 </td>
 <td style="text-align:center;">
-672288
+672299
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -4780,7 +4780,7 @@ Ben Affleck
 Rosamund Pike
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2267998/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_179>
+<http://www.imdb.com/title/tt2267998/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_179>
 </td>
 </tr>
 <tr>
@@ -4794,7 +4794,7 @@ La passion de Jeanne d'Arc
 8.1
 </td>
 <td style="text-align:center;">
-31254
+31255
 </td>
 <td style="text-align:center;">
 Carl Theodor Dreyer
@@ -4806,7 +4806,7 @@ Maria Falconetti
 Eugene Silvain
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0019254/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_180>
+<http://www.imdb.com/title/tt0019254/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_180>
 </td>
 </tr>
 <tr>
@@ -4820,7 +4820,7 @@ Shutter Island
 8.1
 </td>
 <td style="text-align:center;">
-897510
+897522
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -4832,7 +4832,7 @@ Leonardo DiCaprio
 Emily Mortimer
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1130884/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_181>
+<http://www.imdb.com/title/tt1130884/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_181>
 </td>
 </tr>
 <tr>
@@ -4846,7 +4846,7 @@ Into the Wild
 8.1
 </td>
 <td style="text-align:center;">
-478413
+478418
 </td>
 <td style="text-align:center;">
 Sean Penn
@@ -4858,33 +4858,7 @@ Emile Hirsch
 Vince Vaughn
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0758758/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_182>
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-La La Land
-</td>
-<td style="text-align:center;">
-2016
-</td>
-<td style="text-align:center;">
-8.1
-</td>
-<td style="text-align:center;">
-328901
-</td>
-<td style="text-align:center;">
-Damien Chazelle
-</td>
-<td style="text-align:center;">
-Ryan Gosling
-</td>
-<td style="text-align:center;">
-Emma Stone
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt3783958/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_183>
+<http://www.imdb.com/title/tt0758758/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_182>
 </td>
 </tr>
 <tr>
@@ -4898,7 +4872,7 @@ Life of Brian
 8.1
 </td>
 <td style="text-align:center;">
-300048
+300054
 </td>
 <td style="text-align:center;">
 Terry Jones
@@ -4910,7 +4884,33 @@ Graham Chapman
 John Cleese
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0079470/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_184>
+<http://www.imdb.com/title/tt0079470/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_183>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+La La Land
+</td>
+<td style="text-align:center;">
+2016
+</td>
+<td style="text-align:center;">
+8.1
+</td>
+<td style="text-align:center;">
+328919
+</td>
+<td style="text-align:center;">
+Damien Chazelle
+</td>
+<td style="text-align:center;">
+Ryan Gosling
+</td>
+<td style="text-align:center;">
+Emma Stone
+</td>
+<td style="text-align:center;">
+<http://www.imdb.com/title/tt3783958/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_184>
 </td>
 </tr>
 <tr>
@@ -4936,7 +4936,7 @@ Clark Gable
 Claudette Colbert
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0025316/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_185>
+<http://www.imdb.com/title/tt0025316/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_185>
 </td>
 </tr>
 <tr>
@@ -4950,7 +4950,7 @@ Relatos salvajes
 8.1
 </td>
 <td style="text-align:center;">
-122297
+122301
 </td>
 <td style="text-align:center;">
 Damián Szifron
@@ -4962,7 +4962,7 @@ Darío Grandinetti
 María Marull
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt3011894/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_186>
+<http://www.imdb.com/title/tt3011894/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_186>
 </td>
 </tr>
 <tr>
@@ -4976,7 +4976,7 @@ Logan
 8.1
 </td>
 <td style="text-align:center;">
-415666
+415695
 </td>
 <td style="text-align:center;">
 James Mangold
@@ -4988,7 +4988,7 @@ Hugh Jackman
 Patrick Stewart
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt3315342/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_187>
+<http://www.imdb.com/title/tt3315342/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_187>
 </td>
 </tr>
 <tr>
@@ -5002,7 +5002,7 @@ Platoon
 8.1
 </td>
 <td style="text-align:center;">
-321141
+321147
 </td>
 <td style="text-align:center;">
 Oliver Stone
@@ -5014,7 +5014,7 @@ Charlie Sheen
 Tom Berenger
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0091763/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_188>
+<http://www.imdb.com/title/tt0091763/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_188>
 </td>
 </tr>
 <tr>
@@ -5028,7 +5028,7 @@ Hotel Rwanda
 8.1
 </td>
 <td style="text-align:center;">
-289529
+289536
 </td>
 <td style="text-align:center;">
 Terry George
@@ -5040,7 +5040,7 @@ Don Cheadle
 Sophie Okonedo
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0395169/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_189>
+<http://www.imdb.com/title/tt0395169/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_189>
 </td>
 </tr>
 <tr>
@@ -5054,7 +5054,7 @@ Le salaire de la peur
 8.1
 </td>
 <td style="text-align:center;">
-40299
+40303
 </td>
 <td style="text-align:center;">
 Henri-Georges Clouzot
@@ -5066,7 +5066,7 @@ Yves Montand
 Charles Vanel
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0046268/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_190>
+<http://www.imdb.com/title/tt0046268/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_190>
 </td>
 </tr>
 <tr>
@@ -5080,7 +5080,7 @@ Network
 8.1
 </td>
 <td style="text-align:center;">
-116166
+116170
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -5092,7 +5092,7 @@ Faye Dunaway
 William Holden
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0074958/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_191>
+<http://www.imdb.com/title/tt0074958/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_191>
 </td>
 </tr>
 <tr>
@@ -5106,7 +5106,7 @@ In the Name of the Father
 8.1
 </td>
 <td style="text-align:center;">
-124926
+124927
 </td>
 <td style="text-align:center;">
 Jim Sheridan
@@ -5118,7 +5118,7 @@ Daniel Day-Lewis
 Pete Postlethwaite
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0107207/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_192>
+<http://www.imdb.com/title/tt0107207/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_192>
 </td>
 </tr>
 <tr>
@@ -5132,7 +5132,7 @@ Stand by Me
 8.1
 </td>
 <td style="text-align:center;">
-303256
+303263
 </td>
 <td style="text-align:center;">
 Rob Reiner
@@ -5144,7 +5144,7 @@ Wil Wheaton
 River Phoenix
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0092005/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_193>
+<http://www.imdb.com/title/tt0092005/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_193>
 </td>
 </tr>
 <tr>
@@ -5158,7 +5158,7 @@ Rush
 8.1
 </td>
 <td style="text-align:center;">
-355158
+355163
 </td>
 <td style="text-align:center;">
 Ron Howard
@@ -5170,7 +5170,7 @@ Daniel Brühl
 Chris Hemsworth
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1979320/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_194>
+<http://www.imdb.com/title/tt1979320/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_194>
 </td>
 </tr>
 <tr>
@@ -5184,7 +5184,7 @@ A Wednesday
 8.1
 </td>
 <td style="text-align:center;">
-56114
+56117
 </td>
 <td style="text-align:center;">
 Neeraj Pandey
@@ -5196,7 +5196,7 @@ Anupam Kher
 Naseeruddin Shah
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1280558/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_195>
+<http://www.imdb.com/title/tt1280558/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_195>
 </td>
 </tr>
 <tr>
@@ -5210,7 +5210,7 @@ Ben-Hur
 8.1
 </td>
 <td style="text-align:center;">
-180616
+180619
 </td>
 <td style="text-align:center;">
 William Wyler
@@ -5222,7 +5222,7 @@ Charlton Heston
 Jack Hawkins
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0052618/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_196>
+<http://www.imdb.com/title/tt0052618/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_196>
 </td>
 </tr>
 <tr>
@@ -5236,7 +5236,7 @@ The Grand Budapest Hotel
 8.1
 </td>
 <td style="text-align:center;">
-560430
+560443
 </td>
 <td style="text-align:center;">
 Wes Anderson
@@ -5248,7 +5248,7 @@ Ralph Fiennes
 F. Murray Abraham
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2278388/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_197>
+<http://www.imdb.com/title/tt2278388/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_197>
 </td>
 </tr>
 <tr>
@@ -5262,7 +5262,7 @@ Persona
 8.1
 </td>
 <td style="text-align:center;">
-72224
+72227
 </td>
 <td style="text-align:center;">
 Ingmar Bergman
@@ -5274,7 +5274,7 @@ Bibi Andersson
 Liv Ullmann
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0060827/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_198>
+<http://www.imdb.com/title/tt0060827/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_198>
 </td>
 </tr>
 <tr>
@@ -5288,7 +5288,7 @@ Les quatre cents coups
 8.1
 </td>
 <td style="text-align:center;">
-79663
+79667
 </td>
 <td style="text-align:center;">
 François Truffaut
@@ -5300,7 +5300,7 @@ Jean-Pierre Léaud
 Albert Rémy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0053198/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_199>
+<http://www.imdb.com/title/tt0053198/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_199>
 </td>
 </tr>
 <tr>
@@ -5314,7 +5314,7 @@ Jurassic Park
 8.1
 </td>
 <td style="text-align:center;">
-695247
+695263
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -5326,7 +5326,7 @@ Sam Neill
 Laura Dern
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0107290/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_200>
+<http://www.imdb.com/title/tt0107290/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_200>
 </td>
 </tr>
 <tr>
@@ -5352,7 +5352,7 @@ Kang-ho Song
 Sang-kyung Kim
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0353969/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_201>
+<http://www.imdb.com/title/tt0353969/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_201>
 </td>
 </tr>
 <tr>
@@ -5366,7 +5366,7 @@ Sang-kyung Kim
 8.1
 </td>
 <td style="text-align:center;">
-512426
+512437
 </td>
 <td style="text-align:center;">
 Steve McQueen
@@ -5378,7 +5378,7 @@ Chiwetel Ejiofor
 Michael Kenneth Williams
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2024544/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_202>
+<http://www.imdb.com/title/tt2024544/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_202>
 </td>
 </tr>
 <tr>
@@ -5392,7 +5392,7 @@ Mad Max: Fury Road
 8.1
 </td>
 <td style="text-align:center;">
-675899
+675918
 </td>
 <td style="text-align:center;">
 George Miller
@@ -5404,7 +5404,7 @@ Tom Hardy
 Charlize Theron
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1392190/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_203>
+<http://www.imdb.com/title/tt1392190/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_203>
 </td>
 </tr>
 <tr>
@@ -5418,7 +5418,7 @@ Million Dollar Baby
 8.1
 </td>
 <td style="text-align:center;">
-535296
+535304
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -5430,7 +5430,7 @@ Hilary Swank
 Clint Eastwood
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0405159/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_204>
+<http://www.imdb.com/title/tt0405159/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_204>
 </td>
 </tr>
 <tr>
@@ -5444,7 +5444,7 @@ Thor: Ragnarok
 8.1
 </td>
 <td style="text-align:center;">
-166419
+166491
 </td>
 <td style="text-align:center;">
 Taika Waititi
@@ -5456,7 +5456,7 @@ Chris Hemsworth
 Tom Hiddleston
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt3501632/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_205>
+<http://www.imdb.com/title/tt3501632/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_205>
 </td>
 </tr>
 <tr>
@@ -5470,7 +5470,7 @@ Spotlight
 8.1
 </td>
 <td style="text-align:center;">
-296763
+296772
 </td>
 <td style="text-align:center;">
 Tom McCarthy
@@ -5482,7 +5482,7 @@ Mark Ruffalo
 Michael Keaton
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1895587/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_206>
+<http://www.imdb.com/title/tt1895587/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_206>
 </td>
 </tr>
 <tr>
@@ -5496,7 +5496,7 @@ Stalker
 8.1
 </td>
 <td style="text-align:center;">
-80913
+80914
 </td>
 <td style="text-align:center;">
 Andrei Tarkovsky
@@ -5508,7 +5508,7 @@ Alisa Freyndlikh
 Aleksandr Kaydanovskiy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0079944/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_207>
+<http://www.imdb.com/title/tt0079944/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_207>
 </td>
 </tr>
 <tr>
@@ -5522,7 +5522,7 @@ The Truman Show
 8.1
 </td>
 <td style="text-align:center;">
-751722
+751732
 </td>
 <td style="text-align:center;">
 Peter Weir
@@ -5534,7 +5534,7 @@ Jim Carrey
 Ed Harris
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0120382/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_208>
+<http://www.imdb.com/title/tt0120382/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_208>
 </td>
 </tr>
 <tr>
@@ -5548,7 +5548,7 @@ Amores perros
 8.1
 </td>
 <td style="text-align:center;">
-189944
+189949
 </td>
 <td style="text-align:center;">
 Alejandro G. Iñárritu
@@ -5560,7 +5560,7 @@ Emilio Echevarría
 Gael García Bernal
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0245712/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_209>
+<http://www.imdb.com/title/tt0245712/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_209>
 </td>
 </tr>
 <tr>
@@ -5574,7 +5574,7 @@ Butch Cassidy and the Sundance Kid
 8.1
 </td>
 <td style="text-align:center;">
-168665
+168667
 </td>
 <td style="text-align:center;">
 George Roy Hill
@@ -5586,7 +5586,7 @@ Paul Newman
 Robert Redford
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0064115/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_210>
+<http://www.imdb.com/title/tt0064115/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_210>
 </td>
 </tr>
 <tr>
@@ -5600,7 +5600,7 @@ Hachi: A Dog's Tale
 8.1
 </td>
 <td style="text-align:center;">
-190527
+190535
 </td>
 <td style="text-align:center;">
 Lasse Hallström
@@ -5612,7 +5612,7 @@ Richard Gere
 Joan Allen
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1028532/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_211>
+<http://www.imdb.com/title/tt1028532/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_211>
 </td>
 </tr>
 <tr>
@@ -5626,7 +5626,7 @@ Kaze no tani no Naushika
 8.1
 </td>
 <td style="text-align:center;">
-110970
+110973
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -5638,7 +5638,7 @@ Sumi Shimamoto
 Mahito Tsujimura
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0087544/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_212>
+<http://www.imdb.com/title/tt0087544/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_212>
 </td>
 </tr>
 <tr>
@@ -5652,7 +5652,7 @@ Before Sunrise
 8.1
 </td>
 <td style="text-align:center;">
-210520
+210524
 </td>
 <td style="text-align:center;">
 Richard Linklater
@@ -5664,7 +5664,7 @@ Ethan Hawke
 Julie Delpy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0112471/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_213>
+<http://www.imdb.com/title/tt0112471/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_213>
 </td>
 </tr>
 <tr>
@@ -5678,7 +5678,7 @@ The Princess Bride
 8.1
 </td>
 <td style="text-align:center;">
-325194
+325200
 </td>
 <td style="text-align:center;">
 Rob Reiner
@@ -5690,7 +5690,7 @@ Cary Elwes
 Mandy Patinkin
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0093779/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_214>
+<http://www.imdb.com/title/tt0093779/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_214>
 </td>
 </tr>
 <tr>
@@ -5704,7 +5704,7 @@ The Maltese Falcon
 8.1
 </td>
 <td style="text-align:center;">
-125649
+125651
 </td>
 <td style="text-align:center;">
 John Huston
@@ -5716,7 +5716,7 @@ Humphrey Bogart
 Mary Astor
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0033870/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_215>
+<http://www.imdb.com/title/tt0033870/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_215>
 </td>
 </tr>
 <tr>
@@ -5730,7 +5730,7 @@ Prisoners
 8.0
 </td>
 <td style="text-align:center;">
-459948
+459957
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -5742,7 +5742,7 @@ Hugh Jackman
 Jake Gyllenhaal
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1392214/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_216>
+<http://www.imdb.com/title/tt1392214/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_216>
 </td>
 </tr>
 <tr>
@@ -5756,7 +5756,7 @@ Paper Moon
 8.0
 </td>
 <td style="text-align:center;">
-27726
+27727
 </td>
 <td style="text-align:center;">
 Peter Bogdanovich
@@ -5768,7 +5768,7 @@ Ryan O'Neal
 Tatum O'Neal
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0070510/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_217>
+<http://www.imdb.com/title/tt0070510/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_217>
 </td>
 </tr>
 <tr>
@@ -5782,7 +5782,7 @@ Le notti di Cabiria
 8.0
 </td>
 <td style="text-align:center;">
-30847
+30849
 </td>
 <td style="text-align:center;">
 Federico Fellini
@@ -5794,7 +5794,7 @@ Giulietta Masina
 François Périer
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0050783/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_218>
+<http://www.imdb.com/title/tt0050783/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_218>
 </td>
 </tr>
 <tr>
@@ -5808,7 +5808,7 @@ Harry Potter and the Deathly Hallows: Part 2
 8.0
 </td>
 <td style="text-align:center;">
-617902
+617907
 </td>
 <td style="text-align:center;">
 David Yates
@@ -5820,7 +5820,7 @@ Daniel Radcliffe
 Emma Watson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1201607/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_219>
+<http://www.imdb.com/title/tt1201607/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_219>
 </td>
 </tr>
 <tr>
@@ -5834,7 +5834,7 @@ Catch Me If You Can
 8.0
 </td>
 <td style="text-align:center;">
-623610
+623624
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -5846,7 +5846,7 @@ Leonardo DiCaprio
 Tom Hanks
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0264464/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_220>
+<http://www.imdb.com/title/tt0264464/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_220>
 </td>
 </tr>
 <tr>
@@ -5860,7 +5860,7 @@ Rocky
 8.0
 </td>
 <td style="text-align:center;">
-423902
+423909
 </td>
 <td style="text-align:center;">
 John G. Avildsen
@@ -5872,7 +5872,7 @@ Sylvester Stallone
 Talia Shire
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0075148/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_221>
+<http://www.imdb.com/title/tt0075148/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_221>
 </td>
 </tr>
 <tr>
@@ -5886,7 +5886,7 @@ The Grapes of Wrath
 8.0
 </td>
 <td style="text-align:center;">
-70585
+70587
 </td>
 <td style="text-align:center;">
 John Ford
@@ -5898,7 +5898,7 @@ Henry Fonda
 Jane Darwell
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0032551/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_222>
+<http://www.imdb.com/title/tt0032551/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_222>
 </td>
 </tr>
 <tr>
@@ -5912,7 +5912,7 @@ Les diaboliques
 8.0
 </td>
 <td style="text-align:center;">
-47862
+47863
 </td>
 <td style="text-align:center;">
 Henri-Georges Clouzot
@@ -5924,7 +5924,7 @@ Simone Signoret
 Véra Clouzot
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0046911/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_223>
+<http://www.imdb.com/title/tt0046911/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_223>
 </td>
 </tr>
 <tr>
@@ -5938,7 +5938,7 @@ Touch of Evil
 8.0
 </td>
 <td style="text-align:center;">
-80742
+80743
 </td>
 <td style="text-align:center;">
 Orson Welles
@@ -5950,7 +5950,7 @@ Charlton Heston
 Orson Welles
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0052311/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_224>
+<http://www.imdb.com/title/tt0052311/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_224>
 </td>
 </tr>
 <tr>
@@ -5964,7 +5964,7 @@ Monsters, Inc.
 8.0
 </td>
 <td style="text-align:center;">
-661162
+661173
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -5976,7 +5976,7 @@ Billy Crystal
 John Goodman
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0198781/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_225>
+<http://www.imdb.com/title/tt0198781/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_225>
 </td>
 </tr>
 <tr>
@@ -5990,7 +5990,7 @@ Gandhi
 8.0
 </td>
 <td style="text-align:center;">
-189479
+189481
 </td>
 <td style="text-align:center;">
 Richard Attenborough
@@ -6002,7 +6002,7 @@ Ben Kingsley
 John Gielgud
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0083987/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_226>
+<http://www.imdb.com/title/tt0083987/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_226>
 </td>
 </tr>
 <tr>
@@ -6016,7 +6016,7 @@ Donnie Darko
 8.0
 </td>
 <td style="text-align:center;">
-643559
+643568
 </td>
 <td style="text-align:center;">
 Richard Kelly
@@ -6028,7 +6028,7 @@ Jake Gyllenhaal
 Jena Malone
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0246578/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_227>
+<http://www.imdb.com/title/tt0246578/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_227>
 </td>
 </tr>
 <tr>
@@ -6042,7 +6042,7 @@ Barry Lyndon
 8.0
 </td>
 <td style="text-align:center;">
-114577
+114582
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -6054,7 +6054,7 @@ Ryan O'Neal
 Marisa Berenson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0072684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_228>
+<http://www.imdb.com/title/tt0072684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_228>
 </td>
 </tr>
 <tr>
@@ -6068,7 +6068,7 @@ Annie Hall
 8.0
 </td>
 <td style="text-align:center;">
-217016
+217017
 </td>
 <td style="text-align:center;">
 Woody Allen
@@ -6080,7 +6080,7 @@ Woody Allen
 Diane Keaton
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0075686/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_229>
+<http://www.imdb.com/title/tt0075686/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_229>
 </td>
 </tr>
 <tr>
@@ -6094,7 +6094,7 @@ The Terminator
 8.0
 </td>
 <td style="text-align:center;">
-665151
+665162
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -6106,7 +6106,7 @@ Arnold Schwarzenegger
 Linda Hamilton
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0088247/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_230>
+<http://www.imdb.com/title/tt0088247/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_230>
 </td>
 </tr>
 <tr>
@@ -6120,7 +6120,7 @@ The Bourne Ultimatum
 8.0
 </td>
 <td style="text-align:center;">
-542956
+542963
 </td>
 <td style="text-align:center;">
 Paul Greengrass
@@ -6132,7 +6132,7 @@ Matt Damon
 Edgar Ramírez
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0440963/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_231>
+<http://www.imdb.com/title/tt0440963/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_231>
 </td>
 </tr>
 <tr>
@@ -6146,7 +6146,7 @@ Groundhog Day
 8.0
 </td>
 <td style="text-align:center;">
-490262
+490270
 </td>
 <td style="text-align:center;">
 Harold Ramis
@@ -6158,7 +6158,7 @@ Bill Murray
 Andie MacDowell
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0107048/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_232>
+<http://www.imdb.com/title/tt0107048/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_232>
 </td>
 </tr>
 <tr>
@@ -6172,7 +6172,7 @@ The Wizard of Oz
 8.0
 </td>
 <td style="text-align:center;">
-320829
+320831
 </td>
 <td style="text-align:center;">
 Victor Fleming
@@ -6184,7 +6184,7 @@ Judy Garland
 Frank Morgan
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0032138/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_233>
+<http://www.imdb.com/title/tt0032138/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_233>
 </td>
 </tr>
 <tr>
@@ -6198,7 +6198,7 @@ La haine
 8.0
 </td>
 <td style="text-align:center;">
-117204
+117205
 </td>
 <td style="text-align:center;">
 Mathieu Kassovitz
@@ -6210,7 +6210,7 @@ Vincent Cassel
 Hubert Koundé
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0113247/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_234>
+<http://www.imdb.com/title/tt0113247/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_234>
 </td>
 </tr>
 <tr>
@@ -6224,7 +6224,7 @@ Hubert Koundé
 8.0
 </td>
 <td style="text-align:center;">
-87990
+87992
 </td>
 <td style="text-align:center;">
 Federico Fellini
@@ -6236,7 +6236,7 @@ Marcello Mastroianni
 Anouk Aimée
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0056801/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_235>
+<http://www.imdb.com/title/tt0056801/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_235>
 </td>
 </tr>
 <tr>
@@ -6250,7 +6250,7 @@ Munna Bhai M.B.B.S.
 8.0
 </td>
 <td style="text-align:center;">
-56211
+56213
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -6262,7 +6262,7 @@ Sunil Dutt
 Sanjay Dutt
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0374887/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_236>
+<http://www.imdb.com/title/tt0374887/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_236>
 </td>
 </tr>
 <tr>
@@ -6276,7 +6276,7 @@ Jaws
 8.0
 </td>
 <td style="text-align:center;">
-461136
+461146
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -6288,7 +6288,7 @@ Roy Scheider
 Robert Shaw
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0073195/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_237>
+<http://www.imdb.com/title/tt0073195/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_237>
 </td>
 </tr>
 <tr>
@@ -6302,7 +6302,7 @@ Star Wars: Episode VII - The Force Awakens
 8.0
 </td>
 <td style="text-align:center;">
-702892
+702969
 </td>
 <td style="text-align:center;">
 J.J. Abrams
@@ -6314,7 +6314,7 @@ Daisy Ridley
 John Boyega
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2488496/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_238>
+<http://www.imdb.com/title/tt2488496/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_238>
 </td>
 </tr>
 <tr>
@@ -6328,7 +6328,7 @@ The Best Years of Our Lives
 8.0
 </td>
 <td style="text-align:center;">
-45160
+45161
 </td>
 <td style="text-align:center;">
 William Wyler
@@ -6340,7 +6340,7 @@ Myrna Loy
 Dana Andrews
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0036868/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_239>
+<http://www.imdb.com/title/tt0036868/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_239>
 </td>
 </tr>
 <tr>
@@ -6354,7 +6354,7 @@ Twelve Monkeys
 8.0
 </td>
 <td style="text-align:center;">
-505690
+505695
 </td>
 <td style="text-align:center;">
 Terry Gilliam
@@ -6366,7 +6366,7 @@ Bruce Willis
 Madeleine Stowe
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0114746/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_240>
+<http://www.imdb.com/title/tt0114746/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_240>
 </td>
 </tr>
 <tr>
@@ -6380,7 +6380,7 @@ Mou gaan dou
 8.0
 </td>
 <td style="text-align:center;">
-101601
+101600
 </td>
 <td style="text-align:center;">
 Wai-Keung Lau
@@ -6392,7 +6392,7 @@ Andy Lau
 Tony Chiu-Wai Leung
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0338564/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_241>
+<http://www.imdb.com/title/tt0338564/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_241>
 </td>
 </tr>
 <tr>
@@ -6406,7 +6406,7 @@ Faa yeung nin wa
 8.0
 </td>
 <td style="text-align:center;">
-88843
+88844
 </td>
 <td style="text-align:center;">
 Kar-Wai Wong
@@ -6418,7 +6418,7 @@ Tony Chiu-Wai Leung
 Maggie Cheung
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0118694/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_242>
+<http://www.imdb.com/title/tt0118694/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_242>
 </td>
 </tr>
 <tr>
@@ -6432,7 +6432,7 @@ Paris, Texas
 8.0
 </td>
 <td style="text-align:center;">
-59458
+59460
 </td>
 <td style="text-align:center;">
 Wim Wenders
@@ -6444,7 +6444,7 @@ Harry Dean Stanton
 Nastassja Kinski
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0087884/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_243>
+<http://www.imdb.com/title/tt0087884/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_243>
 </td>
 </tr>
 <tr>
@@ -6458,7 +6458,7 @@ The Help
 8.0
 </td>
 <td style="text-align:center;">
-355548
+355551
 </td>
 <td style="text-align:center;">
 Tate Taylor
@@ -6470,7 +6470,7 @@ Emma Stone
 Viola Davis
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt1454029/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_244>
+<http://www.imdb.com/title/tt1454029/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_244>
 </td>
 </tr>
 <tr>
@@ -6484,7 +6484,7 @@ Dead Poets Society
 8.0
 </td>
 <td style="text-align:center;">
-310303
+310317
 </td>
 <td style="text-align:center;">
 Peter Weir
@@ -6496,7 +6496,7 @@ Robin Williams
 Robert Sean Leonard
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0097165/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_245>
+<http://www.imdb.com/title/tt0097165/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_245>
 </td>
 </tr>
 <tr>
@@ -6510,7 +6510,7 @@ Beauty and the Beast
 8.0
 </td>
 <td style="text-align:center;">
-350456
+350463
 </td>
 <td style="text-align:center;">
 Gary Trousdale
@@ -6522,7 +6522,7 @@ Paige O'Hara
 Robby Benson
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0101414/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_246>
+<http://www.imdb.com/title/tt0101414/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_246>
 </td>
 </tr>
 <tr>
@@ -6536,7 +6536,7 @@ PK
 8.0
 </td>
 <td style="text-align:center;">
-114505
+114513
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -6548,7 +6548,7 @@ Aamir Khan
 Anushka Sharma Kohli
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt2338151/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_247>
+<http://www.imdb.com/title/tt2338151/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_247>
 </td>
 </tr>
 <tr>
@@ -6574,7 +6574,7 @@ Brahim Hadjadj
 Jean Martin
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0058946/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_248>
+<http://www.imdb.com/title/tt0058946/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_248>
 </td>
 </tr>
 <tr>
@@ -6588,7 +6588,7 @@ Pirates of the Caribbean: The Curse of the Black Pearl
 8.0
 </td>
 <td style="text-align:center;">
-896342
+896353
 </td>
 <td style="text-align:center;">
 Gore Verbinski
@@ -6600,33 +6600,33 @@ Johnny Depp
 Geoffrey Rush
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt0325980/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_249>
+<http://www.imdb.com/title/tt0325980/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_249>
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
-Ah-ga-ssi
+Zerkalo
 </td>
 <td style="text-align:center;">
-2016
+1975
 </td>
 <td style="text-align:center;">
 8.0
 </td>
 <td style="text-align:center;">
-49017
+26573
 </td>
 <td style="text-align:center;">
-Chan-wook Park
+Andrei Tarkovsky
 </td>
 <td style="text-align:center;">
-Min-hee Kim
+Margarita Terekhova
 </td>
 <td style="text-align:center;">
-Jung-woo Ha
+Filipp Yankovskiy
 </td>
 <td style="text-align:center;">
-<http://www.imdb.com/title/tt4016934/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1TGCM8NQXMS40P0BR6X0&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_250>
+<http://www.imdb.com/title/tt0072443/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0GJ78YR994TP15R5Z0T8&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_250>
 </td>
 </tr>
 </tbody>
@@ -6683,7 +6683,7 @@ The Shawshank Redemption
 9.2
 </td>
 <td style="text-align:center;">
-1886772
+1886797
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -6706,7 +6706,7 @@ The Godfather
 9.2
 </td>
 <td style="text-align:center;">
-1288216
+1288241
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -6729,7 +6729,7 @@ The Godfather: Part II
 9.0
 </td>
 <td style="text-align:center;">
-888694
+888707
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -6752,7 +6752,7 @@ The Dark Knight
 9.0
 </td>
 <td style="text-align:center;">
-1862557
+1862579
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -6775,7 +6775,7 @@ Heath Ledger
 8.9
 </td>
 <td style="text-align:center;">
-517864
+517875
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -6798,7 +6798,7 @@ Schindler's List
 8.9
 </td>
 <td style="text-align:center;">
-970147
+970161
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -6821,7 +6821,7 @@ Pulp Fiction
 8.9
 </td>
 <td style="text-align:center;">
-1475822
+1475838
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -6844,7 +6844,7 @@ The Lord of the Rings: The Return of the King
 8.9
 </td>
 <td style="text-align:center;">
-1348173
+1348193
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -6867,7 +6867,7 @@ Il buono, il brutto, il cattivo
 8.8
 </td>
 <td style="text-align:center;">
-558932
+558941
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -6890,7 +6890,7 @@ Fight Club
 8.8
 </td>
 <td style="text-align:center;">
-1512187
+1512212
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -6913,7 +6913,7 @@ The Lord of the Rings: The Fellowship of the Ring
 8.8
 </td>
 <td style="text-align:center;">
-1368339
+1368362
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -6936,7 +6936,7 @@ Forrest Gump
 8.7
 </td>
 <td style="text-align:center;">
-1423957
+1423987
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -6959,7 +6959,7 @@ Star Wars: Episode V - The Empire Strikes Back
 8.7
 </td>
 <td style="text-align:center;">
-942464
+942508
 </td>
 <td style="text-align:center;">
 Irvin Kershner
@@ -6982,7 +6982,7 @@ Inception
 8.7
 </td>
 <td style="text-align:center;">
-1651410
+1651436
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -7005,7 +7005,7 @@ The Lord of the Rings: The Two Towers
 8.7
 </td>
 <td style="text-align:center;">
-1220263
+1220283
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -7028,7 +7028,7 @@ One Flew Over the Cuckoo's Nest
 8.7
 </td>
 <td style="text-align:center;">
-753207
+753224
 </td>
 <td style="text-align:center;">
 Milos Forman
@@ -7051,7 +7051,7 @@ Goodfellas
 8.7
 </td>
 <td style="text-align:center;">
-812985
+812998
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -7074,7 +7074,7 @@ The Matrix
 8.7
 </td>
 <td style="text-align:center;">
-1357252
+1357272
 </td>
 <td style="text-align:center;">
 Lana Wachowski
@@ -7097,7 +7097,7 @@ Shichinin no samurai
 8.6
 </td>
 <td style="text-align:center;">
-254227
+254232
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -7120,7 +7120,7 @@ Star Wars
 8.6
 </td>
 <td style="text-align:center;">
-1014722
+1014771
 </td>
 <td style="text-align:center;">
 George Lucas
@@ -7143,7 +7143,7 @@ Cidade de Deus
 8.6
 </td>
 <td style="text-align:center;">
-587241
+587248
 </td>
 <td style="text-align:center;">
 Fernando Meirelles
@@ -7166,7 +7166,7 @@ Se7en
 8.6
 </td>
 <td style="text-align:center;">
-1150613
+1150626
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -7189,7 +7189,7 @@ The Silence of the Lambs
 8.6
 </td>
 <td style="text-align:center;">
-1004772
+1004792
 </td>
 <td style="text-align:center;">
 Jonathan Demme
@@ -7212,7 +7212,7 @@ It's a Wonderful Life
 8.6
 </td>
 <td style="text-align:center;">
-312281
+312292
 </td>
 <td style="text-align:center;">
 Frank Capra
@@ -7235,7 +7235,7 @@ La vita è bella
 8.6
 </td>
 <td style="text-align:center;">
-484274
+484283
 </td>
 <td style="text-align:center;">
 Roberto Benigni
@@ -7258,7 +7258,7 @@ The Usual Suspects
 8.6
 </td>
 <td style="text-align:center;">
-824733
+824744
 </td>
 <td style="text-align:center;">
 Bryan Singer
@@ -7281,7 +7281,7 @@ Léon
 8.5
 </td>
 <td style="text-align:center;">
-818956
+818973
 </td>
 <td style="text-align:center;">
 Luc Besson
@@ -7304,7 +7304,7 @@ Saving Private Ryan
 8.5
 </td>
 <td style="text-align:center;">
-992822
+992840
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -7327,7 +7327,7 @@ Sen to Chihiro no kamikakushi
 8.5
 </td>
 <td style="text-align:center;">
-484940
+484949
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -7350,7 +7350,7 @@ Coco
 8.5
 </td>
 <td style="text-align:center;">
-35367
+35409
 </td>
 <td style="text-align:center;">
 Lee Unkrich
@@ -7373,7 +7373,7 @@ American History X
 8.5
 </td>
 <td style="text-align:center;">
-868200
+868219
 </td>
 <td style="text-align:center;">
 Tony Kaye
@@ -7396,7 +7396,7 @@ Once Upon a Time in the West
 8.5
 </td>
 <td style="text-align:center;">
-242557
+242562
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -7419,7 +7419,7 @@ Interstellar
 8.5
 </td>
 <td style="text-align:center;">
-1118110
+1118147
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -7442,7 +7442,7 @@ The Green Mile
 8.5
 </td>
 <td style="text-align:center;">
-893699
+893714
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -7465,7 +7465,7 @@ Psycho
 8.5
 </td>
 <td style="text-align:center;">
-476197
+476204
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -7488,7 +7488,7 @@ City Lights
 8.5
 </td>
 <td style="text-align:center;">
-125565
+125567
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -7511,7 +7511,7 @@ Casablanca
 8.5
 </td>
 <td style="text-align:center;">
-429626
+429632
 </td>
 <td style="text-align:center;">
 Michael Curtiz
@@ -7534,7 +7534,7 @@ The Intouchables
 8.5
 </td>
 <td style="text-align:center;">
-590043
+590059
 </td>
 <td style="text-align:center;">
 Olivier Nakache
@@ -7557,7 +7557,7 @@ Modern Times
 8.5
 </td>
 <td style="text-align:center;">
-164947
+164950
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -7580,7 +7580,7 @@ The Pianist
 8.5
 </td>
 <td style="text-align:center;">
-567086
+567098
 </td>
 <td style="text-align:center;">
 Roman Polanski
@@ -7603,7 +7603,7 @@ Raiders of the Lost Ark
 8.5
 </td>
 <td style="text-align:center;">
-732280
+732289
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -7626,7 +7626,7 @@ The Departed
 8.5
 </td>
 <td style="text-align:center;">
-974437
+974454
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -7649,7 +7649,7 @@ Rear Window
 8.5
 </td>
 <td style="text-align:center;">
-355115
+355119
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -7672,7 +7672,7 @@ Terminator 2: Judgment Day
 8.5
 </td>
 <td style="text-align:center;">
-823596
+823611
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -7695,7 +7695,7 @@ Back to the Future
 8.5
 </td>
 <td style="text-align:center;">
-828693
+828714
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -7718,7 +7718,7 @@ Whiplash
 8.5
 </td>
 <td style="text-align:center;">
-516186
+516207
 </td>
 <td style="text-align:center;">
 Damien Chazelle
@@ -7741,7 +7741,7 @@ Gladiator
 8.5
 </td>
 <td style="text-align:center;">
-1094543
+1094559
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -7764,7 +7764,7 @@ The Lion King
 8.5
 </td>
 <td style="text-align:center;">
-734665
+734680
 </td>
 <td style="text-align:center;">
 Roger Allers
@@ -7787,7 +7787,7 @@ The Prestige
 8.5
 </td>
 <td style="text-align:center;">
-957975
+957992
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -7810,7 +7810,7 @@ Memento
 8.5
 </td>
 <td style="text-align:center;">
-941385
+941398
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -7833,7 +7833,7 @@ Apocalypse Now
 8.5
 </td>
 <td style="text-align:center;">
-497217
+497227
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -7856,7 +7856,7 @@ Alien
 8.4
 </td>
 <td style="text-align:center;">
-642531
+642546
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -7879,7 +7879,7 @@ The Great Dictator
 8.4
 </td>
 <td style="text-align:center;">
-157633
+157636
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -7902,7 +7902,7 @@ Sunset Blvd.
 8.4
 </td>
 <td style="text-align:center;">
-157317
+157319
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -7925,7 +7925,7 @@ Nuovo Cinema Paradiso
 8.4
 </td>
 <td style="text-align:center;">
-174558
+174561
 </td>
 <td style="text-align:center;">
 Giuseppe Tornatore
@@ -7948,7 +7948,7 @@ Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
 8.4
 </td>
 <td style="text-align:center;">
-378779
+378784
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -7971,7 +7971,7 @@ The Lives of Others
 8.4
 </td>
 <td style="text-align:center;">
-289879
+289881
 </td>
 <td style="text-align:center;">
 Florian Henckel von Donnersmarck
@@ -7994,7 +7994,7 @@ Hotaru no haka
 8.4
 </td>
 <td style="text-align:center;">
-164221
+164224
 </td>
 <td style="text-align:center;">
 Isao Takahata
@@ -8017,7 +8017,7 @@ Paths of Glory
 8.4
 </td>
 <td style="text-align:center;">
-136850
+136854
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -8040,7 +8040,7 @@ Django Unchained
 8.4
 </td>
 <td style="text-align:center;">
-1086262
+1086283
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -8063,7 +8063,7 @@ The Shining
 8.4
 </td>
 <td style="text-align:center;">
-691339
+691351
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -8086,7 +8086,7 @@ WALL·E
 8.4
 </td>
 <td style="text-align:center;">
-811234
+811256
 </td>
 <td style="text-align:center;">
 Andrew Stanton
@@ -8109,7 +8109,7 @@ American Beauty
 8.4
 </td>
 <td style="text-align:center;">
-910699
+910711
 </td>
 <td style="text-align:center;">
 Sam Mendes
@@ -8132,7 +8132,7 @@ Mononoke-hime
 8.4
 </td>
 <td style="text-align:center;">
-256833
+256835
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -8155,7 +8155,7 @@ The Dark Knight Rises
 8.4
 </td>
 <td style="text-align:center;">
-1268237
+1268248
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -8178,7 +8178,7 @@ Blade Runner 2049
 8.4
 </td>
 <td style="text-align:center;">
-158183
+158210
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -8201,7 +8201,7 @@ Oldeuboi
 8.4
 </td>
 <td style="text-align:center;">
-406944
+406952
 </td>
 <td style="text-align:center;">
 Chan-wook Park
@@ -8224,7 +8224,7 @@ Witness for the Prosecution
 8.4
 </td>
 <td style="text-align:center;">
-75596
+75599
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -8247,7 +8247,7 @@ Aliens
 8.4
 </td>
 <td style="text-align:center;">
-546989
+546998
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -8270,7 +8270,7 @@ Once Upon a Time in America
 8.4
 </td>
 <td style="text-align:center;">
-247177
+247182
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -8293,7 +8293,7 @@ Das Boot
 8.3
 </td>
 <td style="text-align:center;">
-186994
+186998
 </td>
 <td style="text-align:center;">
 Wolfgang Petersen
@@ -8316,7 +8316,7 @@ Dangal
 8.3
 </td>
 <td style="text-align:center;">
-77496
+77506
 </td>
 <td style="text-align:center;">
 Nitesh Tiwari
@@ -8339,7 +8339,7 @@ Citizen Kane
 8.3
 </td>
 <td style="text-align:center;">
-328960
+328963
 </td>
 <td style="text-align:center;">
 Orson Welles
@@ -8362,7 +8362,7 @@ Vertigo
 8.3
 </td>
 <td style="text-align:center;">
-282556
+282564
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -8385,7 +8385,7 @@ North by Northwest
 8.3
 </td>
 <td style="text-align:center;">
-243443
+243445
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -8408,7 +8408,7 @@ Star Wars: Episode VI - Return of the Jedi
 8.3
 </td>
 <td style="text-align:center;">
-773082
+773130
 </td>
 <td style="text-align:center;">
 Richard Marquand
@@ -8431,7 +8431,7 @@ Braveheart
 8.3
 </td>
 <td style="text-align:center;">
-817217
+817232
 </td>
 <td style="text-align:center;">
 Mel Gibson
@@ -8454,7 +8454,7 @@ Reservoir Dogs
 8.3
 </td>
 <td style="text-align:center;">
-745159
+745172
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -8477,7 +8477,7 @@ M
 8.3
 </td>
 <td style="text-align:center;">
-111647
+111648
 </td>
 <td style="text-align:center;">
 Fritz Lang
@@ -8500,7 +8500,7 @@ Requiem for a Dream
 8.3
 </td>
 <td style="text-align:center;">
-638904
+638918
 </td>
 <td style="text-align:center;">
 Darren Aronofsky
@@ -8523,7 +8523,7 @@ Kimi no na wa.
 8.3
 </td>
 <td style="text-align:center;">
-65545
+65561
 </td>
 <td style="text-align:center;">
 Makoto Shinkai
@@ -8546,7 +8546,7 @@ Taare Zameen Par
 8.3
 </td>
 <td style="text-align:center;">
-113090
+113091
 </td>
 <td style="text-align:center;">
 Aamir Khan
@@ -8569,7 +8569,7 @@ Amélie
 8.3
 </td>
 <td style="text-align:center;">
-594444
+594450
 </td>
 <td style="text-align:center;">
 Jean-Pierre Jeunet
@@ -8592,7 +8592,7 @@ A Clockwork Orange
 8.3
 </td>
 <td style="text-align:center;">
-623097
+623106
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -8615,7 +8615,7 @@ Lawrence of Arabia
 8.3
 </td>
 <td style="text-align:center;">
-215491
+215495
 </td>
 <td style="text-align:center;">
 David Lean
@@ -8638,7 +8638,7 @@ Amadeus
 8.3
 </td>
 <td style="text-align:center;">
-302920
+302932
 </td>
 <td style="text-align:center;">
 Milos Forman
@@ -8661,7 +8661,7 @@ Double Indemnity
 8.3
 </td>
 <td style="text-align:center;">
-110710
+110712
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -8684,7 +8684,7 @@ Eternal Sunshine of the Spotless Mind
 8.3
 </td>
 <td style="text-align:center;">
-745692
+745702
 </td>
 <td style="text-align:center;">
 Michel Gondry
@@ -8707,7 +8707,7 @@ Taxi Driver
 8.3
 </td>
 <td style="text-align:center;">
-570855
+570867
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -8730,7 +8730,7 @@ To Kill a Mockingbird
 8.3
 </td>
 <td style="text-align:center;">
-242783
+242789
 </td>
 <td style="text-align:center;">
 Robert Mulligan
@@ -8753,7 +8753,7 @@ Full Metal Jacket
 8.3
 </td>
 <td style="text-align:center;">
-545349
+545360
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -8776,7 +8776,7 @@ R. Lee Ermey
 8.3
 </td>
 <td style="text-align:center;">
-481309
+481321
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -8799,7 +8799,7 @@ Singin' in the Rain
 8.3
 </td>
 <td style="text-align:center;">
-172640
+172643
 </td>
 <td style="text-align:center;">
 Stanley Donen
@@ -8822,7 +8822,7 @@ Toy Story
 8.3
 </td>
 <td style="text-align:center;">
-704090
+704105
 </td>
 <td style="text-align:center;">
 John Lasseter
@@ -8845,7 +8845,7 @@ Tim Allen
 8.3
 </td>
 <td style="text-align:center;">
-256287
+256296
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -8868,7 +8868,7 @@ The Sting
 8.3
 </td>
 <td style="text-align:center;">
-196044
+196048
 </td>
 <td style="text-align:center;">
 George Roy Hill
@@ -8891,7 +8891,7 @@ Toy Story 3
 8.3
 </td>
 <td style="text-align:center;">
-611443
+611453
 </td>
 <td style="text-align:center;">
 Lee Unkrich
@@ -8914,7 +8914,7 @@ Inglourious Basterds
 8.3
 </td>
 <td style="text-align:center;">
-1003151
+1003177
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -8937,7 +8937,7 @@ Ladri di biciclette
 8.3
 </td>
 <td style="text-align:center;">
-108700
+108702
 </td>
 <td style="text-align:center;">
 Vittorio De Sica
@@ -8960,7 +8960,7 @@ The Kid
 8.3
 </td>
 <td style="text-align:center;">
-80589
+80592
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -8983,7 +8983,7 @@ Snatch
 8.3
 </td>
 <td style="text-align:center;">
-662235
+662247
 </td>
 <td style="text-align:center;">
 Guy Ritchie
@@ -9006,7 +9006,7 @@ Monty Python and the Holy Grail
 8.3
 </td>
 <td style="text-align:center;">
-419266
+419270
 </td>
 <td style="text-align:center;">
 Terry Gilliam
@@ -9029,7 +9029,7 @@ Good Will Hunting
 8.3
 </td>
 <td style="text-align:center;">
-686189
+686204
 </td>
 <td style="text-align:center;">
 Gus Van Sant
@@ -9052,7 +9052,7 @@ Jagten
 8.3
 </td>
 <td style="text-align:center;">
-205766
+205771
 </td>
 <td style="text-align:center;">
 Thomas Vinterberg
@@ -9075,7 +9075,7 @@ Per qualche dollaro in più
 8.3
 </td>
 <td style="text-align:center;">
-179638
+179642
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -9098,7 +9098,7 @@ Scarface
 8.3
 </td>
 <td style="text-align:center;">
-599079
+599094
 </td>
 <td style="text-align:center;">
 Brian De Palma
@@ -9121,7 +9121,7 @@ L.A. Confidential
 8.3
 </td>
 <td style="text-align:center;">
-453678
+453681
 </td>
 <td style="text-align:center;">
 Curtis Hanson
@@ -9144,7 +9144,7 @@ The Apartment
 8.2
 </td>
 <td style="text-align:center;">
-124421
+124424
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -9190,7 +9190,7 @@ Jodaeiye Nader az Simin
 8.2
 </td>
 <td style="text-align:center;">
-172939
+172946
 </td>
 <td style="text-align:center;">
 Asghar Farhadi
@@ -9213,7 +9213,7 @@ Rashômon
 8.2
 </td>
 <td style="text-align:center;">
-116463
+116467
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -9236,7 +9236,7 @@ Indiana Jones and the Last Crusade
 8.2
 </td>
 <td style="text-align:center;">
-573573
+573587
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -9282,7 +9282,7 @@ Yôjinbô
 8.2
 </td>
 <td style="text-align:center;">
-83504
+83508
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -9305,7 +9305,7 @@ Babam ve Oglum
 8.2
 </td>
 <td style="text-align:center;">
-51667
+51670
 </td>
 <td style="text-align:center;">
 Çagan Irmak
@@ -9328,7 +9328,7 @@ Up
 8.2
 </td>
 <td style="text-align:center;">
-753989
+754000
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -9351,7 +9351,7 @@ Batman Begins
 8.2
 </td>
 <td style="text-align:center;">
-1088852
+1088871
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -9374,7 +9374,7 @@ Some Like It Hot
 8.2
 </td>
 <td style="text-align:center;">
-195889
+195893
 </td>
 <td style="text-align:center;">
 Billy Wilder
@@ -9397,7 +9397,7 @@ The Treasure of the Sierra Madre
 8.2
 </td>
 <td style="text-align:center;">
-88728
+88730
 </td>
 <td style="text-align:center;">
 John Huston
@@ -9420,7 +9420,7 @@ Unforgiven
 8.2
 </td>
 <td style="text-align:center;">
-308215
+308221
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -9443,7 +9443,7 @@ Der Untergang
 8.2
 </td>
 <td style="text-align:center;">
-275887
+275889
 </td>
 <td style="text-align:center;">
 Oliver Hirschbiegel
@@ -9466,7 +9466,7 @@ Die Hard
 8.2
 </td>
 <td style="text-align:center;">
-654813
+654825
 </td>
 <td style="text-align:center;">
 John McTiernan
@@ -9489,7 +9489,7 @@ Raging Bull
 8.2
 </td>
 <td style="text-align:center;">
-259891
+259895
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -9512,7 +9512,7 @@ Heat
 8.2
 </td>
 <td style="text-align:center;">
-475919
+475929
 </td>
 <td style="text-align:center;">
 Michael Mann
@@ -9535,7 +9535,7 @@ The Third Man
 8.2
 </td>
 <td style="text-align:center;">
-127342
+127344
 </td>
 <td style="text-align:center;">
 Carol Reed
@@ -9558,7 +9558,7 @@ Bacheha-Ye aseman
 8.2
 </td>
 <td style="text-align:center;">
-38897
+38898
 </td>
 <td style="text-align:center;">
 Majid Majidi
@@ -9581,7 +9581,7 @@ The Great Escape
 8.2
 </td>
 <td style="text-align:center;">
-184024
+184027
 </td>
 <td style="text-align:center;">
 John Sturges
@@ -9627,7 +9627,7 @@ Chinatown
 8.2
 </td>
 <td style="text-align:center;">
-240336
+240340
 </td>
 <td style="text-align:center;">
 Roman Polanski
@@ -9650,7 +9650,7 @@ Pan's Labyrinth
 8.2
 </td>
 <td style="text-align:center;">
-518665
+518672
 </td>
 <td style="text-align:center;">
 Guillermo del Toro
@@ -9673,7 +9673,7 @@ Tonari no Totoro
 8.2
 </td>
 <td style="text-align:center;">
-203918
+203919
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -9696,7 +9696,7 @@ Incendies
 8.2
 </td>
 <td style="text-align:center;">
-101160
+101164
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -9719,7 +9719,7 @@ Ran
 8.2
 </td>
 <td style="text-align:center;">
-86844
+86845
 </td>
 <td style="text-align:center;">
 Akira Kurosawa
@@ -9733,29 +9733,6 @@ Akira Terao
 </tr>
 <tr>
 <td style="text-align:center;">
-Dunkirk
-</td>
-<td style="text-align:center;">
-2017
-</td>
-<td style="text-align:center;">
-8.2
-</td>
-<td style="text-align:center;">
-265687
-</td>
-<td style="text-align:center;">
-Christopher Nolan
-</td>
-<td style="text-align:center;">
-Fionn Whitehead
-</td>
-<td style="text-align:center;">
-Barry Keoghan
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 Judgment at Nuremberg
 </td>
 <td style="text-align:center;">
@@ -9765,7 +9742,7 @@ Judgment at Nuremberg
 8.2
 </td>
 <td style="text-align:center;">
-51665
+51666
 </td>
 <td style="text-align:center;">
 Stanley Kramer
@@ -9779,6 +9756,29 @@ Burt Lancaster
 </tr>
 <tr>
 <td style="text-align:center;">
+Dunkirk
+</td>
+<td style="text-align:center;">
+2017
+</td>
+<td style="text-align:center;">
+8.2
+</td>
+<td style="text-align:center;">
+265900
+</td>
+<td style="text-align:center;">
+Christopher Nolan
+</td>
+<td style="text-align:center;">
+Fionn Whitehead
+</td>
+<td style="text-align:center;">
+Barry Keoghan
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
 The Gold Rush
 </td>
 <td style="text-align:center;">
@@ -9788,7 +9788,7 @@ The Gold Rush
 8.2
 </td>
 <td style="text-align:center;">
-77234
+77235
 </td>
 <td style="text-align:center;">
 Charles Chaplin
@@ -9811,7 +9811,7 @@ El secreto de sus ojos
 8.2
 </td>
 <td style="text-align:center;">
-152204
+152207
 </td>
 <td style="text-align:center;">
 Juan José Campanella
@@ -9834,7 +9834,7 @@ Hauru no ugoku shiro
 8.2
 </td>
 <td style="text-align:center;">
-246834
+246836
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -9857,7 +9857,7 @@ Inside Out
 8.2
 </td>
 <td style="text-align:center;">
-450473
+450484
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -9903,7 +9903,7 @@ The Bridge on the River Kwai
 8.2
 </td>
 <td style="text-align:center;">
-166440
+166442
 </td>
 <td style="text-align:center;">
 David Lean
@@ -9926,7 +9926,7 @@ Det sjunde inseglet
 8.2
 </td>
 <td style="text-align:center;">
-125687
+125689
 </td>
 <td style="text-align:center;">
 Ingmar Bergman
@@ -9949,7 +9949,7 @@ Room
 8.2
 </td>
 <td style="text-align:center;">
-250437
+250446
 </td>
 <td style="text-align:center;">
 Lenny Abrahamson
@@ -9972,7 +9972,7 @@ Lock, Stock and Two Smoking Barrels
 8.2
 </td>
 <td style="text-align:center;">
-455248
+455255
 </td>
 <td style="text-align:center;">
 Guy Ritchie
@@ -9995,7 +9995,7 @@ Mr. Smith Goes to Washington
 8.2
 </td>
 <td style="text-align:center;">
-85826
+85827
 </td>
 <td style="text-align:center;">
 Frank Capra
@@ -10018,7 +10018,7 @@ A Beautiful Mind
 8.2
 </td>
 <td style="text-align:center;">
-691686
+691703
 </td>
 <td style="text-align:center;">
 Ron Howard
@@ -10041,7 +10041,7 @@ Casino
 8.2
 </td>
 <td style="text-align:center;">
-372592
+372595
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -10064,7 +10064,7 @@ Blade Runner
 8.2
 </td>
 <td style="text-align:center;">
-548417
+548429
 </td>
 <td style="text-align:center;">
 Ridley Scott
@@ -10087,7 +10087,7 @@ The Elephant Man
 8.1
 </td>
 <td style="text-align:center;">
-180613
+180616
 </td>
 <td style="text-align:center;">
 David Lynch
@@ -10110,7 +10110,7 @@ V for Vendetta
 8.1
 </td>
 <td style="text-align:center;">
-877319
+877335
 </td>
 <td style="text-align:center;">
 James McTeigue
@@ -10133,7 +10133,7 @@ The Wolf of Wall Street
 8.1
 </td>
 <td style="text-align:center;">
-910815
+910838
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -10179,7 +10179,7 @@ The General
 8.1
 </td>
 <td style="text-align:center;">
-60756
+60757
 </td>
 <td style="text-align:center;">
 Clyde Bruckman
@@ -10202,7 +10202,7 @@ Warrior
 8.1
 </td>
 <td style="text-align:center;">
-369497
+369503
 </td>
 <td style="text-align:center;">
 Gavin O'Connor
@@ -10225,7 +10225,7 @@ Dial M for Murder
 8.1
 </td>
 <td style="text-align:center;">
-122089
+122090
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -10248,7 +10248,7 @@ Trainspotting
 8.1
 </td>
 <td style="text-align:center;">
-537780
+537789
 </td>
 <td style="text-align:center;">
 Danny Boyle
@@ -10271,7 +10271,7 @@ Gran Torino
 8.1
 </td>
 <td style="text-align:center;">
-616862
+616874
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -10294,7 +10294,7 @@ Gone with the Wind
 8.1
 </td>
 <td style="text-align:center;">
-238383
+238384
 </td>
 <td style="text-align:center;">
 Victor Fleming
@@ -10317,7 +10317,7 @@ The Deer Hunter
 8.1
 </td>
 <td style="text-align:center;">
-257658
+257664
 </td>
 <td style="text-align:center;">
 Michael Cimino
@@ -10340,7 +10340,7 @@ Sunrise: A Song of Two Humans
 8.1
 </td>
 <td style="text-align:center;">
-34527
+34528
 </td>
 <td style="text-align:center;">
 F.W. Murnau
@@ -10363,7 +10363,7 @@ The Sixth Sense
 8.1
 </td>
 <td style="text-align:center;">
-775479
+775490
 </td>
 <td style="text-align:center;">
 M. Night Shyamalan
@@ -10386,7 +10386,7 @@ Fargo
 8.1
 </td>
 <td style="text-align:center;">
-507352
+507357
 </td>
 <td style="text-align:center;">
 Joel Coen
@@ -10409,7 +10409,7 @@ No Country for Old Men
 8.1
 </td>
 <td style="text-align:center;">
-688916
+688928
 </td>
 <td style="text-align:center;">
 Ethan Coen
@@ -10432,7 +10432,7 @@ The Thing
 8.1
 </td>
 <td style="text-align:center;">
-293119
+293131
 </td>
 <td style="text-align:center;">
 John Carpenter
@@ -10455,7 +10455,7 @@ Andrei Rublev
 8.1
 </td>
 <td style="text-align:center;">
-28992
+28998
 </td>
 <td style="text-align:center;">
 Andrei Tarkovsky
@@ -10478,7 +10478,7 @@ The Big Lebowski
 8.1
 </td>
 <td style="text-align:center;">
-600512
+600526
 </td>
 <td style="text-align:center;">
 Joel Coen
@@ -10501,7 +10501,7 @@ Finding Nemo
 8.1
 </td>
 <td style="text-align:center;">
-782099
+782112
 </td>
 <td style="text-align:center;">
 Andrew Stanton
@@ -10524,7 +10524,7 @@ Tôkyô monogatari
 8.1
 </td>
 <td style="text-align:center;">
-33453
+33456
 </td>
 <td style="text-align:center;">
 Yasujirô Ozu
@@ -10547,7 +10547,7 @@ Eskiya
 8.1
 </td>
 <td style="text-align:center;">
-44678
+44679
 </td>
 <td style="text-align:center;">
 Yavuz Turgul
@@ -10570,7 +10570,7 @@ There Will Be Blood
 8.1
 </td>
 <td style="text-align:center;">
-418262
+418268
 </td>
 <td style="text-align:center;">
 Paul Thomas Anderson
@@ -10616,7 +10616,7 @@ Idi i smotri
 8.1
 </td>
 <td style="text-align:center;">
-33018
+33020
 </td>
 <td style="text-align:center;">
 Elem Klimov
@@ -10639,7 +10639,7 @@ Rebecca
 8.1
 </td>
 <td style="text-align:center;">
-97795
+97796
 </td>
 <td style="text-align:center;">
 Alfred Hitchcock
@@ -10662,7 +10662,7 @@ Hacksaw Ridge
 8.1
 </td>
 <td style="text-align:center;">
-281556
+281585
 </td>
 <td style="text-align:center;">
 Mel Gibson
@@ -10685,7 +10685,7 @@ Kill Bill: Vol. 1
 8.1
 </td>
 <td style="text-align:center;">
-817920
+817937
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -10708,7 +10708,7 @@ How to Train Your Dragon
 8.1
 </td>
 <td style="text-align:center;">
-545677
+545688
 </td>
 <td style="text-align:center;">
 Dean DeBlois
@@ -10731,7 +10731,7 @@ Rang De Basanti
 8.1
 </td>
 <td style="text-align:center;">
-85885
+85889
 </td>
 <td style="text-align:center;">
 Rakeysh Omprakash Mehra
@@ -10754,7 +10754,7 @@ Mary and Max
 8.1
 </td>
 <td style="text-align:center;">
-134789
+134790
 </td>
 <td style="text-align:center;">
 Adam Elliot
@@ -10777,7 +10777,7 @@ Gone Girl
 8.1
 </td>
 <td style="text-align:center;">
-672288
+672299
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -10800,7 +10800,7 @@ La passion de Jeanne d'Arc
 8.1
 </td>
 <td style="text-align:center;">
-31254
+31255
 </td>
 <td style="text-align:center;">
 Carl Theodor Dreyer
@@ -10823,7 +10823,7 @@ Shutter Island
 8.1
 </td>
 <td style="text-align:center;">
-897510
+897522
 </td>
 <td style="text-align:center;">
 Martin Scorsese
@@ -10846,7 +10846,7 @@ Into the Wild
 8.1
 </td>
 <td style="text-align:center;">
-478413
+478418
 </td>
 <td style="text-align:center;">
 Sean Penn
@@ -10860,29 +10860,6 @@ Vince Vaughn
 </tr>
 <tr>
 <td style="text-align:center;">
-La La Land
-</td>
-<td style="text-align:center;">
-2016
-</td>
-<td style="text-align:center;">
-8.1
-</td>
-<td style="text-align:center;">
-328901
-</td>
-<td style="text-align:center;">
-Damien Chazelle
-</td>
-<td style="text-align:center;">
-Ryan Gosling
-</td>
-<td style="text-align:center;">
-Emma Stone
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 Life of Brian
 </td>
 <td style="text-align:center;">
@@ -10892,7 +10869,7 @@ Life of Brian
 8.1
 </td>
 <td style="text-align:center;">
-300048
+300054
 </td>
 <td style="text-align:center;">
 Terry Jones
@@ -10902,6 +10879,29 @@ Graham Chapman
 </td>
 <td style="text-align:center;">
 John Cleese
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+La La Land
+</td>
+<td style="text-align:center;">
+2016
+</td>
+<td style="text-align:center;">
+8.1
+</td>
+<td style="text-align:center;">
+328919
+</td>
+<td style="text-align:center;">
+Damien Chazelle
+</td>
+<td style="text-align:center;">
+Ryan Gosling
+</td>
+<td style="text-align:center;">
+Emma Stone
 </td>
 </tr>
 <tr>
@@ -10938,7 +10938,7 @@ Relatos salvajes
 8.1
 </td>
 <td style="text-align:center;">
-122297
+122301
 </td>
 <td style="text-align:center;">
 Damián Szifron
@@ -10961,7 +10961,7 @@ Logan
 8.1
 </td>
 <td style="text-align:center;">
-415666
+415695
 </td>
 <td style="text-align:center;">
 James Mangold
@@ -10984,7 +10984,7 @@ Platoon
 8.1
 </td>
 <td style="text-align:center;">
-321141
+321147
 </td>
 <td style="text-align:center;">
 Oliver Stone
@@ -11007,7 +11007,7 @@ Hotel Rwanda
 8.1
 </td>
 <td style="text-align:center;">
-289529
+289536
 </td>
 <td style="text-align:center;">
 Terry George
@@ -11030,7 +11030,7 @@ Le salaire de la peur
 8.1
 </td>
 <td style="text-align:center;">
-40299
+40303
 </td>
 <td style="text-align:center;">
 Henri-Georges Clouzot
@@ -11053,7 +11053,7 @@ Network
 8.1
 </td>
 <td style="text-align:center;">
-116166
+116170
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -11076,7 +11076,7 @@ In the Name of the Father
 8.1
 </td>
 <td style="text-align:center;">
-124926
+124927
 </td>
 <td style="text-align:center;">
 Jim Sheridan
@@ -11099,7 +11099,7 @@ Stand by Me
 8.1
 </td>
 <td style="text-align:center;">
-303256
+303263
 </td>
 <td style="text-align:center;">
 Rob Reiner
@@ -11122,7 +11122,7 @@ Rush
 8.1
 </td>
 <td style="text-align:center;">
-355158
+355163
 </td>
 <td style="text-align:center;">
 Ron Howard
@@ -11145,7 +11145,7 @@ A Wednesday
 8.1
 </td>
 <td style="text-align:center;">
-56114
+56117
 </td>
 <td style="text-align:center;">
 Neeraj Pandey
@@ -11168,7 +11168,7 @@ Ben-Hur
 8.1
 </td>
 <td style="text-align:center;">
-180616
+180619
 </td>
 <td style="text-align:center;">
 William Wyler
@@ -11191,7 +11191,7 @@ The Grand Budapest Hotel
 8.1
 </td>
 <td style="text-align:center;">
-560430
+560443
 </td>
 <td style="text-align:center;">
 Wes Anderson
@@ -11214,7 +11214,7 @@ Persona
 8.1
 </td>
 <td style="text-align:center;">
-72224
+72227
 </td>
 <td style="text-align:center;">
 Ingmar Bergman
@@ -11237,7 +11237,7 @@ Les quatre cents coups
 8.1
 </td>
 <td style="text-align:center;">
-79663
+79667
 </td>
 <td style="text-align:center;">
 François Truffaut
@@ -11260,7 +11260,7 @@ Jurassic Park
 8.1
 </td>
 <td style="text-align:center;">
-695247
+695263
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -11306,7 +11306,7 @@ Sang-kyung Kim
 8.1
 </td>
 <td style="text-align:center;">
-512426
+512437
 </td>
 <td style="text-align:center;">
 Steve McQueen
@@ -11329,7 +11329,7 @@ Mad Max: Fury Road
 8.1
 </td>
 <td style="text-align:center;">
-675899
+675918
 </td>
 <td style="text-align:center;">
 George Miller
@@ -11352,7 +11352,7 @@ Million Dollar Baby
 8.1
 </td>
 <td style="text-align:center;">
-535296
+535304
 </td>
 <td style="text-align:center;">
 Clint Eastwood
@@ -11375,7 +11375,7 @@ Thor: Ragnarok
 8.1
 </td>
 <td style="text-align:center;">
-166419
+166491
 </td>
 <td style="text-align:center;">
 Taika Waititi
@@ -11398,7 +11398,7 @@ Spotlight
 8.1
 </td>
 <td style="text-align:center;">
-296763
+296772
 </td>
 <td style="text-align:center;">
 Tom McCarthy
@@ -11421,7 +11421,7 @@ Stalker
 8.1
 </td>
 <td style="text-align:center;">
-80913
+80914
 </td>
 <td style="text-align:center;">
 Andrei Tarkovsky
@@ -11444,7 +11444,7 @@ The Truman Show
 8.1
 </td>
 <td style="text-align:center;">
-751722
+751732
 </td>
 <td style="text-align:center;">
 Peter Weir
@@ -11467,7 +11467,7 @@ Amores perros
 8.1
 </td>
 <td style="text-align:center;">
-189944
+189949
 </td>
 <td style="text-align:center;">
 Alejandro G. Iñárritu
@@ -11490,7 +11490,7 @@ Butch Cassidy and the Sundance Kid
 8.1
 </td>
 <td style="text-align:center;">
-168665
+168667
 </td>
 <td style="text-align:center;">
 George Roy Hill
@@ -11513,7 +11513,7 @@ Hachi: A Dog's Tale
 8.1
 </td>
 <td style="text-align:center;">
-190527
+190535
 </td>
 <td style="text-align:center;">
 Lasse Hallström
@@ -11536,7 +11536,7 @@ Kaze no tani no Naushika
 8.1
 </td>
 <td style="text-align:center;">
-110970
+110973
 </td>
 <td style="text-align:center;">
 Hayao Miyazaki
@@ -11559,7 +11559,7 @@ Before Sunrise
 8.1
 </td>
 <td style="text-align:center;">
-210520
+210524
 </td>
 <td style="text-align:center;">
 Richard Linklater
@@ -11582,7 +11582,7 @@ The Princess Bride
 8.1
 </td>
 <td style="text-align:center;">
-325194
+325200
 </td>
 <td style="text-align:center;">
 Rob Reiner
@@ -11605,7 +11605,7 @@ The Maltese Falcon
 8.1
 </td>
 <td style="text-align:center;">
-125649
+125651
 </td>
 <td style="text-align:center;">
 John Huston
@@ -11628,7 +11628,7 @@ Prisoners
 8.0
 </td>
 <td style="text-align:center;">
-459948
+459957
 </td>
 <td style="text-align:center;">
 Denis Villeneuve
@@ -11651,7 +11651,7 @@ Paper Moon
 8.0
 </td>
 <td style="text-align:center;">
-27726
+27727
 </td>
 <td style="text-align:center;">
 Peter Bogdanovich
@@ -11674,7 +11674,7 @@ Le notti di Cabiria
 8.0
 </td>
 <td style="text-align:center;">
-30847
+30849
 </td>
 <td style="text-align:center;">
 Federico Fellini
@@ -11697,7 +11697,7 @@ Harry Potter and the Deathly Hallows: Part 2
 8.0
 </td>
 <td style="text-align:center;">
-617902
+617907
 </td>
 <td style="text-align:center;">
 David Yates
@@ -11720,7 +11720,7 @@ Catch Me If You Can
 8.0
 </td>
 <td style="text-align:center;">
-623610
+623624
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -11743,7 +11743,7 @@ Rocky
 8.0
 </td>
 <td style="text-align:center;">
-423902
+423909
 </td>
 <td style="text-align:center;">
 John G. Avildsen
@@ -11766,7 +11766,7 @@ The Grapes of Wrath
 8.0
 </td>
 <td style="text-align:center;">
-70585
+70587
 </td>
 <td style="text-align:center;">
 John Ford
@@ -11789,7 +11789,7 @@ Les diaboliques
 8.0
 </td>
 <td style="text-align:center;">
-47862
+47863
 </td>
 <td style="text-align:center;">
 Henri-Georges Clouzot
@@ -11812,7 +11812,7 @@ Touch of Evil
 8.0
 </td>
 <td style="text-align:center;">
-80742
+80743
 </td>
 <td style="text-align:center;">
 Orson Welles
@@ -11835,7 +11835,7 @@ Monsters, Inc.
 8.0
 </td>
 <td style="text-align:center;">
-661162
+661173
 </td>
 <td style="text-align:center;">
 Pete Docter
@@ -11858,7 +11858,7 @@ Gandhi
 8.0
 </td>
 <td style="text-align:center;">
-189479
+189481
 </td>
 <td style="text-align:center;">
 Richard Attenborough
@@ -11881,7 +11881,7 @@ Donnie Darko
 8.0
 </td>
 <td style="text-align:center;">
-643559
+643568
 </td>
 <td style="text-align:center;">
 Richard Kelly
@@ -11904,7 +11904,7 @@ Barry Lyndon
 8.0
 </td>
 <td style="text-align:center;">
-114577
+114582
 </td>
 <td style="text-align:center;">
 Stanley Kubrick
@@ -11927,7 +11927,7 @@ Annie Hall
 8.0
 </td>
 <td style="text-align:center;">
-217016
+217017
 </td>
 <td style="text-align:center;">
 Woody Allen
@@ -11950,7 +11950,7 @@ The Terminator
 8.0
 </td>
 <td style="text-align:center;">
-665151
+665162
 </td>
 <td style="text-align:center;">
 James Cameron
@@ -11973,7 +11973,7 @@ The Bourne Ultimatum
 8.0
 </td>
 <td style="text-align:center;">
-542956
+542963
 </td>
 <td style="text-align:center;">
 Paul Greengrass
@@ -11996,7 +11996,7 @@ Groundhog Day
 8.0
 </td>
 <td style="text-align:center;">
-490262
+490270
 </td>
 <td style="text-align:center;">
 Harold Ramis
@@ -12019,7 +12019,7 @@ The Wizard of Oz
 8.0
 </td>
 <td style="text-align:center;">
-320829
+320831
 </td>
 <td style="text-align:center;">
 Victor Fleming
@@ -12042,7 +12042,7 @@ La haine
 8.0
 </td>
 <td style="text-align:center;">
-117204
+117205
 </td>
 <td style="text-align:center;">
 Mathieu Kassovitz
@@ -12065,7 +12065,7 @@ Hubert Koundé
 8.0
 </td>
 <td style="text-align:center;">
-87990
+87992
 </td>
 <td style="text-align:center;">
 Federico Fellini
@@ -12088,7 +12088,7 @@ Munna Bhai M.B.B.S.
 8.0
 </td>
 <td style="text-align:center;">
-56211
+56213
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -12111,7 +12111,7 @@ Jaws
 8.0
 </td>
 <td style="text-align:center;">
-461136
+461146
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -12134,7 +12134,7 @@ Star Wars: Episode VII - The Force Awakens
 8.0
 </td>
 <td style="text-align:center;">
-702892
+702969
 </td>
 <td style="text-align:center;">
 J.J. Abrams
@@ -12157,7 +12157,7 @@ The Best Years of Our Lives
 8.0
 </td>
 <td style="text-align:center;">
-45160
+45161
 </td>
 <td style="text-align:center;">
 William Wyler
@@ -12180,7 +12180,7 @@ Twelve Monkeys
 8.0
 </td>
 <td style="text-align:center;">
-505690
+505695
 </td>
 <td style="text-align:center;">
 Terry Gilliam
@@ -12203,7 +12203,7 @@ Mou gaan dou
 8.0
 </td>
 <td style="text-align:center;">
-101601
+101600
 </td>
 <td style="text-align:center;">
 Wai-Keung Lau
@@ -12226,7 +12226,7 @@ Faa yeung nin wa
 8.0
 </td>
 <td style="text-align:center;">
-88843
+88844
 </td>
 <td style="text-align:center;">
 Kar-Wai Wong
@@ -12249,7 +12249,7 @@ Paris, Texas
 8.0
 </td>
 <td style="text-align:center;">
-59458
+59460
 </td>
 <td style="text-align:center;">
 Wim Wenders
@@ -12272,7 +12272,7 @@ The Help
 8.0
 </td>
 <td style="text-align:center;">
-355548
+355551
 </td>
 <td style="text-align:center;">
 Tate Taylor
@@ -12295,7 +12295,7 @@ Dead Poets Society
 8.0
 </td>
 <td style="text-align:center;">
-310303
+310317
 </td>
 <td style="text-align:center;">
 Peter Weir
@@ -12318,7 +12318,7 @@ Beauty and the Beast
 8.0
 </td>
 <td style="text-align:center;">
-350456
+350463
 </td>
 <td style="text-align:center;">
 Gary Trousdale
@@ -12341,7 +12341,7 @@ PK
 8.0
 </td>
 <td style="text-align:center;">
-114505
+114513
 </td>
 <td style="text-align:center;">
 Rajkumar Hirani
@@ -12387,7 +12387,7 @@ Pirates of the Caribbean: The Curse of the Black Pearl
 8.0
 </td>
 <td style="text-align:center;">
-896342
+896353
 </td>
 <td style="text-align:center;">
 Gore Verbinski
@@ -12401,25 +12401,25 @@ Geoffrey Rush
 </tr>
 <tr>
 <td style="text-align:center;">
-Ah-ga-ssi
+Zerkalo
 </td>
 <td style="text-align:center;">
-2016
+1975
 </td>
 <td style="text-align:center;">
 8.0
 </td>
 <td style="text-align:center;">
-49017
+26573
 </td>
 <td style="text-align:center;">
-Chan-wook Park
+Andrei Tarkovsky
 </td>
 <td style="text-align:center;">
-Min-hee Kim
+Margarita Terekhova
 </td>
 <td style="text-align:center;">
-Jung-woo Ha
+Filipp Yankovskiy
 </td>
 </tr>
 </tbody>
@@ -12435,21 +12435,9 @@ Jung-woo Ha
 
 *Quick look at the correlation between release year and rating.*
 
-<img src="media/yearRelease_hist.png" align = "middle">
+<img src="media/yearRelease_hist.png" align = "middle"> <img src=media/yearRelease_rating.png align = "middle"> <img src=media/rating_noVotes.png align = "middle">
 
-``` r
-print(plot2)
-```
-
-    ## `geom_smooth()` using method = 'loess'
-
-``` r
-print(plot3)
-```
-
-    ## `geom_smooth()` using method = 'loess'
-
-<img src="hw10_scrapingData_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png" width="4cm" height="4cm" /><img src="hw10_scrapingData_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-2.png" width="4cm" height="4cm" />
+<br><br><br>
 
 #### Get data from links
 
