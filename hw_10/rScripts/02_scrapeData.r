@@ -44,7 +44,7 @@ for(i in 1:25){
             html_nodes("time") %>% 
             html_text()
 
-      imdb_full$Duration[i] <- time
+      imdb_full$Duration[i] <- time[1]
 }
 
 # Plot summary ---------------------------------------------------------------------------
@@ -63,7 +63,7 @@ for(i in 1:25){
 
 
 # Clean and add ----------------------------------------------------------------------------------
-finalData <- function(imdb_full){
+cleanfinalData <- function(imdb_full){
       
       genre <- word(imdb_full$Genre, 2, sep = fixed('Genres:'))
       genre <- as.factor(gsub("Sci-Fi", "SciFi", genre))
@@ -78,6 +78,7 @@ finalData <- function(imdb_full){
       return(df)
 }
 
+imdb_full <- cleanfinalData(imdb_full)
 
-write.table(imdb, './hw_10/data/.tsv', 
-            quote = FALSE, sep = "\t", row.names = FALSE)
+
+
