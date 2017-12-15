@@ -75,18 +75,20 @@ imdb_df %>% glimpse()
 
 #### Clean dataset
 
-```{r}
-imdb_kable1
-```
-
 <div>
     <div>imdb_kable1
     </div>
 </div>
 
-Parse out names of the cast memebers for analysis
-```{r results='asis', echo=TRUE, fig.height=3}
+```{r}
+imdb_kable1
+```
 
+
+
+
+Parse out names of the cast memebers for analysis
+```{r results='markup', echo=TRUE, fig.height=3}
 
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
