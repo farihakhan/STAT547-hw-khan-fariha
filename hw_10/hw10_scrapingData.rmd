@@ -34,6 +34,7 @@ suppressMessages(source('rScripts/01_scrapeData.r'))
 
 ###### View [html_structure](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/html_structure.md)
 
+
 ```{r strucure}
 imdb
 
@@ -75,24 +76,24 @@ imdb_df %>% glimpse()
 
 #### Clean dataset
 
+> See rScript
+
 <div>
     <div>imdb_kable1
     </div>
 </div>
 
-```{r}
-imdb_kable1
-```
+
 
 
 
 
 Parse out names of the cast memebers for analysis
-```{r results='markup', echo=TRUE, fig.height=3}
+```{r}
 
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
-      kable(knitr.table.format="html", align = "c", padding = 1,
+      kable("html", align = "c", padding = 1,
             caption = "IMDb Top 250 Rated") %>% 
       kableExtra::scroll_box(height = "400px")
 
@@ -108,8 +109,8 @@ imdb_df2 %>%
 
 <img src="media/yearRelease_hist.png" align = "middle">
 <p float = "middle">
-<img src="media/yearRelease_rating.png" width="50%" height="30%" align = "left">
-<img src="media/rating_noVotes.png" width="50%" height="30%" align = "right">
+<img src="media/yearRelease_rating.png" width="30%" height="30%" align = "left">
+<img src="media/rating_noVotes.png" width="30%" height="30%" align = "right">
 </p>
 
 
