@@ -111,13 +111,16 @@ imdb_df2 %>%
 
 *Quick look at the correlation between release year and rating.*
 
-<body>
 <img src="media/yearRelease_hist.png" align = "middle">
-<p>
-<img src="media/yearRelease_rating.png" width="40%" height="40%" align = "left">
-<img src="media/rating_noVotes.png" width="40%" height="40%" align = "right">
-</p>
-</body>
+
+```{r out.width='4cm', out.height='4cm', fig.show='hold'}
+print(plot2)
+print(plot3)
+```
+
+
+
+
 
 
 #### Get data from links
