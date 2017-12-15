@@ -88,11 +88,6 @@ imdb_df2 %>%
 ```
 
 
-
-
-
-
-
 Parse out names of the cast memebers for analysis
 ```{r}
 imdb_df2 %>% 
@@ -101,6 +96,9 @@ imdb_df2 %>%
             caption = "IMDb Top 250 Rated") %>% 
       kableExtra::scroll_box(height = "400px")
 
+```
+
+```{r}
 ## Save data
 ## write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
 ##             quote = FALSE, sep = "\t", row.names = FALSE)
@@ -111,11 +109,13 @@ imdb_df2 %>%
 
 *Quick look at the correlation between release year and rating.*
 
-<img src="media/yearRelease_hist.png" align = "middle">
-<img src=media/yearRelease_rating.png align = "middle">
-<img src=media/rating_noVotes.png align = "middle">
 
-<br><br><br>
+<img src="media/yearRelease_hist.png" align="middle">
+<div>
+<img src=media/yearRelease_rating.png align="left" height="50%" width="50%">
+<img src=media/rating_noVotes.png align="right" height="50%" width="50%>
+</div>
+<p></p>
 
 #### Get data from links
 
