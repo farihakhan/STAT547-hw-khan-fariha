@@ -78,7 +78,7 @@ imdb_df %>% glimpse()
     ## $ yearRelease <dbl> 1994, 1972, 1974, 2008, 1957, 1993, 1994, 2003, 19...
     ## $ Rating      <dbl> 9.2, 9.2, 9.0, 9.0, 8.9, 8.9, 8.9, 8.9, 8.8, 8.8, ...
     ## $ Cast        <fctr> Frank Darabont (dir.), Tim Robbins, Morgan Freema...
-    ## $ Votes       <fctr> 9.2 based on 1,886,797 user ratings, 9.2 based on...
+    ## $ Votes       <fctr> 9.2 based on 1,886,841 user ratings, 9.2 based on...
     ## $ Link        <chr> "http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FG...
 
 #### Clean dataset
@@ -92,36 +92,40 @@ imdb_df2 %>%
              Cast2, Link) %>% 
       head(25) %>% 
       kable(align = "c", padding = 1,
-            caption = "imdb Top 250 Rated movies")
+            caption = "imdb Top 250 Rated movies") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    full_width = F, font_size = 9)
 ```
+
+    ## Currently generic markdown table using pandoc is not supported.
 
 |                       Title                       | yearRelease | Rating | no.Votes |       Director       |        Cast1        |         Cast2        |                                                                                    Link                                                                                   |
 |:-------------------------------------------------:|:-----------:|:------:|:--------:|:--------------------:|:-------------------:|:--------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|              The Shawshank Redemption             |     1994    |   9.2  |  1886797 |    Frank Darabont    |     Tim Robbins     |    Morgan Freeman    |  <http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1> |
-|                   The Godfather                   |     1972    |   9.2  |  1288241 | Francis Ford Coppola |    Marlon Brando    |       Al Pacino      |  <http://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2> |
-|               The Godfather: Part II              |     1974    |   9.0  |  888707  | Francis Ford Coppola |      Al Pacino      |    Robert De Niro    |  <http://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3> |
-|                  The Dark Knight                  |     2008    |   9.0  |  1862579 |   Christopher Nolan  |    Christian Bale   |     Heath Ledger     |  <http://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4> |
-|                    12 Angry Men                   |     1957    |   8.9  |  517875  |     Sidney Lumet     |     Henry Fonda     |      Lee J. Cobb     |  <http://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5> |
-|                  Schindler's List                 |     1993    |   8.9  |  970161  |   Steven Spielberg   |     Liam Neeson     |     Ralph Fiennes    |  <http://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6> |
-|                    Pulp Fiction                   |     1994    |   8.9  |  1475838 |   Quentin Tarantino  |    John Travolta    |      Uma Thurman     |  <http://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7> |
-|   The Lord of the Rings: The Return of the King   |     2003    |   8.9  |  1348193 |     Peter Jackson    |     Elijah Wood     |    Viggo Mortensen   |  <http://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8> |
-|          Il buono, il brutto, il cattivo          |     1966    |   8.8  |  558941  |     Sergio Leone     |    Clint Eastwood   |      Eli Wallach     |  <http://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9> |
-|                     Fight Club                    |     1999    |   8.8  |  1512212 |     David Fincher    |      Brad Pitt      |     Edward Norton    | <http://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10> |
-| The Lord of the Rings: The Fellowship of the Ring |     2001    |   8.8  |  1368362 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     | <http://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11> |
-|                    Forrest Gump                   |     1994    |   8.7  |  1423987 |    Robert Zemeckis   |      Tom Hanks      |     Robin Wright     | <http://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12> |
-|   Star Wars: Episode V - The Empire Strikes Back  |     1980    |   8.7  |  942508  |    Irvin Kershner    |     Mark Hamill     |     Harrison Ford    | <http://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13> |
-|                     Inception                     |     2010    |   8.7  |  1651436 |   Christopher Nolan  |  Leonardo DiCaprio  | Joseph Gordon-Levitt | <http://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14> |
-|       The Lord of the Rings: The Two Towers       |     2002    |   8.7  |  1220283 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     | <http://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15> |
-|          One Flew Over the Cuckoo's Nest          |     1975    |   8.7  |  753224  |     Milos Forman     |    Jack Nicholson   |    Louise Fletcher   | <http://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16> |
-|                     Goodfellas                    |     1990    |   8.7  |  812998  |    Martin Scorsese   |    Robert De Niro   |      Ray Liotta      | <http://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17> |
-|                     The Matrix                    |     1999    |   8.7  |  1357272 |    Lana Wachowski    |     Keanu Reeves    |  Laurence Fishburne  | <http://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18> |
-|                Shichinin no samurai               |     1954    |   8.6  |  254232  |    Akira Kurosawa    |    Toshirô Mifune   |    Takashi Shimura   | <http://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19> |
-|                     Star Wars                     |     1977    |   8.6  |  1014771 |     George Lucas     |     Mark Hamill     |     Harrison Ford    | <http://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20> |
-|                   Cidade de Deus                  |     2002    |   8.6  |  587248  |  Fernando Meirelles  | Alexandre Rodrigues |    Leandro Firmino   | <http://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21> |
-|                       Se7en                       |     1995    |   8.6  |  1150626 |     David Fincher    |    Morgan Freeman   |       Brad Pitt      | <http://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22> |
-|              The Silence of the Lambs             |     1991    |   8.6  |  1004792 |    Jonathan Demme    |     Jodie Foster    |    Anthony Hopkins   | <http://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23> |
-|               It's a Wonderful Life               |     1946    |   8.6  |  312292  |      Frank Capra     |    James Stewart    |      Donna Reed      | <http://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24> |
-|                  La vita è bella                  |     1997    |   8.6  |  484283  |    Roberto Benigni   |   Roberto Benigni   |   Nicoletta Braschi  | <http://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=1PZSYKWQBFSE7YZMHBZR&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25> |
+|              The Shawshank Redemption             |     1994    |   9.2  |  1886841 |    Frank Darabont    |     Tim Robbins     |    Morgan Freeman    |  <http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1> |
+|                   The Godfather                   |     1972    |   9.2  |  1288277 | Francis Ford Coppola |    Marlon Brando    |       Al Pacino      |  <http://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2> |
+|               The Godfather: Part II              |     1974    |   9.0  |  888732  | Francis Ford Coppola |      Al Pacino      |    Robert De Niro    |  <http://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3> |
+|                  The Dark Knight                  |     2008    |   9.0  |  1862637 |   Christopher Nolan  |    Christian Bale   |     Heath Ledger     |  <http://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4> |
+|                    12 Angry Men                   |     1957    |   8.9  |  517893  |     Sidney Lumet     |     Henry Fonda     |      Lee J. Cobb     |  <http://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5> |
+|                  Schindler's List                 |     1993    |   8.9  |  970201  |   Steven Spielberg   |     Liam Neeson     |     Ralph Fiennes    |  <http://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6> |
+|                    Pulp Fiction                   |     1994    |   8.9  |  1475884 |   Quentin Tarantino  |    John Travolta    |      Uma Thurman     |  <http://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7> |
+|   The Lord of the Rings: The Return of the King   |     2003    |   8.9  |  1348236 |     Peter Jackson    |     Elijah Wood     |    Viggo Mortensen   |  <http://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8> |
+|          Il buono, il brutto, il cattivo          |     1966    |   8.8  |  558964  |     Sergio Leone     |    Clint Eastwood   |      Eli Wallach     |  <http://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9> |
+|                     Fight Club                    |     1999    |   8.8  |  1512266 |     David Fincher    |      Brad Pitt      |     Edward Norton    | <http://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10> |
+| The Lord of the Rings: The Fellowship of the Ring |     2001    |   8.8  |  1368396 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     | <http://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11> |
+|                    Forrest Gump                   |     1994    |   8.7  |  1424034 |    Robert Zemeckis   |      Tom Hanks      |     Robin Wright     | <http://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12> |
+|   Star Wars: Episode V - The Empire Strikes Back  |     1980    |   8.7  |  942645  |    Irvin Kershner    |     Mark Hamill     |     Harrison Ford    | <http://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13> |
+|                     Inception                     |     2010    |   8.7  |  1651480 |   Christopher Nolan  |  Leonardo DiCaprio  | Joseph Gordon-Levitt | <http://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14> |
+|       The Lord of the Rings: The Two Towers       |     2002    |   8.7  |  1220325 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     | <http://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15> |
+|          One Flew Over the Cuckoo's Nest          |     1975    |   8.7  |  753245  |     Milos Forman     |    Jack Nicholson   |    Louise Fletcher   | <http://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16> |
+|                     Goodfellas                    |     1990    |   8.7  |  813028  |    Martin Scorsese   |    Robert De Niro   |      Ray Liotta      | <http://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17> |
+|                     The Matrix                    |     1999    |   8.7  |  1357321 |    Lana Wachowski    |     Keanu Reeves    |  Laurence Fishburne  | <http://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18> |
+|                Shichinin no samurai               |     1954    |   8.6  |  254243  |    Akira Kurosawa    |    Toshirô Mifune   |    Takashi Shimura   | <http://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19> |
+|                     Star Wars                     |     1977    |   8.6  |  1014901 |     George Lucas     |     Mark Hamill     |     Harrison Ford    | <http://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20> |
+|                   Cidade de Deus                  |     2002    |   8.6  |  587273  |  Fernando Meirelles  | Alexandre Rodrigues |    Leandro Firmino   | <http://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21> |
+|                       Se7en                       |     1995    |   8.6  |  1150670 |     David Fincher    |    Morgan Freeman   |       Brad Pitt      | <http://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22> |
+|              The Silence of the Lambs             |     1991    |   8.6  |  1004835 |    Jonathan Demme    |     Jodie Foster    |    Anthony Hopkins   | <http://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23> |
+|               It's a Wonderful Life               |     1946    |   8.6  |  312318  |      Frank Capra     |    James Stewart    |      Donna Reed      | <http://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24> |
+|                  La vita è bella                  |     1997    |   8.6  |  484303  |    Roberto Benigni   |   Roberto Benigni   |   Nicoletta Braschi  | <http://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0WCJZ4872ES8Q9F0K8AC&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25> |
 
 ``` r
 ## Look at cast members
@@ -129,36 +133,40 @@ imdb_df2 %>%
       select(Title:Rating, no.Votes:Cast2) %>% 
       head(25) %>% 
       kable(align = "c", padding = 1,
-            caption = "IMDb Top 250 Rated") 
+            caption = "IMDb Top 250 Rated") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    full_width = F, font_size = 9)
 ```
+
+    ## Currently generic markdown table using pandoc is not supported.
 
 |                       Title                       | yearRelease | Rating | no.Votes |       Director       |        Cast1        |         Cast2        |
 |:-------------------------------------------------:|:-----------:|:------:|:--------:|:--------------------:|:-------------------:|:--------------------:|
-|              The Shawshank Redemption             |     1994    |   9.2  |  1886797 |    Frank Darabont    |     Tim Robbins     |    Morgan Freeman    |
-|                   The Godfather                   |     1972    |   9.2  |  1288241 | Francis Ford Coppola |    Marlon Brando    |       Al Pacino      |
-|               The Godfather: Part II              |     1974    |   9.0  |  888707  | Francis Ford Coppola |      Al Pacino      |    Robert De Niro    |
-|                  The Dark Knight                  |     2008    |   9.0  |  1862579 |   Christopher Nolan  |    Christian Bale   |     Heath Ledger     |
-|                    12 Angry Men                   |     1957    |   8.9  |  517875  |     Sidney Lumet     |     Henry Fonda     |      Lee J. Cobb     |
-|                  Schindler's List                 |     1993    |   8.9  |  970161  |   Steven Spielberg   |     Liam Neeson     |     Ralph Fiennes    |
-|                    Pulp Fiction                   |     1994    |   8.9  |  1475838 |   Quentin Tarantino  |    John Travolta    |      Uma Thurman     |
-|   The Lord of the Rings: The Return of the King   |     2003    |   8.9  |  1348193 |     Peter Jackson    |     Elijah Wood     |    Viggo Mortensen   |
-|          Il buono, il brutto, il cattivo          |     1966    |   8.8  |  558941  |     Sergio Leone     |    Clint Eastwood   |      Eli Wallach     |
-|                     Fight Club                    |     1999    |   8.8  |  1512212 |     David Fincher    |      Brad Pitt      |     Edward Norton    |
-| The Lord of the Rings: The Fellowship of the Ring |     2001    |   8.8  |  1368362 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     |
-|                    Forrest Gump                   |     1994    |   8.7  |  1423987 |    Robert Zemeckis   |      Tom Hanks      |     Robin Wright     |
-|   Star Wars: Episode V - The Empire Strikes Back  |     1980    |   8.7  |  942508  |    Irvin Kershner    |     Mark Hamill     |     Harrison Ford    |
-|                     Inception                     |     2010    |   8.7  |  1651436 |   Christopher Nolan  |  Leonardo DiCaprio  | Joseph Gordon-Levitt |
-|       The Lord of the Rings: The Two Towers       |     2002    |   8.7  |  1220283 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     |
-|          One Flew Over the Cuckoo's Nest          |     1975    |   8.7  |  753224  |     Milos Forman     |    Jack Nicholson   |    Louise Fletcher   |
-|                     Goodfellas                    |     1990    |   8.7  |  812998  |    Martin Scorsese   |    Robert De Niro   |      Ray Liotta      |
-|                     The Matrix                    |     1999    |   8.7  |  1357272 |    Lana Wachowski    |     Keanu Reeves    |  Laurence Fishburne  |
-|                Shichinin no samurai               |     1954    |   8.6  |  254232  |    Akira Kurosawa    |    Toshirô Mifune   |    Takashi Shimura   |
-|                     Star Wars                     |     1977    |   8.6  |  1014771 |     George Lucas     |     Mark Hamill     |     Harrison Ford    |
-|                   Cidade de Deus                  |     2002    |   8.6  |  587248  |  Fernando Meirelles  | Alexandre Rodrigues |    Leandro Firmino   |
-|                       Se7en                       |     1995    |   8.6  |  1150626 |     David Fincher    |    Morgan Freeman   |       Brad Pitt      |
-|              The Silence of the Lambs             |     1991    |   8.6  |  1004792 |    Jonathan Demme    |     Jodie Foster    |    Anthony Hopkins   |
-|               It's a Wonderful Life               |     1946    |   8.6  |  312292  |      Frank Capra     |    James Stewart    |      Donna Reed      |
-|                  La vita è bella                  |     1997    |   8.6  |  484283  |    Roberto Benigni   |   Roberto Benigni   |   Nicoletta Braschi  |
+|              The Shawshank Redemption             |     1994    |   9.2  |  1886841 |    Frank Darabont    |     Tim Robbins     |    Morgan Freeman    |
+|                   The Godfather                   |     1972    |   9.2  |  1288277 | Francis Ford Coppola |    Marlon Brando    |       Al Pacino      |
+|               The Godfather: Part II              |     1974    |   9.0  |  888732  | Francis Ford Coppola |      Al Pacino      |    Robert De Niro    |
+|                  The Dark Knight                  |     2008    |   9.0  |  1862637 |   Christopher Nolan  |    Christian Bale   |     Heath Ledger     |
+|                    12 Angry Men                   |     1957    |   8.9  |  517893  |     Sidney Lumet     |     Henry Fonda     |      Lee J. Cobb     |
+|                  Schindler's List                 |     1993    |   8.9  |  970201  |   Steven Spielberg   |     Liam Neeson     |     Ralph Fiennes    |
+|                    Pulp Fiction                   |     1994    |   8.9  |  1475884 |   Quentin Tarantino  |    John Travolta    |      Uma Thurman     |
+|   The Lord of the Rings: The Return of the King   |     2003    |   8.9  |  1348236 |     Peter Jackson    |     Elijah Wood     |    Viggo Mortensen   |
+|          Il buono, il brutto, il cattivo          |     1966    |   8.8  |  558964  |     Sergio Leone     |    Clint Eastwood   |      Eli Wallach     |
+|                     Fight Club                    |     1999    |   8.8  |  1512266 |     David Fincher    |      Brad Pitt      |     Edward Norton    |
+| The Lord of the Rings: The Fellowship of the Ring |     2001    |   8.8  |  1368396 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     |
+|                    Forrest Gump                   |     1994    |   8.7  |  1424034 |    Robert Zemeckis   |      Tom Hanks      |     Robin Wright     |
+|   Star Wars: Episode V - The Empire Strikes Back  |     1980    |   8.7  |  942645  |    Irvin Kershner    |     Mark Hamill     |     Harrison Ford    |
+|                     Inception                     |     2010    |   8.7  |  1651480 |   Christopher Nolan  |  Leonardo DiCaprio  | Joseph Gordon-Levitt |
+|       The Lord of the Rings: The Two Towers       |     2002    |   8.7  |  1220325 |     Peter Jackson    |     Elijah Wood     |     Ian McKellen     |
+|          One Flew Over the Cuckoo's Nest          |     1975    |   8.7  |  753245  |     Milos Forman     |    Jack Nicholson   |    Louise Fletcher   |
+|                     Goodfellas                    |     1990    |   8.7  |  813028  |    Martin Scorsese   |    Robert De Niro   |      Ray Liotta      |
+|                     The Matrix                    |     1999    |   8.7  |  1357321 |    Lana Wachowski    |     Keanu Reeves    |  Laurence Fishburne  |
+|                Shichinin no samurai               |     1954    |   8.6  |  254243  |    Akira Kurosawa    |    Toshirô Mifune   |    Takashi Shimura   |
+|                     Star Wars                     |     1977    |   8.6  |  1014901 |     George Lucas     |     Mark Hamill     |     Harrison Ford    |
+|                   Cidade de Deus                  |     2002    |   8.6  |  587273  |  Fernando Meirelles  | Alexandre Rodrigues |    Leandro Firmino   |
+|                       Se7en                       |     1995    |   8.6  |  1150670 |     David Fincher    |    Morgan Freeman   |       Brad Pitt      |
+|              The Silence of the Lambs             |     1991    |   8.6  |  1004835 |    Jonathan Demme    |     Jodie Foster    |    Anthony Hopkins   |
+|               It's a Wonderful Life               |     1946    |   8.6  |  312318  |      Frank Capra     |    James Stewart    |      Donna Reed      |
+|                  La vita è bella                  |     1997    |   8.6  |  484303  |    Roberto Benigni   |   Roberto Benigni   |   Nicoletta Braschi  |
 
 ``` r
 ## Save data
@@ -185,4 +193,26 @@ Creating more detailed dataset, which include:
 
 -   Plot summary
 
-Due to issues with memory, the top 25 movies are subsetted. This work is done in the following rScript - to avoid long lagging time when rendering the rmarkdown.
+The extraction of these fields is done via for loops that points to each indexed link and pulls desired node. Due to memory and lag time, the script is not scources into this rmd; the resulting data was saved, and read back into this rmd as a different dataset.
+
+###### The script that produced the data set is found [here](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/rScripts/02_scrapeData.r)
+
+I did some data wrangling to clean the data for a more tidy dataset. I saved the data before wrangling to prevent addition possible errors.
+
+``` r
+imdb_full <- readRDS("./data/imdb_extractedInfo.rds")
+glimpse(imdb_full)
+```
+
+    ## Observations: 250
+    ## Variables: 10
+    ## $ Title       <fctr> The Shawshank Redemption, The Godfather, The Godf...
+    ## $ yearRelease <dbl> 1994, 1972, 1974, 2008, 1957, 1993, 1994, 2003, 19...
+    ## $ Rating      <dbl> 9.2, 9.2, 9.0, 9.0, 8.9, 8.9, 8.9, 8.9, 8.8, 8.8, ...
+    ## $ no.Votes    <dbl> 1886797, 1288241, 888707, 1862579, 517875, 970161,...
+    ## $ Director    <fctr> Frank Darabont, Francis Ford Coppola, Francis For...
+    ## $ Cast1       <fctr> Tim Robbins, Marlon Brando, Al Pacino, Christian ...
+    ## $ Cast2       <fctr> Morgan Freeman, Al Pacino, Robert De Niro, Heath ...
+    ## $ Genre       <chr> "\n            Genres:\n Crime |\n Drama\n        ...
+    ## $ Duration    <chr> "142 min", "175 min", "202 min", "152 min", "96 mi...
+    ## $ plotSummary <chr> "\nChronicles the experiences of a formerly succes...

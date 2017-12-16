@@ -20,7 +20,7 @@ suppressPackageStartupMessages(library(rvest))
 ```
 
 
-#### Get data from web
+### Get data from web
 I wrote my code in an R script to make the markdown cleaner to view.
 The rScript for the first part is found [here]()
 ```{r url}
@@ -43,7 +43,7 @@ imdb %>%
 ```
 
 
-#### Extract and structure data:
+### Extract and structure data:
 
 I stored each column variable into character lists. I changed some of the data types of the variables to allow analysis.
 
@@ -63,7 +63,7 @@ The extracted variables are:
 
 
 
-#### Create summary dataframe
+### Create summary dataframe
 
 ```{r top dataset}
 
@@ -72,7 +72,7 @@ imdb_df %>% glimpse()
 
 ```
 
-#### Clean dataset
+### Clean dataset
 
 > See rScript for more
 
@@ -83,14 +83,18 @@ imdb_df2 %>%
              Cast2, Link) %>% 
       head(25) %>% 
       kable(align = "c", padding = 1,
-            caption = "imdb Top 250 Rated movies")
+            caption = "imdb Top 250 Rated movies") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    full_width = F, font_size = 9)
 
 ## Look at cast members
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
       head(25) %>% 
       kable(align = "c", padding = 1,
-            caption = "IMDb Top 250 Rated") 
+            caption = "IMDb Top 250 Rated") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    full_width = F, font_size = 9)
 ``` 
 
 ```{r}
@@ -100,7 +104,7 @@ imdb_df2 %>%
 
 ```
 
-#### Analyze datase
+### Analyze prelim data
 
 *Quick look at the correlation between release year and rating.*
 
@@ -122,12 +126,22 @@ Creating more detailed dataset, which include:
  
  - Plot summary
  
- 
- 
-Due to issues with memory, the top 25 movies are subsetted and saved into a second tsv file. This work is done in the following rScript - to avoid long lagging time when rendering the rmarkdown. I used for loops to pull the data for the first 25 indexed values to avoid manual coding of url links.
 
-```{r, eval=FALSE, include=FALSE}
-suppressMessages(source('rScripts/02_scrapeData.r'))
-```
+The extraction of these fields is done via for loops that points to each indexed link and pulls desired node. Due to memory and lag time, the script is not scources into this rmd; the resulting data was saved, and read back into this rmd as a different dataset. 
+
+##### The script that produced the data set is found [here](https://github.com/farihakhan/STAT547-hw-khan-fariha/blob/master/hw_10/rScripts/02_scrapeData.r)
 
 I did some data wrangling to clean the data for a more tidy dataset.
+I saved the data before wrangling to prevent addition possible errors.
+
+```{r}
+imdb_full <- readRDS("./data/imdb_extractedInfo.rds")
+glimpse(imdb_full)
+```
+
+### More analysis
+
+```{r}
+
+```
+

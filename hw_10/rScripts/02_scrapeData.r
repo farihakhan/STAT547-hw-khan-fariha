@@ -9,7 +9,13 @@ suppressPackageStartupMessages(library(rvest))
 
 
 # Access movie page --------------------------------------------------------------
-
+if(!exists("imdb_df2")){
+      
+      imdb_df2 <- readr::read_delim(
+            "./hw_10/data/imdb_top250movies_summary.tsv", 
+            "\t", escape_double = FALSE, trim_ws = TRUE)
+}
+      
 imdb_full <- imdb_df2 %>% 
       select(Title:Rating, no.Votes, Director:Cast2) %>% 
       mutate(Director = as.factor(Director),
@@ -17,13 +23,12 @@ imdb_full <- imdb_df2 %>%
              Cast2 = as.factor(Cast2),
              Genre = "",
              Duration = "",
-             plotSummary = "") %>% 
-      head(25)
+             plotSummary = "")
 
 
 # Genre --------------------------------------------------------------
 
-for(i in 1:25){
+for(i in 1:250){
       genre <- imdb_df$Link[i] %>%
             read_html() %>%
             html_nodes(".see-more.inline.canwrap") %>%
@@ -37,7 +42,7 @@ for(i in 1:25){
 # Duration -------------------------------------------------------------------------------
 
 
-for(i in 1:25){
+for(i in 1:250){
       time <- imdb_df$Link[i] %>%
             read_html() %>%
             html_nodes(".txt-block") %>%
@@ -50,7 +55,7 @@ for(i in 1:25){
 # Plot summary ---------------------------------------------------------------------------
 
 
-for(i in 1:25){
+for(i in 1:250){
       txt <- imdb_df$Link[i] %>%
             read_html() %>%
             html_nodes("#titleStoryLine , div.inline.canwrap") %>%
@@ -61,24 +66,9 @@ for(i in 1:25){
 }
 
 
+# Write data----------------------------------------------------------------------------------
 
-# Clean and add ----------------------------------------------------------------------------------
-cleanfinalData <- function(imdb_full){
-      
-      genre <- word(imdb_full$Genre, 2, sep = fixed('Genres:'))
-      genre <- as.factor(gsub("Sci-Fi", "SciFi", genre))
-      genre <- str_extract_all(genre, boundary("word"))
-      
-      df <-  imdb_full %>% 
-            mutate(plotSummary = word(imdb_full$plotSummary,
-                                      1, sep = fixed('Written'))) %>% 
-            mutate(plotSummary = trimws(plotSummary, which = "right")) %>% 
-            mutate(Genre = genre)
-      
-      return(df)
-}
-
-imdb_full <- cleanfinalData(imdb_full)
+saveRDS(imdb_full, './hw_10/data/imdb_extractedInfo.rds')
 
 
 
