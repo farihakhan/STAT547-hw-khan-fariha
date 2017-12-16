@@ -109,11 +109,16 @@ imdb_df2 %>%
 
 
 <img src="media/yearRelease_hist.png" align="middle">
-<div float="left"">
-<img src=media/yearRelease_rating.png height="50%" width="50%">
-<img src=media/rating_noVotes.png height="50%" width="50%">
+
+<div float="left">
+
+<img src=media/yearRelease_rating.png height="50%" width="50%"><img src=media/rating_noVotes.png height="50%" width="50%">
+
 </div>
 
+plot2                              |  plot3
+:---------------------------------:|:-----------------------------:
+![](media/yearRelease_rating.png)  |  ![](media/rating_noVotes.png)
 
 
 ### 
