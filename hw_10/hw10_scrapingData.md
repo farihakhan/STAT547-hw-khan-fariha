@@ -89,15 +89,15 @@ imdb_df %>% glimpse()
 imdb_df2 %>% 
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
-             Cast2, Link) %>% 
+             Cast2) %>% 
       head(25) %>% 
       kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
-                    full_width = F, font_size = 9)
+                    full_width = F, font_size = 11)
 ```
 
-<table class="table table-striped table-condensed" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-condensed" style="font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 imdb Top 250 Rated movies
 </caption>
@@ -124,9 +124,6 @@ Cast1
 <th style="text-align:center;">
 Cast2
 </th>
-<th style="text-align:center;">
-Link
-</th>
 </tr>
 </thead>
 <tbody>
@@ -152,9 +149,6 @@ Tim Robbins
 <td style="text-align:center;">
 Morgan Freeman
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -177,9 +171,6 @@ Marlon Brando
 </td>
 <td style="text-align:center;">
 Al Pacino
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2>
 </td>
 </tr>
 <tr>
@@ -204,9 +195,6 @@ Al Pacino
 <td style="text-align:center;">
 Robert De Niro
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -229,9 +217,6 @@ Christian Bale
 </td>
 <td style="text-align:center;">
 Heath Ledger
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4>
 </td>
 </tr>
 <tr>
@@ -256,9 +241,6 @@ Henry Fonda
 <td style="text-align:center;">
 Lee J. Cobb
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -281,9 +263,6 @@ Liam Neeson
 </td>
 <td style="text-align:center;">
 Ralph Fiennes
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6>
 </td>
 </tr>
 <tr>
@@ -308,9 +287,6 @@ John Travolta
 <td style="text-align:center;">
 Uma Thurman
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -333,9 +309,6 @@ Elijah Wood
 </td>
 <td style="text-align:center;">
 Viggo Mortensen
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8>
 </td>
 </tr>
 <tr>
@@ -360,9 +333,6 @@ Clint Eastwood
 <td style="text-align:center;">
 Eli Wallach
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -385,9 +355,6 @@ Brad Pitt
 </td>
 <td style="text-align:center;">
 Edward Norton
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10>
 </td>
 </tr>
 <tr>
@@ -412,9 +379,6 @@ Elijah Wood
 <td style="text-align:center;">
 Ian McKellen
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -437,9 +401,6 @@ Tom Hanks
 </td>
 <td style="text-align:center;">
 Robin Wright
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12>
 </td>
 </tr>
 <tr>
@@ -464,9 +425,6 @@ Mark Hamill
 <td style="text-align:center;">
 Harrison Ford
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -489,9 +447,6 @@ Leonardo DiCaprio
 </td>
 <td style="text-align:center;">
 Joseph Gordon-Levitt
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14>
 </td>
 </tr>
 <tr>
@@ -516,9 +471,6 @@ Elijah Wood
 <td style="text-align:center;">
 Ian McKellen
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -541,9 +493,6 @@ Jack Nicholson
 </td>
 <td style="text-align:center;">
 Louise Fletcher
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16>
 </td>
 </tr>
 <tr>
@@ -568,9 +517,6 @@ Robert De Niro
 <td style="text-align:center;">
 Ray Liotta
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -593,9 +539,6 @@ Keanu Reeves
 </td>
 <td style="text-align:center;">
 Laurence Fishburne
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18>
 </td>
 </tr>
 <tr>
@@ -620,9 +563,6 @@ Toshirô Mifune
 <td style="text-align:center;">
 Takashi Shimura
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -645,9 +585,6 @@ Mark Hamill
 </td>
 <td style="text-align:center;">
 Harrison Ford
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20>
 </td>
 </tr>
 <tr>
@@ -672,9 +609,6 @@ Alexandre Rodrigues
 <td style="text-align:center;">
 Leandro Firmino
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -697,9 +631,6 @@ Morgan Freeman
 </td>
 <td style="text-align:center;">
 Brad Pitt
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22>
 </td>
 </tr>
 <tr>
@@ -724,9 +655,6 @@ Jodie Foster
 <td style="text-align:center;">
 Anthony Hopkins
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23>
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -749,9 +677,6 @@ James Stewart
 </td>
 <td style="text-align:center;">
 Donna Reed
-</td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24>
 </td>
 </tr>
 <tr>
@@ -776,9 +701,6 @@ Roberto Benigni
 <td style="text-align:center;">
 Nicoletta Braschi
 </td>
-<td style="text-align:center;">
-<http://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3376940102&pf_rd_r=0C7PX6YBWCF8VTETGHHA&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25>
-</td>
 </tr>
 </tbody>
 </table>
@@ -790,10 +712,10 @@ imdb_df2 %>%
       kable("html", align = "c", padding = 1,
             caption = "IMDb Top 250 Rated") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
-                    full_width = F, font_size = 9)
+                    full_width = F, font_size = 11)
 ```
 
-<table class="table table-striped table-condensed" style="font-size: 9px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-condensed" style="font-size: 11px; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 IMDb Top 250 Rated
 </caption>
@@ -1454,93 +1376,173 @@ glimpse(imdb_full)
 ``` r
 suppressMessages(source('rScripts/03_scrapeData.r'))
 movieDF <- cleanfinalData(imdb_full)
-
-movieDF %>% 
-      select(Title, Genre, plotSummary) %>% 
-      head() %>% 
-      kable("html")
 ```
 
-<table>
+Looking briefly at the plot summaries and genres of the top 10 movies...
+
+``` r
+movieDF %>% 
+      select(Title, Genre, plotSummary) %>% 
+      head(10) %>% 
+      kable("html", align = "c", padding = 1,
+            caption = "Genres and Plots") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    font_size = 12) %>% 
+      column_spec(1, bold = T, width = "20em") %>%
+      column_spec(2, width = "10em") %>%
+      column_spec(3, width = "60em")
+```
+
+<table class="table table-striped table-condensed" style="font-size: 12px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+Genres and Plots
+</caption>
 <thead>
 <tr>
-<th style="text-align:left;">
+<th style="text-align:center;">
 Title
 </th>
-<th style="text-align:left;">
+<th style="text-align:center;">
 Genre
 </th>
-<th style="text-align:left;">
+<th style="text-align:center;">
 plotSummary
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 The Shawshank Redemption
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Crime, Drama
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 The Godfather
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Crime, Drama
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 The Godfather: Part II
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Crime, Drama
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 The continuing saga of the Corleone crime family tells the story of a young Vito Corleone growing up in Sicily and in 1910s New York; and follows Michael Corleone in the 1950s as he attempts to expand the family business into Las Vegas, Hollywood and Cuba.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 The Dark Knight
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Action, Crime, Drama, Thriller
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 Set within a year after the events of Batman Begins, Batman, Lieutenant James Gordon, and new district attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City until a mysterious and sadistic criminal mastermind known only as the Joker appears in Gotham, creating a new wave of chaos. Batman's struggle against the Joker becomes deeply personal, forcing him to "confront everything he believes" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent and Rachel Dawes.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 12 Angry Men
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Crime, Drama
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young man is guilty or innocent of murdering his father. What begins as an open-and-shut case of murder soon becomes a detective story that presents a succession of clues creating doubt, and a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other. Based on the play, all of the action takes place on the stage of the jury room.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:center;width: 20em; font-weight: bold;">
 Schindler's List
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 10em; ">
 Biography, Drama, History
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 60em; ">
 Oskar Schindler is a vainglorious and greedy German businessman who becomes an unlikely humanitarian amid the barbaric German Nazi reign when he feels compelled to turn his factory into a refuge for Jews. Based on the true story of Oskar Schindler who managed to save about 1100 Jews from being gassed at the Auschwitz concentration camp, it is a testament to the good in all of us.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 20em; font-weight: bold;">
+Pulp Fiction
+</td>
+<td style="text-align:center;width: 10em; ">
+Crime, Drama
+</td>
+<td style="text-align:center;width: 60em; ">
+Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two hit men who are out to retrieve a suitcase stolen from their employer, mob boss Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia (Uma Thurman) out a few days later when Wallace himself will be out of town. Butch Coolidge (Bruce Willis) is an aging boxer who is paid by Wallace to lose his fight. The lives of these seemingly unrelated people are woven together comprising of a series of funny, bizarre and uncalled-for incidents.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 20em; font-weight: bold;">
+The Lord of the Rings: The Return of the King
+</td>
+<td style="text-align:center;width: 10em; ">
+Adventure, Drama, Fantasy
+</td>
+<td style="text-align:center;width: 60em; ">
+The final confrontation between the forces of good and evil fighting for control of the future of Middle-earth. Hobbits: Frodo and Sam reach Mordor in their quest to destroy the "one ring", while Aragorn leads the forces of good against Sauron's evil army at the stone city of Minas Tirith.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 20em; font-weight: bold;">
+Il buono, il brutto, il cattivo
+</td>
+<td style="text-align:center;width: 10em; ">
+Western
+</td>
+<td style="text-align:center;width: 60em; ">
+Blondie (The Good) is a professional gunslinger who is out trying to earn a few dollars. Angel Eyes (The Bad) is a hit man who always commits to a task and sees it through, as long as he is paid to do so. And Tuco (The Ugly) is a wanted outlaw trying to take care of his own hide. Tuco and Blondie share a partnership together making money off Tuco's bounty, but when Blondie unties the partnership, Tuco tries to hunt down Blondie. When Blondie and Tuco come across a horse carriage loaded with dead bodies, they soon learn from the only survivor (Bill Carson) that he and a few other men have buried a stash of gold in a cemetery. Unfortunately Carson dies and Tuco only finds out the name of the cemetery, while Blondie finds out the name on the grave. Now the two must keep each other alive in order to find the gold. Angel Eyes (who had been looking for Bill Carson) discovers that Tuco and Blondie met with Carson and knows they know the location of the gold. All he needs is for the two to ...
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 20em; font-weight: bold;">
+Fight Club
+</td>
+<td style="text-align:center;width: 10em; ">
+Drama
+</td>
+<td style="text-align:center;width: 60em; ">
+A nameless first person narrator (Edward Norton) attends support groups in attempt to subdue his emotional state and relieve his insomniac state. When he meets Marla (Helena Bonham Carter), another fake attendee of support groups, his life seems to become a little more bearable. However when he associates himself with Tyler (Brad Pitt) he is dragged into an underground fight club and soap making scheme. Together the two men spiral out of control and engage in competitive rivalry for love and power. When the narrator is exposed to the hidden agenda of Tyler's fight club, he must accept the awful truth that Tyler may not be who he says he is.
 </td>
 </tr>
 </tbody>
 </table>
+##### Most popular directors
+
+``` r
+movieDF %>% 
+      group_by(Director) %>% 
+      tally() %>% 
+      arrange(desc(n)) %>% 
+      filter(n>4) %>% 
+      kable()
+```
+
+| Director          |    n|
+|:------------------|----:|
+| Christopher Nolan |    8|
+| Martin Scorsese   |    7|
+| Stanley Kubrick   |    7|
+| Steven Spielberg  |    7|
+| Alfred Hitchcock  |    6|
+| Akira Kurosawa    |    5|
+| Billy Wilder      |    5|
+| Charles Chaplin   |    5|
+| Hayao Miyazaki    |    5|
+| Quentin Tarantino |    5|

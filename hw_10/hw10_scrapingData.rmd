@@ -80,12 +80,12 @@ imdb_df %>% glimpse()
 imdb_df2 %>% 
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
-             Cast2, Link) %>% 
+             Cast2) %>% 
       head(25) %>% 
       kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
-                    full_width = F, font_size = 9)
+                    full_width = F, font_size = 11)
 
 ## Look at cast members
 imdb_df2 %>% 
@@ -94,7 +94,7 @@ imdb_df2 %>%
       kable("html", align = "c", padding = 1,
             caption = "IMDb Top 250 Rated") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
-                    full_width = F, font_size = 9)
+                    full_width = F, font_size = 11)
 ``` 
 
 ```{r}
@@ -145,9 +145,31 @@ glimpse(imdb_full)
 suppressMessages(source('rScripts/03_scrapeData.r'))
 movieDF <- cleanfinalData(imdb_full)
 
+```
+
+Looking briefly at the plot summaries and genres of the top 10 movies...
+```{r}
 movieDF %>% 
       select(Title, Genre, plotSummary) %>% 
-      head() %>% 
-      kable("html")
+      head(10) %>% 
+      kable("html", align = "c", padding = 1,
+            caption = "Genres and Plots") %>% 
+      kable_styling(bootstrap_options = c("striped", "condensed"), 
+                    font_size = 12) %>% 
+      column_spec(1, bold = T, width = "20em") %>%
+      column_spec(2, width = "10em") %>%
+      column_spec(3, width = "60em")
+```
+
+
+##### Most popular directors
+
+```{r}
+movieDF %>% 
+      group_by(Director) %>% 
+      tally() %>% 
+      arrange(desc(n)) %>% 
+      filter(n>4) %>% 
+      kable()
 ```
 

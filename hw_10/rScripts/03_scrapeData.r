@@ -16,3 +16,6 @@ cleanfinalData <- function(imdb_full){
 }
 
 movieDF <- cleanfinalData(imdb_full)
+
+
+
