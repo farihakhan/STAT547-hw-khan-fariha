@@ -78,7 +78,7 @@ imdb_df %>% glimpse()
     ## $ yearRelease <dbl> 1994, 1972, 1974, 2008, 1957, 1993, 1994, 2003, 19...
     ## $ Rating      <dbl> 9.2, 9.2, 9.0, 9.0, 8.9, 8.9, 8.9, 8.9, 8.8, 8.8, ...
     ## $ Cast        <fctr> Frank Darabont (dir.), Tim Robbins, Morgan Freema...
-    ## $ Votes       <fctr> 9.2 based on 1,886,841 user ratings, 9.2 based on...
+    ## $ Votes       <fctr> 9.2 based on 1,886,881 user ratings, 9.2 based on...
     ## $ Link        <chr> "http://www.imdb.com/title/tt0111161/?pf_rd_m=A2FG...
 
 ### Clean dataset
@@ -138,7 +138,7 @@ The Shawshank Redemption
 9.2
 </td>
 <td style="text-align:center;">
-1886841
+1886881
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -161,7 +161,7 @@ The Godfather
 9.2
 </td>
 <td style="text-align:center;">
-1288277
+1288297
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -184,7 +184,7 @@ The Godfather: Part II
 9.0
 </td>
 <td style="text-align:center;">
-888732
+888752
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -207,7 +207,7 @@ The Dark Knight
 9.0
 </td>
 <td style="text-align:center;">
-1862637
+1862674
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -230,7 +230,7 @@ Heath Ledger
 8.9
 </td>
 <td style="text-align:center;">
-517893
+517905
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -253,7 +253,7 @@ Schindler's List
 8.9
 </td>
 <td style="text-align:center;">
-970201
+970226
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -276,7 +276,7 @@ Pulp Fiction
 8.9
 </td>
 <td style="text-align:center;">
-1475884
+1475914
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -299,7 +299,7 @@ The Lord of the Rings: The Return of the King
 8.9
 </td>
 <td style="text-align:center;">
-1348236
+1348257
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -322,7 +322,7 @@ Il buono, il brutto, il cattivo
 8.8
 </td>
 <td style="text-align:center;">
-558964
+558975
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -345,7 +345,7 @@ Fight Club
 8.8
 </td>
 <td style="text-align:center;">
-1512266
+1512291
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -368,7 +368,7 @@ The Lord of the Rings: The Fellowship of the Ring
 8.8
 </td>
 <td style="text-align:center;">
-1368396
+1368431
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -391,7 +391,7 @@ Forrest Gump
 8.7
 </td>
 <td style="text-align:center;">
-1424034
+1424063
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -414,7 +414,7 @@ Star Wars: Episode V - The Empire Strikes Back
 8.7
 </td>
 <td style="text-align:center;">
-942645
+942724
 </td>
 <td style="text-align:center;">
 Irvin Kershner
@@ -437,7 +437,7 @@ Inception
 8.7
 </td>
 <td style="text-align:center;">
-1651480
+1651512
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -460,7 +460,7 @@ The Lord of the Rings: The Two Towers
 8.7
 </td>
 <td style="text-align:center;">
-1220325
+1220352
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -527,7 +527,7 @@ The Shawshank Redemption
 9.2
 </td>
 <td style="text-align:center;">
-1886841
+1886881
 </td>
 <td style="text-align:center;">
 Frank Darabont
@@ -550,7 +550,7 @@ The Godfather
 9.2
 </td>
 <td style="text-align:center;">
-1288277
+1288297
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -573,7 +573,7 @@ The Godfather: Part II
 9.0
 </td>
 <td style="text-align:center;">
-888732
+888752
 </td>
 <td style="text-align:center;">
 Francis Ford Coppola
@@ -596,7 +596,7 @@ The Dark Knight
 9.0
 </td>
 <td style="text-align:center;">
-1862637
+1862674
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -619,7 +619,7 @@ Heath Ledger
 8.9
 </td>
 <td style="text-align:center;">
-517893
+517905
 </td>
 <td style="text-align:center;">
 Sidney Lumet
@@ -642,7 +642,7 @@ Schindler's List
 8.9
 </td>
 <td style="text-align:center;">
-970201
+970226
 </td>
 <td style="text-align:center;">
 Steven Spielberg
@@ -665,7 +665,7 @@ Pulp Fiction
 8.9
 </td>
 <td style="text-align:center;">
-1475884
+1475914
 </td>
 <td style="text-align:center;">
 Quentin Tarantino
@@ -688,7 +688,7 @@ The Lord of the Rings: The Return of the King
 8.9
 </td>
 <td style="text-align:center;">
-1348236
+1348257
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -711,7 +711,7 @@ Il buono, il brutto, il cattivo
 8.8
 </td>
 <td style="text-align:center;">
-558964
+558975
 </td>
 <td style="text-align:center;">
 Sergio Leone
@@ -734,7 +734,7 @@ Fight Club
 8.8
 </td>
 <td style="text-align:center;">
-1512266
+1512291
 </td>
 <td style="text-align:center;">
 David Fincher
@@ -757,7 +757,7 @@ The Lord of the Rings: The Fellowship of the Ring
 8.8
 </td>
 <td style="text-align:center;">
-1368396
+1368431
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -780,7 +780,7 @@ Forrest Gump
 8.7
 </td>
 <td style="text-align:center;">
-1424034
+1424063
 </td>
 <td style="text-align:center;">
 Robert Zemeckis
@@ -803,7 +803,7 @@ Star Wars: Episode V - The Empire Strikes Back
 8.7
 </td>
 <td style="text-align:center;">
-942645
+942724
 </td>
 <td style="text-align:center;">
 Irvin Kershner
@@ -826,7 +826,7 @@ Inception
 8.7
 </td>
 <td style="text-align:center;">
-1651480
+1651512
 </td>
 <td style="text-align:center;">
 Christopher Nolan
@@ -849,7 +849,7 @@ The Lord of the Rings: The Two Towers
 8.7
 </td>
 <td style="text-align:center;">
-1220325
+1220352
 </td>
 <td style="text-align:center;">
 Peter Jackson
@@ -868,9 +868,11 @@ Ian McKellen
 *Quick look at the correlation between release year and rating.*
 
 <img src="media/yearRelease_hist.png" align="middle">
-<img src=media/yearRelease_rating.png height="50%" width="50%"> <img src=media/rating_noVotes.png height="50%" width="50%>
+<img src=media/yearRelease_rating.png height="40%" width="40%" align="left"> <img src=media/rating_noVotes.png height="40%" width="40%" align="right">
 
-#### Get data from links
+### 
+
+### Get data from links
 
 Creating more detailed dataset, which include:
 

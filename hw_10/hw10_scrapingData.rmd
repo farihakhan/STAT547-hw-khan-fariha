@@ -100,6 +100,7 @@ imdb_df2 %>%
                     full_width = F, font_size = 11)
 ```
 
+
 ### Analyze prelim data
 
 *Quick look at the correlation between release year and rating.*
@@ -107,12 +108,14 @@ imdb_df2 %>%
 
 <img src="media/yearRelease_hist.png" align="middle">
 <div>
-<img src=media/yearRelease_rating.png height="50%" width="50%">
-<img src=media/rating_noVotes.png height="50%" width="50%>
+<img src=media/yearRelease_rating.png height="40%" width="40%" align="left">
+<img src=media/rating_noVotes.png height="40%" width="40%" align="right">
 </div>
 
 
-#### Get data from links
+### 
+
+### Get data from links
 
 Creating more detailed dataset, which include:
 
