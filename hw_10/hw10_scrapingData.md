@@ -868,7 +868,7 @@ Ian McKellen
 *Quick look at the correlation between release year and rating.*
 
 <img src="media/yearRelease_hist.png" align="middle">
-<img src=media/yearRelease_rating.png height="50%" width="50%" align="left"> <img src=media/rating_noVotes.png height="50%" width="50%" align="right">
+<img src=media/yearRelease_rating.png height="50%" width="50%" float="left"> <img src=media/rating_noVotes.png height="50%" width="50%" float="right">
 
 ### 
 
