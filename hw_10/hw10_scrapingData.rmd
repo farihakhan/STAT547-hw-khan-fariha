@@ -89,7 +89,9 @@ imdb_df2 %>%
 ``` 
 
 
-##### Look at cast members
+
+#### Look at cast members
+
 ```{r results='markup'}
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
@@ -107,9 +109,9 @@ imdb_df2 %>%
 
 
 <img src="media/yearRelease_hist.png" align="middle">
-<div>
-<img src=media/yearRelease_rating.png height="40%" width="40%" align="left">
-<img src=media/rating_noVotes.png height="40%" width="40%" align="right">
+<div float="left">
+<img src=media/yearRelease_rating.png height="50%" width="50%" align="left">
+<img src=media/rating_noVotes.png height="50%" width="50%" align="right">
 </div>
 
 
