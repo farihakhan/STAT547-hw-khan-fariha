@@ -76,7 +76,7 @@ imdb_df %>% glimpse()
 
 > See rScript for more
 
-```{r }
+```{r results='asis'}
 imdb_df2 %>% 
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
@@ -86,8 +86,11 @@ imdb_df2 %>%
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
                     full_width = F, font_size = 11)
+``` 
 
-## Look at cast members
+
+##### Look at cast members
+```{r}
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
       head(25) %>% 
@@ -95,13 +98,6 @@ imdb_df2 %>%
             caption = "IMDb Top 250 Rated") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
                     full_width = F, font_size = 11)
-``` 
-
-```{r}
-## Save data
-## write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
-##             quote = FALSE, sep = "\t", row.names = FALSE)
-
 ```
 
 ### Analyze prelim data

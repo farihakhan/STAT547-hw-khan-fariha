@@ -704,8 +704,9 @@ Nicoletta Braschi
 </tr>
 </tbody>
 </table>
+##### Look at cast members
+
 ``` r
-## Look at cast members
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
       head(25) %>% 
@@ -1322,12 +1323,6 @@ Nicoletta Braschi
 </tr>
 </tbody>
 </table>
-``` r
-## Save data
-## write.table(imdb_df2, "./data/imdb_top250movies_summary.tsv",
-##             quote = FALSE, sep = "\t", row.names = FALSE)
-```
-
 ### Analyze prelim data
 
 *Quick look at the correlation between release year and rating.*
