@@ -81,7 +81,7 @@ imdb_df2 %>%
       select(Title, yearRelease, Rating,
              no.Votes, Director, Cast1,
              Cast2) %>% 
-      head(25) %>% 
+      head(15) %>% 
       kable("html", align = "c", padding = 1,
             caption = "imdb Top 250 Rated movies") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
@@ -90,10 +90,10 @@ imdb_df2 %>%
 
 
 ##### Look at cast members
-```{r}
+```{r results='markup'}
 imdb_df2 %>% 
       select(Title:Rating, no.Votes:Cast2) %>% 
-      head(25) %>% 
+      head(15) %>% 
       kable("html", align = "c", padding = 1,
             caption = "IMDb Top 250 Rated") %>% 
       kable_styling(bootstrap_options = c("striped", "condensed"), 
@@ -110,7 +110,7 @@ imdb_df2 %>%
 <img src=media/yearRelease_rating.png align="left" height="50%" width="50%">
 <img src=media/rating_noVotes.png align="right" height="50%" width="50%>
 </div>
-<p> </p>
+
 
 #### Get data from links
 
